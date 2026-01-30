@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kruger National Park | South Africa | WildlifeVacation.com</title>
+  <meta name="description" content="Explore Kruger National Park - South Africa's flagship safari destination. Discover Big Five wildlife, family-friendly lodges, self-drive options, and malaria-free zones perfect for families.">
+  <link rel="canonical" href="https://wildlifevacation.com/destinations/kruger/">
+  <meta property="og:title" content="Kruger National Park | South Africa Safari">
+  <meta name="theme-color" content="#2d5a27">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦁</text></svg>">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"TouristDestination","name":"Kruger National Park","description":"South Africa's largest and most famous game reserve, home to the Big Five and excellent family safari experiences.","touristType":["Family","Wildlife Enthusiast","First-time Safari"]}
+  </script>
+  <style>
+    .dest-hero { background: linear-gradient(135deg, #16a34a 0%, #15803d 100%); padding: var(--space-16) 0 var(--space-20); text-align: center; color: white; }
+    .dest-emoji { font-size: clamp(4rem, 12vw, 8rem); display: block; margin-bottom: var(--space-4); }
+    .dest-title { font-family: var(--font-family-display); font-size: clamp(2.5rem, 8vw, 4rem); margin-bottom: var(--space-2); }
+    .dest-subtitle { font-size: var(--text-xl); opacity: 0.9; margin-bottom: var(--space-4); }
+    .dest-tagline { font-size: var(--text-lg); max-width: 600px; margin: 0 auto; line-height: 1.6; }
+    .quick-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: var(--space-4); margin: calc(-1 * var(--space-12)) auto var(--space-12); max-width: 900px; padding: 0 var(--space-4); position: relative; z-index: 2; }
+    .quick-fact { background: var(--color-white); padding: var(--space-5); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); text-align: center; }
+    .quick-fact-icon { font-size: 2rem; margin-bottom: var(--space-2); }
+    .quick-fact-value { font-family: var(--font-family-display); font-size: var(--text-xl); color: var(--color-forest); }
+    .quick-fact-label { font-size: var(--text-sm); color: var(--color-gray-600); }
+    .content-section { padding: var(--space-12) 0; }
+    .content-section:nth-child(even) { background: var(--color-cream); }
+    .section-header { text-align: center; margin-bottom: var(--space-8); }
+    .section-icon { font-size: 3rem; margin-bottom: var(--space-3); }
+    .section-title { font-family: var(--font-family-display); font-size: var(--text-3xl); color: var(--color-forest); }
+    .section-subtitle { font-size: var(--text-lg); color: var(--color-gray-600); max-width: 600px; margin: var(--space-2) auto 0; }
+    .wildlife-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: var(--space-4); }
+    .wildlife-card { background: var(--color-white); padding: var(--space-4); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); text-align: center; text-decoration: none; color: inherit; transition: transform 0.2s; }
+    .wildlife-card:hover { transform: translateY(-4px); }
+    .wildlife-card-emoji { font-size: 2.5rem; margin-bottom: var(--space-2); }
+    .wildlife-card-name { font-weight: 700; color: var(--color-gray-800); font-size: var(--text-sm); }
+    .wildlife-card-chance { font-size: var(--text-xs); color: var(--color-gray-500); margin-top: var(--space-1); }
+    .benefit-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); }
+    .benefit-card { background: var(--color-white); padding: var(--space-6); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); border-left: 4px solid #16a34a; }
+    .benefit-card h3 { font-size: var(--text-lg); color: var(--color-gray-800); margin-bottom: var(--space-2); }
+    .benefit-card p { color: var(--color-gray-600); line-height: 1.6; margin: 0; font-size: var(--text-sm); }
+    .highlight-box { background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%); padding: var(--space-8); border-radius: var(--radius-2xl); margin: var(--space-8) 0; }
+    .highlight-box h3 { font-family: var(--font-family-display); color: #15803d; margin-bottom: var(--space-4); text-align: center; }
+    .highlight-box p { color: var(--color-gray-700); line-height: 1.7; max-width: 700px; margin: 0 auto; text-align: center; }
+    .season-table { width: 100%; border-collapse: collapse; margin-top: var(--space-6); background: var(--color-white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-md); }
+    .season-table th, .season-table td { padding: var(--space-4); text-align: left; border-bottom: 1px solid var(--color-gray-100); }
+    .season-table th { background: var(--color-forest); color: white; font-weight: 600; }
+    .season-table tr:last-child td { border-bottom: none; }
+    .cta-section { background: linear-gradient(135deg, var(--color-forest) 0%, #3d7a37 100%); padding: var(--space-16) 0; text-align: center; color: white; }
+    .cta-section h2 { font-family: var(--font-family-display); font-size: var(--text-3xl); margin-bottom: var(--space-4); }
+    .cta-buttons { display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center; margin-top: var(--space-6); }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="trust-bar"><div class="trust-bar-inner"><span>🏆 Trusted by 50,000+ families</span><span>✓ Expert-verified</span><span>🌍 Conservation-focused</span></div></div>
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="/" class="logo"><span class="logo-icon">🦁</span><span>WildlifeVacation</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <nav class="nav" id="main-nav"><ul class="nav-list"><li><a href="/" class="nav-link">Home</a></li><li><a href="/destinations/" class="nav-link nav-link--active">Destinations</a></li><li><a href="/animals/" class="nav-link">Animals</a></li><li><a href="/experiences/" class="nav-link">Experiences</a></li><li><a href="/about/" class="nav-link">About</a></li></ul></nav>
+      <div class="nav-overlay"></div>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="dest-hero">
+      <div class="container">
+        <span class="dest-emoji">🇿🇦</span>
+        <h1 class="dest-title">Kruger National Park</h1>
+        <p class="dest-subtitle">South Africa</p>
+        <p class="dest-tagline">South Africa's flagship safari destination - one of Africa's largest game reserves with exceptional Big Five viewing, excellent infrastructure, and family-friendly options including malaria-free zones.</p>
+      </div>
+    </section>
+    <div class="quick-facts">
+      <div class="quick-fact"><div class="quick-fact-icon">📍</div><div class="quick-fact-value">South Africa</div><div class="quick-fact-label">Location</div></div>
+      <div class="quick-fact"><div class="quick-fact-icon">📐</div><div class="quick-fact-value">19,485 km²</div><div class="quick-fact-label">Area</div></div>
+      <div class="quick-fact"><div class="quick-fact-icon">🐘</div><div class="quick-fact-value">17,000+</div><div class="quick-fact-label">Elephants</div></div>
+      <div class="quick-fact"><div class="quick-fact-icon">🦁</div><div class="quick-fact-value">1,600+</div><div class="quick-fact-label">Lions</div></div>
+      <div class="quick-fact"><div class="quick-fact-icon">🚗</div><div class="quick-fact-value">Self-Drive</div><div class="quick-fact-label">Options</div></div>
+      <div class="quick-fact"><div class="quick-fact-icon">👨‍👩‍👧</div><div class="quick-fact-value">★★★★★</div><div class="quick-fact-label">Family Rating</div></div>
+    </div>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">👨‍👩‍👧‍👦</div><h2 class="section-title">Why Kruger is Perfect for Families</h2></header>
+        <div class="benefit-grid">
+          <div class="benefit-card"><h3>🚗 Self-Drive Safaris</h3><p>Explore at your own pace in your own vehicle! Kruger has over 2,500 km of roads, many paved. Stop whenever kids spot wildlife, take breaks when needed, and enjoy the flexibility families need. No minimum age restrictions.</p></div>
+          <div class="benefit-card"><h3>💊 Malaria-Free Options</h3><p>Adjacent private reserves like Madikwe, Pilanesberg, and parts of the Eastern Cape offer Big Five viewing without malaria risk - ideal for families with young children or those preferring to skip antimalarial medication.</p></div>
+          <div class="benefit-card"><h3>🏨 Excellent Infrastructure</h3><p>SANParks rest camps offer self-catering chalets, restaurants, shops, swimming pools, and playgrounds. Private lodges range from affordable to luxury, many with dedicated kids' programs and family suites.</p></div>
+          <div class="benefit-card"><h3>✈️ Easy Access</h3><p>Just 4-5 hours drive from Johannesburg, or fly directly to Skukuza, Hoedspruit, or Nelspruit airports. Good roads and well-marked entrances make Kruger accessible for first-time safari visitors.</p></div>
+          <div class="benefit-card"><h3>💰 Budget-Friendly</h3><p>Government-run rest camps are remarkably affordable compared to private lodges in other countries. Self-catering and self-drive options make Kruger one of Africa's most budget-friendly Big Five destinations.</p></div>
+          <div class="benefit-card"><h3>🦁 Exceptional Wildlife</h3><p>Home to Africa's largest concentration of large mammals. Over 147 mammal species, 500+ birds, and the Big Five. Multiple sightings per day are common. Great for checking animals off your list!</p></div>
+        </div>
+        <div class="highlight-box">
+          <h3>🏆 Perfect First Safari Destination</h3>
+          <p>Kruger is widely recommended as the ideal first African safari, especially for families. The combination of self-drive freedom, excellent facilities, reliable wildlife sightings, and range of accommodation options from budget to luxury makes it accessible for all ages and budgets. Many families return year after year!</p>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">🐾</div><h2 class="section-title">Wildlife of Kruger</h2><p class="section-subtitle">147 mammal species and over 500 bird species</p></header>
+        <div class="wildlife-grid">
+          <a href="/animals/african-elephant/" class="wildlife-card"><div class="wildlife-card-emoji">🐘</div><div class="wildlife-card-name">African Elephant</div><div class="wildlife-card-chance">17,000+ | Excellent</div></a>
+          <a href="/animals/african-lion/" class="wildlife-card"><div class="wildlife-card-emoji">🦁</div><div class="wildlife-card-name">African Lion</div><div class="wildlife-card-chance">1,600+ | Very good</div></a>
+          <a href="/animals/african-leopard/" class="wildlife-card"><div class="wildlife-card-emoji">🐆</div><div class="wildlife-card-name">Leopard</div><div class="wildlife-card-chance">1,000+ | Good</div></a>
+          <a href="/animals/rhinoceros/" class="wildlife-card"><div class="wildlife-card-emoji">🦏</div><div class="wildlife-card-name">Rhinoceros</div><div class="wildlife-card-chance">Both species | Moderate</div></a>
+          <div class="wildlife-card"><div class="wildlife-card-emoji">🐃</div><div class="wildlife-card-name">Cape Buffalo</div><div class="wildlife-card-chance">40,000+ | Excellent</div></div>
+          <a href="/animals/giraffe/" class="wildlife-card"><div class="wildlife-card-emoji">🦒</div><div class="wildlife-card-name">Giraffe</div><div class="wildlife-card-chance">9,000+ | Excellent</div></a>
+          <a href="/animals/hippo/" class="wildlife-card"><div class="wildlife-card-emoji">🦛</div><div class="wildlife-card-name">Hippopotamus</div><div class="wildlife-card-chance">3,000+ | Good</div></a>
+          <a href="/animals/cheetah/" class="wildlife-card"><div class="wildlife-card-emoji">🐱</div><div class="wildlife-card-name">Cheetah</div><div class="wildlife-card-chance">200+ | Moderate</div></a>
+          <div class="wildlife-card"><div class="wildlife-card-emoji">🐕</div><div class="wildlife-card-name">Wild Dog</div><div class="wildlife-card-chance">400+ | Lucky sighting</div></div>
+          <a href="/animals/zebra/" class="wildlife-card"><div class="wildlife-card-emoji">🦓</div><div class="wildlife-card-name">Zebra</div><div class="wildlife-card-chance">30,000+ | Excellent</div></a>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">📅</div><h2 class="section-title">Best Time to Visit</h2></header>
+        <table class="season-table">
+          <thead><tr><th>Season</th><th>Months</th><th>Wildlife</th><th>Experience</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Dry Season</strong></td><td>May-Sep</td><td>⭐⭐⭐⭐⭐</td><td>Best game viewing, animals at waterholes, thinner vegetation, cooler mornings</td></tr>
+            <tr><td><strong>Shoulder</strong></td><td>Apr, Oct</td><td>⭐⭐⭐⭐</td><td>Good wildlife, fewer crowds, pleasant weather</td></tr>
+            <tr><td><strong>Green Season</strong></td><td>Nov-Mar</td><td>⭐⭐⭐</td><td>Baby animals, migratory birds, lush landscapes, afternoon thunderstorms, lower prices</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="container">
+        <h2>Plan Your Kruger Safari</h2>
+        <p>Experience South Africa's premier wildlife destination with your family. From self-drive adventures to luxury lodges, Kruger has something for everyone.</p>
+        <div class="cta-buttons">
+          <a href="/contact/" class="btn btn--secondary">Get Expert Advice</a>
+          <a href="/checklist/" class="btn btn--outline" style="border-color:white;color:white">Wildlife Checklist</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p class="footer-copyright">© 2024 WildlifeVacation.com</p><div class="footer-legal"><a href="/legal/privacy/">Privacy</a><a href="/legal/terms/">Terms</a></div></div></div></footer>
+  <script>const navToggle=document.querySelector('.nav-toggle'),nav=document.querySelector('.nav'),navOverlay=document.querySelector('.nav-overlay');navToggle?.addEventListener('click',()=>{const isOpen=nav.classList.toggle('active');navToggle.classList.toggle('active');navOverlay.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);document.body.style.overflow=isOpen?'hidden':'';});navOverlay?.addEventListener('click',()=>navToggle.click());</script>
+</body>
+</html>

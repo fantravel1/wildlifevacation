@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whale Watching | Ocean Wildlife Adventures | WildlifeVacation.com</title>
+  <meta name="description" content="Experience incredible whale watching adventures worldwide. From humpback migrations to orcas and blue whales - find the best destinations and seasons for family whale watching trips.">
+  <link rel="canonical" href="https://wildlifevacation.com/experiences/whale-watching/">
+  <meta property="og:title" content="Whale Watching | Ocean Wildlife Adventures">
+  <meta name="theme-color" content="#2d5a27">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦁</text></svg>">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    .exp-hero { background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%); padding: var(--space-16) 0 var(--space-20); text-align: center; color: white; }
+    .exp-emoji { font-size: clamp(4rem, 12vw, 8rem); display: block; margin-bottom: var(--space-4); }
+    .exp-title { font-family: var(--font-family-display); font-size: clamp(2.5rem, 8vw, 4rem); margin-bottom: var(--space-4); }
+    .exp-tagline { font-size: var(--text-lg); max-width: 600px; margin: 0 auto; line-height: 1.6; }
+    .content-section { padding: var(--space-12) 0; }
+    .content-section:nth-child(even) { background: var(--color-cream); }
+    .section-header { text-align: center; margin-bottom: var(--space-8); }
+    .section-icon { font-size: 3rem; margin-bottom: var(--space-3); }
+    .section-title { font-family: var(--font-family-display); font-size: var(--text-3xl); color: var(--color-forest); }
+    .section-subtitle { font-size: var(--text-lg); color: var(--color-gray-600); max-width: 600px; margin: var(--space-2) auto 0; }
+    .whale-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); }
+    .whale-card { background: var(--color-white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); }
+    .whale-card-header { background: linear-gradient(135deg, #0369a1 0%, #0ea5e9 100%); padding: var(--space-5); color: white; text-align: center; }
+    .whale-card-emoji { font-size: 2.5rem; margin-bottom: var(--space-2); }
+    .whale-card-name { font-family: var(--font-family-display); font-size: var(--text-lg); }
+    .whale-card-body { padding: var(--space-5); }
+    .whale-card-body p { color: var(--color-gray-600); line-height: 1.6; margin-bottom: var(--space-3); font-size: var(--text-sm); }
+    .whale-card-stat { display: flex; justify-content: space-between; padding: var(--space-2) 0; border-top: 1px solid var(--color-gray-100); font-size: var(--text-sm); }
+    .whale-card-stat:first-of-type { border-top: none; }
+    .whale-card-label { color: var(--color-gray-500); }
+    .whale-card-value { font-weight: 700; color: #0369a1; }
+    .destination-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-5); }
+    .dest-card { background: var(--color-white); padding: var(--space-5); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); }
+    .dest-card h3 { font-size: var(--text-lg); color: var(--color-gray-800); margin-bottom: var(--space-2); display: flex; align-items: center; gap: var(--space-2); }
+    .dest-card p { color: var(--color-gray-600); line-height: 1.5; margin: 0; font-size: var(--text-sm); }
+    .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); }
+    .tip-card { background: var(--color-white); padding: var(--space-6); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); border-left: 4px solid #0369a1; }
+    .tip-card h3 { font-size: var(--text-lg); color: var(--color-gray-800); margin-bottom: var(--space-2); }
+    .tip-card p { color: var(--color-gray-600); line-height: 1.6; margin: 0; font-size: var(--text-sm); }
+    .kids-corner { background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); padding: var(--space-10); border-radius: var(--radius-2xl); margin: var(--space-8) 0; }
+    .kids-corner h3 { font-family: var(--font-family-display); font-size: var(--text-2xl); color: #0369a1; text-align: center; margin-bottom: var(--space-6); }
+    .kids-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-4); }
+    .kids-fact { background: var(--color-white); padding: var(--space-4); border-radius: var(--radius-xl); text-align: center; box-shadow: var(--shadow-md); }
+    .kids-fact-emoji { font-size: 2.5rem; margin-bottom: var(--space-2); }
+    .kids-fact p { color: var(--color-gray-700); font-size: var(--text-sm); margin: 0; }
+    .cta-section { background: linear-gradient(135deg, var(--color-forest) 0%, #3d7a37 100%); padding: var(--space-16) 0; text-align: center; color: white; }
+    .cta-section h2 { font-family: var(--font-family-display); font-size: var(--text-3xl); margin-bottom: var(--space-4); }
+    .cta-buttons { display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center; margin-top: var(--space-6); }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="trust-bar"><div class="trust-bar-inner"><span>🏆 Trusted by 50,000+ families</span><span>✓ Expert-verified</span><span>🌍 Conservation-focused</span></div></div>
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="/" class="logo"><span class="logo-icon">🦁</span><span>WildlifeVacation</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <nav class="nav" id="main-nav"><ul class="nav-list"><li><a href="/" class="nav-link">Home</a></li><li><a href="/destinations/" class="nav-link">Destinations</a></li><li><a href="/animals/" class="nav-link">Animals</a></li><li><a href="/experiences/" class="nav-link nav-link--active">Experiences</a></li><li><a href="/about/" class="nav-link">About</a></li></ul></nav>
+      <div class="nav-overlay"></div>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="exp-hero">
+      <div class="container">
+        <span class="exp-emoji">🐋</span>
+        <h1 class="exp-title">Whale Watching</h1>
+        <p class="exp-tagline">Witness the gentle giants of the ocean - from breaching humpbacks to majestic blue whales. Whale watching offers unforgettable wildlife encounters that awe visitors of all ages.</p>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">🐳</div><h2 class="section-title">Whales You Can See</h2></header>
+        <div class="whale-grid">
+          <div class="whale-card">
+            <div class="whale-card-header"><div class="whale-card-emoji">🐋</div><div class="whale-card-name">Humpback Whale</div></div>
+            <div class="whale-card-body">
+              <p>Famous for breaching, tail-slapping, and haunting songs. One of the most acrobatic whales - their spectacular displays make them a favorite for whale watching.</p>
+              <div class="whale-card-stat"><span class="whale-card-label">Size</span><span class="whale-card-value">Up to 16m / 40 tons</span></div>
+              <div class="whale-card-stat"><span class="whale-card-label">Best spots</span><span class="whale-card-value">Hawaii, Tonga, Alaska</span></div>
+            </div>
+          </div>
+          <div class="whale-card">
+            <div class="whale-card-header"><div class="whale-card-emoji">💙</div><div class="whale-card-name">Blue Whale</div></div>
+            <div class="whale-card-body">
+              <p>The largest animal ever to live on Earth! Seeing a blue whale is bucket-list material. Their sheer size is incomprehensible until you're alongside one.</p>
+              <div class="whale-card-stat"><span class="whale-card-label">Size</span><span class="whale-card-value">Up to 30m / 200 tons</span></div>
+              <div class="whale-card-stat"><span class="whale-card-label">Best spots</span><span class="whale-card-value">Sri Lanka, Baja, Azores</span></div>
+            </div>
+          </div>
+          <div class="whale-card">
+            <div class="whale-card-header"><div class="whale-card-emoji">🖤</div><div class="whale-card-name">Orca (Killer Whale)</div></div>
+            <div class="whale-card-body">
+              <p>Actually the largest dolphin! Intelligent, social hunters with distinctive black and white markings. Watching orca pods hunt is one of nature's most thrilling spectacles.</p>
+              <div class="whale-card-stat"><span class="whale-card-label">Size</span><span class="whale-card-value">Up to 9m / 6 tons</span></div>
+              <div class="whale-card-stat"><span class="whale-card-label">Best spots</span><span class="whale-card-value">Norway, Canada, NZ</span></div>
+            </div>
+          </div>
+          <div class="whale-card">
+            <div class="whale-card-header"><div class="whale-card-emoji">🤍</div><div class="whale-card-name">Gray Whale</div></div>
+            <div class="whale-card-body">
+              <p>Famous for their "friendly" behavior in Mexico's lagoons where mothers bring calves to meet boats! One of the longest migrations of any mammal.</p>
+              <div class="whale-card-stat"><span class="whale-card-label">Size</span><span class="whale-card-value">Up to 15m / 40 tons</span></div>
+              <div class="whale-card-stat"><span class="whale-card-label">Best spots</span><span class="whale-card-value">Baja California, Alaska</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">🌍</div><h2 class="section-title">Top Whale Watching Destinations</h2></header>
+        <div class="destination-grid">
+          <div class="dest-card"><h3>🇲🇽 Baja California</h3><p>Gray whales in winter lagoons - some so friendly they approach boats! Blue whales in summer. Best: Dec-Apr for grays, Feb-Apr for blues.</p></div>
+          <div class="dest-card"><h3>🇿🇦 South Africa</h3><p>Southern right whales in Hermanus - watch from shore! Best land-based whale watching. Best: Jul-Nov, peak Aug-Oct.</p></div>
+          <div class="dest-card"><h3>🇳🇴 Norway</h3><p>Orcas and humpbacks hunting herring in dramatic fjords. Also northern lights! Best: Nov-Jan for orcas.</p></div>
+          <div class="dest-card"><h3>🇱🇰 Sri Lanka</h3><p>Blue whales year-round plus sperm whales. One of the most reliable blue whale spots. Best: Nov-Apr (east), Apr-Sep (south).</p></div>
+          <div class="dest-card"><h3>🇹🇴 Tonga</h3><p>Swim with humpback whales! One of few places where in-water encounters are permitted. Best: Jul-Oct.</p></div>
+          <div class="dest-card"><h3>🇺🇸 Alaska</h3><p>Humpbacks bubble-net feeding - incredible coordinated hunting behavior. Best: May-Sep.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">👨‍👩‍👧‍👦</div><h2 class="section-title">Whale Watching Tips for Families</h2></header>
+        <div class="tips-grid">
+          <div class="tip-card"><h3>💊 Motion Sickness</h3><p>The ocean can be rough! Take seasickness medication 30-60 minutes before departure. Natural remedies like ginger also help. Choose calmer, larger boats for young children.</p></div>
+          <div class="tip-card"><h3>🧥 Dress Warmly</h3><p>It's always colder on the water than land - even in summer. Bring layers, waterproof jackets, and hats. Many operators provide blankets but bring your own just in case.</p></div>
+          <div class="tip-card"><h3>📷 Camera Ready</h3><p>Whales appear suddenly! Keep cameras accessible with wrist straps. Smartphone cameras work great. Don't spend the whole trip looking through a lens - enjoy the moment!</p></div>
+          <div class="tip-card"><h3>🚤 Choose Ethical Operators</h3><p>Look for operators who maintain proper distances, limit viewing time, and follow local guidelines. Responsible whale watching doesn't chase or crowd animals.</p></div>
+          <div class="tip-card"><h3>⏰ Book Morning Trips</h3><p>Morning trips often have calmer seas, better light for photos, and more active whales. Afternoon wind can make waters choppy - important if anyone gets seasick.</p></div>
+          <div class="tip-card"><h3>🎒 Pack Snacks</h3><p>Most trips are 2-4 hours. Bring water and light snacks. Avoid heavy meals before - a light breakfast is better for settling stomachs on choppy water.</p></div>
+        </div>
+        <div class="kids-corner">
+          <h3>🧒 Kids' Corner: Amazing Whale Facts!</h3>
+          <div class="kids-facts">
+            <div class="kids-fact"><div class="kids-fact-emoji">💓</div><p>A blue whale's heart is the size of a small car! You could crawl through its arteries.</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">🍼</div><p>Baby blue whales drink 50 gallons of milk a day and gain 200 pounds EVERY DAY!</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">🎵</div><p>Humpback whale songs can be heard 20 miles away. Only males sing, and they learn new songs from each other!</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">😴</div><p>Whales sleep with half their brain at a time so they remember to come up for air!</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">🦷</div><p>Blue whales have no teeth! They filter tiny krill through bristly baleen plates instead.</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">🏊</div><p>Some whales migrate 10,000 miles every year - that's almost halfway around the world!</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready for Your Whale Watching Adventure?</h2>
+        <p>Let us help you plan an unforgettable whale watching experience - from choosing the right destination and season to finding family-friendly operators.</p>
+        <div class="cta-buttons">
+          <a href="/contact/" class="btn btn--secondary">Plan Your Trip</a>
+          <a href="/checklist/" class="btn btn--outline" style="border-color:white;color:white">Wildlife Checklist</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p class="footer-copyright">© 2024 WildlifeVacation.com</p><div class="footer-legal"><a href="/legal/privacy/">Privacy</a><a href="/legal/terms/">Terms</a></div></div></div></footer>
+  <script>const navToggle=document.querySelector('.nav-toggle'),nav=document.querySelector('.nav'),navOverlay=document.querySelector('.nav-overlay');navToggle?.addEventListener('click',()=>{const isOpen=nav.classList.toggle('active');navToggle.classList.toggle('active');navOverlay.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);document.body.style.overflow=isOpen?'hidden':'';});navOverlay?.addEventListener('click',()=>navToggle.click());</script>
+</body>
+</html>

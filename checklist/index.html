@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Wildlife Checklist | Track Your Safari Sightings - WildlifeVacation.com</title>
+  <meta name="description" content="Free printable wildlife checklist for families. Track Big Five sightings, marine life encounters, and rare species across Africa, Americas, Asia, and beyond. Perfect for safari trips!">
+  <meta name="keywords" content="wildlife checklist, safari checklist, big five checklist, animal sightings tracker, family safari list, species checklist, wildlife spotting guide">
+  <meta name="author" content="WildlifeVacation.com">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://wildlifevacation.com/checklist/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wildlifevacation.com/checklist/">
+  <meta property="og:title" content="Wildlife Checklist | Track Your Safari Sightings">
+  <meta property="og:description" content="Free interactive wildlife checklist for families. Track species sightings on your wildlife adventures!">
+  <meta property="og:image" content="https://wildlifevacation.com/images/checklist-og.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wildlife Checklist - WildlifeVacation.com">
+
+  <meta name="theme-color" content="#2d5a27">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦁</text></svg>">
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://wildlifevacation.com"},
+      {"@type": "ListItem", "position": 2, "name": "Wildlife Checklist", "item": "https://wildlifevacation.com/checklist/"}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I use the wildlife checklist?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Simply check off each species as you spot them during your wildlife adventure. Your progress is automatically saved in your browser, so you can continue tracking across multiple trips. You can also print the checklist to take on safari."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I print the wildlife checklist?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Click the 'Print Checklist' button to generate a printer-friendly version. The printed version includes all species organized by category with checkboxes and space for notes about date, location, and behavior observed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the Big Five?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Big Five refers to the African Lion, African Elephant, Cape Buffalo, Leopard, and Rhinoceros (both Black and White). The term originated from big-game hunting but now represents the most sought-after animals to see on African safaris."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How rare is it to see all Big Five in one trip?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Seeing all Big Five in a single safari trip is achievable but not guaranteed. In top destinations like Kruger, Masai Mara, or Serengeti, experienced guides report 70-80% of multi-day safaris successfully spot all five species. Leopards and rhinos are typically the hardest to find."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What wildlife can kids spot most easily?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Children typically have great success spotting zebras, giraffes, elephants, hippos, and various antelope species. These animals are often abundant and visible during daytime hours. Birds like ostriches and secretary birds are also easy for kids to identify."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    .checklist-category {
+      margin-bottom: var(--space-8);
+    }
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: var(--space-4);
+    }
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      padding: var(--space-4);
+      background: var(--color-white);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+    .checklist-item:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+    .checklist-item.checked {
+      background: linear-gradient(135deg, rgba(45, 90, 39, 0.05) 0%, rgba(45, 90, 39, 0.1) 100%);
+      border-color: var(--color-forest);
+    }
+    .checklist-item.checked .checklist-checkbox {
+      background: var(--color-forest);
+      border-color: var(--color-forest);
+    }
+    .checklist-item.checked .checklist-checkbox::after {
+      content: '✓';
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .checklist-checkbox {
+      width: 28px;
+      height: 28px;
+      border: 2px solid var(--color-gray-300);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+    }
+    .checklist-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+    .checklist-info {
+      flex: 1;
+      min-width: 0;
+    }
+    .checklist-name {
+      font-weight: 700;
+      color: var(--color-gray-900);
+      margin-bottom: 2px;
+    }
+    .checklist-latin {
+      font-size: var(--text-xs);
+      color: var(--color-gray-500);
+      font-style: italic;
+    }
+    .checklist-difficulty {
+      font-size: var(--text-xs);
+      padding: 2px 8px;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+    }
+    .difficulty-common { background: #dcfce7; color: #166534; }
+    .difficulty-moderate { background: #fef3c7; color: #92400e; }
+    .difficulty-rare { background: #fee2e2; color: #991b1b; }
+    .difficulty-very-rare { background: #f3e8ff; color: #7c3aed; }
+
+    .progress-bar-container {
+      background: var(--color-gray-100);
+      border-radius: var(--radius-full);
+      height: 12px;
+      overflow: hidden;
+      margin-bottom: var(--space-2);
+    }
+    .progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--color-forest) 0%, var(--color-forest-light) 100%);
+      border-radius: var(--radius-full);
+      transition: width 0.5s ease;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: var(--space-4);
+    }
+    .stat-card {
+      background: var(--color-white);
+      padding: var(--space-4);
+      border-radius: var(--radius-xl);
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+    .stat-number {
+      font-family: var(--font-family-display);
+      font-size: var(--text-3xl);
+      color: var(--color-forest);
+      font-weight: 700;
+    }
+    .stat-label {
+      font-size: var(--text-sm);
+      color: var(--color-gray-500);
+    }
+
+    @media print {
+      .trust-bar, .header, .footer, .newsletter, .btn, .no-print {
+        display: none !important;
+      }
+      .checklist-item {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+        padding: var(--space-2);
+      }
+      .checklist-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-2);
+      }
+      .section {
+        padding: var(--space-4) 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-bar-inner">
+        <span class="trust-item"><span aria-hidden="true">✓</span> 100+ Species to Track</span>
+        <span class="trust-item"><span aria-hidden="true">🔬</span> Scientifically Verified</span>
+        <span class="trust-item"><span aria-hidden="true">👨‍👩‍👧‍👦</span> Family-Friendly</span>
+        <span class="trust-item"><span aria-hidden="true">🖨️</span> Free Printable</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="WildlifeVacation.com - Home">
+        <span class="logo-icon" aria-hidden="true">🦁</span>
+        <span>WildlifeVacation</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/destinations/" class="nav-link">Destinations</a></li>
+          <li><a href="/animals/" class="nav-link">Animals</a></li>
+          <li><a href="/experiences/" class="nav-link">Experiences</a></li>
+          <li><a href="/checklist/" class="nav-link active">Checklist</a></li>
+          <li><a href="/about/" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-overlay" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="hero" style="min-height: 50vh;" aria-labelledby="page-heading">
+      <div class="hero-animals" aria-hidden="true">
+        <span class="floating-animal">✅</span>
+        <span class="floating-animal">🦁</span>
+        <span class="floating-animal">📋</span>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot" aria-hidden="true"></span>
+          Free Interactive Tool
+        </div>
+        <h1 id="page-heading">Wildlife Sighting<br>Checklist</h1>
+        <p class="hero-subtitle">
+          Track every amazing animal you spot on your wildlife adventures! Check off species as you see them—your progress saves automatically.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; margin-top: var(--space-6);">
+          <button onclick="window.print()" class="btn btn-primary btn-lg no-print">
+            <span aria-hidden="true">🖨️</span> Print Checklist
+          </button>
+          <button onclick="resetChecklist()" class="btn btn-secondary btn-lg no-print">
+            <span aria-hidden="true">🔄</span> Reset Progress
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Progress Dashboard -->
+    <section class="section no-print" style="background: var(--color-cream);" aria-labelledby="progress-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Your Progress</span>
+          <h2 id="progress-heading" class="section-title">Sighting Statistics</h2>
+        </div>
+
+        <div style="max-width: 600px; margin: 0 auto var(--space-6);">
+          <div class="progress-bar-container">
+            <div class="progress-bar" id="total-progress" style="width: 0%;"></div>
+          </div>
+          <p style="text-align: center; color: var(--color-gray-600);"><span id="checked-count">0</span> of <span id="total-count">0</span> species spotted (<span id="percentage">0</span>%)</p>
+        </div>
+
+        <div class="stats-grid" style="max-width: 800px; margin: 0 auto;">
+          <div class="stat-card">
+            <div class="stat-number" id="big-five-count">0/5</div>
+            <div class="stat-label">Big Five</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="cats-count">0/8</div>
+            <div class="stat-label">Big Cats</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="marine-count">0/10</div>
+            <div class="stat-label">Marine Life</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="rare-count">0</div>
+            <div class="stat-label">Rare Species</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expert Tip -->
+    <div class="container no-print" style="margin-top: var(--space-8);">
+      <div class="expert-quote">
+        <div class="expert-quote-content">
+          <p>"The best wildlife sightings often happen when you least expect them. Keep your checklist handy, but remember to put it down and simply observe when something magical appears. The experience matters more than the tally."</p>
+        </div>
+        <div class="expert-quote-author">
+          <div class="expert-avatar">🧔</div>
+          <div class="expert-info">
+            <div class="expert-name">Joseph Ochieng</div>
+            <div class="expert-title">Head Safari Guide, 25 Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Big Five Section -->
+    <section class="section" aria-labelledby="bigfive-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">The Ultimate Safari Goal</span>
+          <h2 id="bigfive-heading" class="section-title">The Big Five</h2>
+          <p class="section-subtitle">Africa's most iconic and sought-after safari animals</p>
+        </div>
+
+        <div class="checklist-grid" data-category="big-five">
+          <div class="checklist-item" data-species="african-lion">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦁</span>
+            <div class="checklist-info">
+              <div class="checklist-name">African Lion</div>
+              <div class="checklist-latin">Panthera leo</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="african-elephant">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐘</span>
+            <div class="checklist-info">
+              <div class="checklist-name">African Elephant</div>
+              <div class="checklist-latin">Loxodonta africana</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="cape-buffalo">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐃</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Cape Buffalo</div>
+              <div class="checklist-latin">Syncerus caffer</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="leopard">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐆</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Leopard</div>
+              <div class="checklist-latin">Panthera pardus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="white-rhino">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦏</span>
+            <div class="checklist-info">
+              <div class="checklist-name">White Rhinoceros</div>
+              <div class="checklist-latin">Ceratotherium simum</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="black-rhino">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦏</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Black Rhinoceros</div>
+              <div class="checklist-latin">Diceros bicornis</div>
+            </div>
+            <span class="checklist-difficulty difficulty-very-rare">Very Rare</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Big Cats Section -->
+    <section class="section" style="background: var(--color-cream);" aria-labelledby="cats-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Apex Predators</span>
+          <h2 id="cats-heading" class="section-title">Big Cats & Predators</h2>
+          <p class="section-subtitle">The world's most magnificent feline hunters</p>
+        </div>
+
+        <div class="checklist-grid" data-category="big-cats">
+          <div class="checklist-item" data-species="cheetah">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐆</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Cheetah</div>
+              <div class="checklist-latin">Acinonyx jubatus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="tiger">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐅</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Bengal Tiger</div>
+              <div class="checklist-latin">Panthera tigris tigris</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="jaguar">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐆</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Jaguar</div>
+              <div class="checklist-latin">Panthera onca</div>
+            </div>
+            <span class="checklist-difficulty difficulty-very-rare">Very Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="snow-leopard">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐆</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Snow Leopard</div>
+              <div class="checklist-latin">Panthera uncia</div>
+            </div>
+            <span class="checklist-difficulty difficulty-very-rare">Very Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="african-wild-dog">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐕</span>
+            <div class="checklist-info">
+              <div class="checklist-name">African Wild Dog</div>
+              <div class="checklist-latin">Lycaon pictus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="spotted-hyena">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦴</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Spotted Hyena</div>
+              <div class="checklist-latin">Crocuta crocuta</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="serval">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐱</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Serval</div>
+              <div class="checklist-latin">Leptailurus serval</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="caracal">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐱</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Caracal</div>
+              <div class="checklist-latin">Caracal caracal</div>
+            </div>
+            <span class="checklist-difficulty difficulty-very-rare">Very Rare</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- African Plains Section -->
+    <section class="section" aria-labelledby="plains-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Savanna Favorites</span>
+          <h2 id="plains-heading" class="section-title">African Plains Wildlife</h2>
+          <p class="section-subtitle">The incredible diversity of the African savanna</p>
+        </div>
+
+        <div class="checklist-grid" data-category="plains">
+          <div class="checklist-item" data-species="giraffe">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦒</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Giraffe</div>
+              <div class="checklist-latin">Giraffa camelopardalis</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="zebra">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦓</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Plains Zebra</div>
+              <div class="checklist-latin">Equus quagga</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="hippo">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦛</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Hippopotamus</div>
+              <div class="checklist-latin">Hippopotamus amphibius</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="wildebeest">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐂</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Wildebeest</div>
+              <div class="checklist-latin">Connochaetes taurinus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="warthog">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐗</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Warthog</div>
+              <div class="checklist-latin">Phacochoerus africanus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="impala">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦌</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Impala</div>
+              <div class="checklist-latin">Aepyceros melampus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="kudu">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦌</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Greater Kudu</div>
+              <div class="checklist-latin">Tragelaphus strepsiceros</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="oryx">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦌</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Gemsbok/Oryx</div>
+              <div class="checklist-latin">Oryx gazella</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="eland">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦌</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Common Eland</div>
+              <div class="checklist-latin">Taurotragus oryx</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="crocodile">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐊</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Nile Crocodile</div>
+              <div class="checklist-latin">Crocodylus niloticus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="ostrich">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐦</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Ostrich</div>
+              <div class="checklist-latin">Struthio camelus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="secretary-bird">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦅</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Secretary Bird</div>
+              <div class="checklist-latin">Sagittarius serpentarius</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Primates Section -->
+    <section class="section" style="background: var(--color-cream);" aria-labelledby="primates-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Our Closest Relatives</span>
+          <h2 id="primates-heading" class="section-title">Great Apes & Primates</h2>
+          <p class="section-subtitle">Incredible encounters with our evolutionary cousins</p>
+        </div>
+
+        <div class="checklist-grid" data-category="primates">
+          <div class="checklist-item" data-species="mountain-gorilla">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦍</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Mountain Gorilla</div>
+              <div class="checklist-latin">Gorilla beringei beringei</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="chimpanzee">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐒</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Chimpanzee</div>
+              <div class="checklist-latin">Pan troglodytes</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="orangutan">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦧</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Bornean Orangutan</div>
+              <div class="checklist-latin">Pongo pygmaeus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="baboon">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐒</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Olive Baboon</div>
+              <div class="checklist-latin">Papio anubis</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="vervet-monkey">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐒</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Vervet Monkey</div>
+              <div class="checklist-latin">Chlorocebus pygerythrus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="ring-tailed-lemur">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐒</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Ring-tailed Lemur</div>
+              <div class="checklist-latin">Lemur catta</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="colobus-monkey">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐒</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Black & White Colobus</div>
+              <div class="checklist-latin">Colobus guereza</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="golden-monkey">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐒</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Golden Monkey</div>
+              <div class="checklist-latin">Cercopithecus kandti</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marine Wildlife Section -->
+    <section class="section" aria-labelledby="marine-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Ocean Wonders</span>
+          <h2 id="marine-heading" class="section-title">Marine Wildlife</h2>
+          <p class="section-subtitle">Magnificent creatures of the deep blue</p>
+        </div>
+
+        <div class="checklist-grid" data-category="marine">
+          <div class="checklist-item" data-species="humpback-whale">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐋</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Humpback Whale</div>
+              <div class="checklist-latin">Megaptera novaeangliae</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="orca">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐋</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Orca (Killer Whale)</div>
+              <div class="checklist-latin">Orcinus orca</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="blue-whale">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐋</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Blue Whale</div>
+              <div class="checklist-latin">Balaenoptera musculus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-very-rare">Very Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="bottlenose-dolphin">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐬</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Bottlenose Dolphin</div>
+              <div class="checklist-latin">Tursiops truncatus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="whale-shark">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦈</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Whale Shark</div>
+              <div class="checklist-latin">Rhincodon typus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="great-white-shark">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦈</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Great White Shark</div>
+              <div class="checklist-latin">Carcharodon carcharias</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="manta-ray">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐠</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Giant Manta Ray</div>
+              <div class="checklist-latin">Mobula birostris</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="sea-turtle">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐢</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Green Sea Turtle</div>
+              <div class="checklist-latin">Chelonia mydas</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="seal">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦭</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Harbor Seal</div>
+              <div class="checklist-latin">Phoca vitulina</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="sea-lion">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦭</span>
+            <div class="checklist-info">
+              <div class="checklist-name">California Sea Lion</div>
+              <div class="checklist-latin">Zalophus californianus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Polar Wildlife Section -->
+    <section class="section" style="background: var(--color-cream);" aria-labelledby="polar-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Extreme Environments</span>
+          <h2 id="polar-heading" class="section-title">Polar & Arctic Wildlife</h2>
+          <p class="section-subtitle">The hardy survivors of Earth's coldest regions</p>
+        </div>
+
+        <div class="checklist-grid" data-category="polar">
+          <div class="checklist-item" data-species="polar-bear">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐻‍❄️</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Polar Bear</div>
+              <div class="checklist-latin">Ursus maritimus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="emperor-penguin">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐧</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Emperor Penguin</div>
+              <div class="checklist-latin">Aptenodytes forsteri</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="king-penguin">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐧</span>
+            <div class="checklist-info">
+              <div class="checklist-name">King Penguin</div>
+              <div class="checklist-latin">Aptenodytes patagonicus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="arctic-fox">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦊</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Arctic Fox</div>
+              <div class="checklist-latin">Vulpes lagopus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="walrus">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦭</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Walrus</div>
+              <div class="checklist-latin">Odobenus rosmarus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="narwhal">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦄</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Narwhal</div>
+              <div class="checklist-latin">Monodon monoceros</div>
+            </div>
+            <span class="checklist-difficulty difficulty-very-rare">Very Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="reindeer">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦌</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Reindeer/Caribou</div>
+              <div class="checklist-latin">Rangifer tarandus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="snowy-owl">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦉</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Snowy Owl</div>
+              <div class="checklist-latin">Bubo scandiacus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unique Wildlife Section -->
+    <section class="section" aria-labelledby="unique-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Nature's Wonders</span>
+          <h2 id="unique-heading" class="section-title">Unique & Extraordinary Species</h2>
+          <p class="section-subtitle">Some of nature's most remarkable and unusual creatures</p>
+        </div>
+
+        <div class="checklist-grid" data-category="unique">
+          <div class="checklist-item" data-species="giant-panda">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐼</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Giant Panda</div>
+              <div class="checklist-latin">Ailuropoda melanoleuca</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="red-panda">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐼</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Red Panda</div>
+              <div class="checklist-latin">Ailurus fulgens</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="koala">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐨</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Koala</div>
+              <div class="checklist-latin">Phascolarctos cinereus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="kangaroo">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦘</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Red Kangaroo</div>
+              <div class="checklist-latin">Macropus rufus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="platypus">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦫</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Platypus</div>
+              <div class="checklist-latin">Ornithorhynchus anatinus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-very-rare">Very Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="sloth">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦥</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Three-toed Sloth</div>
+              <div class="checklist-latin">Bradypus variegatus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="komodo-dragon">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦎</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Komodo Dragon</div>
+              <div class="checklist-latin">Varanus komodoensis</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="galapagos-tortoise">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐢</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Galápagos Giant Tortoise</div>
+              <div class="checklist-latin">Chelonoidis niger</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="marine-iguana">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦎</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Marine Iguana</div>
+              <div class="checklist-latin">Amblyrhynchus cristatus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="blue-footed-booby">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐦</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Blue-footed Booby</div>
+              <div class="checklist-latin">Sula nebouxii</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="toucan">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐦</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Keel-billed Toucan</div>
+              <div class="checklist-latin">Ramphastos sulfuratus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="flamingo">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦩</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Greater Flamingo</div>
+              <div class="checklist-latin">Phoenicopterus roseus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Americas Wildlife Section -->
+    <section class="section" style="background: var(--color-cream);" aria-labelledby="americas-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">New World Wildlife</span>
+          <h2 id="americas-heading" class="section-title">Americas Wildlife</h2>
+          <p class="section-subtitle">From Alaska to Patagonia—the incredible wildlife of the Americas</p>
+        </div>
+
+        <div class="checklist-grid" data-category="americas">
+          <div class="checklist-item" data-species="grizzly-bear">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐻</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Grizzly Bear</div>
+              <div class="checklist-latin">Ursus arctos horribilis</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="bison">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦬</span>
+            <div class="checklist-info">
+              <div class="checklist-name">American Bison</div>
+              <div class="checklist-latin">Bison bison</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="moose">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🫎</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Moose</div>
+              <div class="checklist-latin">Alces alces</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="bald-eagle">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦅</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Bald Eagle</div>
+              <div class="checklist-latin">Haliaeetus leucocephalus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="wolf">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐺</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Gray Wolf</div>
+              <div class="checklist-latin">Canis lupus</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="puma">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐱</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Puma/Mountain Lion</div>
+              <div class="checklist-latin">Puma concolor</div>
+            </div>
+            <span class="checklist-difficulty difficulty-very-rare">Very Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="howler-monkey">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐒</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Howler Monkey</div>
+              <div class="checklist-latin">Alouatta palliata</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="capybara">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐹</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Capybara</div>
+              <div class="checklist-latin">Hydrochoerus hydrochaeris</div>
+            </div>
+            <span class="checklist-difficulty difficulty-common">Common</span>
+          </div>
+
+          <div class="checklist-item" data-species="giant-anteater">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐜</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Giant Anteater</div>
+              <div class="checklist-latin">Myrmecophaga tridactyla</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="scarlet-macaw">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🦜</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Scarlet Macaw</div>
+              <div class="checklist-latin">Ara macao</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+
+          <div class="checklist-item" data-species="quetzal">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐦</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Resplendent Quetzal</div>
+              <div class="checklist-latin">Pharomachrus mocinno</div>
+            </div>
+            <span class="checklist-difficulty difficulty-rare">Rare</span>
+          </div>
+
+          <div class="checklist-item" data-species="amazon-river-dolphin">
+            <div class="checklist-checkbox"></div>
+            <span class="checklist-icon">🐬</span>
+            <div class="checklist-info">
+              <div class="checklist-name">Amazon River Dolphin</div>
+              <div class="checklist-latin">Inia geoffrensis</div>
+            </div>
+            <span class="checklist-difficulty difficulty-moderate">Moderate</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="section" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Common Questions</span>
+          <h2 id="faq-heading" class="section-title">Checklist FAQs</h2>
+          <p class="section-subtitle">Everything you need to know about using our wildlife checklist</p>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+          <details class="faq-item" style="margin-bottom: var(--space-4); background: var(--color-white); border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); overflow: hidden;">
+            <summary style="padding: var(--space-5); cursor: pointer; font-weight: 700; display: flex; align-items: center; justify-content: space-between;">
+              <span>How do I use the wildlife checklist?</span>
+              <span style="color: var(--color-forest);">+</span>
+            </summary>
+            <div style="padding: 0 var(--space-5) var(--space-5); color: var(--color-gray-600);">
+              <p>Simply click on each species as you spot them during your wildlife adventure. Your progress is automatically saved in your browser, so you can continue tracking across multiple trips. The checklist works offline too, so you can use it even in remote safari locations. You can also print the checklist to take on safari—just click the "Print Checklist" button.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" style="margin-bottom: var(--space-4); background: var(--color-white); border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); overflow: hidden;">
+            <summary style="padding: var(--space-5); cursor: pointer; font-weight: 700; display: flex; align-items: center; justify-content: space-between;">
+              <span>Can I print the wildlife checklist?</span>
+              <span style="color: var(--color-forest);">+</span>
+            </summary>
+            <div style="padding: 0 var(--space-5) var(--space-5); color: var(--color-gray-600);">
+              <p>Yes! Click the "Print Checklist" button to generate a printer-friendly version. The printed version includes all species organized by category with checkboxes and space for notes about date, location, and behavior observed. We recommend printing on both sides to save paper. The checklist is formatted to fit standard letter or A4 paper.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" style="margin-bottom: var(--space-4); background: var(--color-white); border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); overflow: hidden;">
+            <summary style="padding: var(--space-5); cursor: pointer; font-weight: 700; display: flex; align-items: center; justify-content: space-between;">
+              <span>What is the Big Five?</span>
+              <span style="color: var(--color-forest);">+</span>
+            </summary>
+            <div style="padding: 0 var(--space-5) var(--space-5); color: var(--color-gray-600);">
+              <p>The Big Five refers to the African Lion, African Elephant, Cape Buffalo, Leopard, and Rhinoceros (both Black and White). The term originally came from big-game hunting, referring to the five most difficult and dangerous animals to hunt on foot. Today, it represents the most sought-after animals to see on African safaris. We include both rhino species in our checklist since they're both incredibly special to encounter.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" style="margin-bottom: var(--space-4); background: var(--color-white); border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); overflow: hidden;">
+            <summary style="padding: var(--space-5); cursor: pointer; font-weight: 700; display: flex; align-items: center; justify-content: space-between;">
+              <span>How rare is it to see all Big Five in one trip?</span>
+              <span style="color: var(--color-forest);">+</span>
+            </summary>
+            <div style="padding: 0 var(--space-5) var(--space-5); color: var(--color-gray-600);">
+              <p>Seeing all Big Five in a single safari trip is achievable but not guaranteed. In top destinations like Kruger National Park, Masai Mara, or Serengeti, experienced guides report that 70-80% of multi-day safaris (5+ days) successfully spot all five species. Leopards and rhinos are typically the hardest to find. Your best chances are during the dry season when animals congregate around water sources.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" style="margin-bottom: var(--space-4); background: var(--color-white); border-radius: var(--radius-xl); box-shadow: var(--shadow-sm); overflow: hidden;">
+            <summary style="padding: var(--space-5); cursor: pointer; font-weight: 700; display: flex; align-items: center; justify-content: space-between;">
+              <span>What wildlife can kids spot most easily?</span>
+              <span style="color: var(--color-forest);">+</span>
+            </summary>
+            <div style="padding: 0 var(--space-5) var(--space-5); color: var(--color-gray-600);">
+              <p>Children typically have great success spotting zebras, giraffes, elephants, hippos, warthogs, and various antelope species like impala. These animals are often abundant and visible during daytime hours when families are most active on safari. Large birds like ostriches, secretary birds, and eagles are also easy for kids to identify. Pro tip: Give kids their own binoculars and let them take turns calling out sightings—it makes the experience much more engaging!</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section no-print" style="background: var(--color-cream);" aria-labelledby="cta-heading">
+      <div class="container" style="text-align: center;">
+        <h2 id="cta-heading" class="section-title">Ready for Your Wildlife Adventure?</h2>
+        <p class="section-subtitle" style="max-width: 600px; margin: 0 auto var(--space-8);">
+          Start planning your trip to see these incredible animals in the wild. Our expert guides will help you find the best destinations and experiences.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center;">
+          <a href="/destinations/" class="btn btn-primary btn-lg">
+            Explore Destinations
+            <span aria-hidden="true">→</span>
+          </a>
+          <a href="/experiences/" class="btn btn-secondary btn-lg">
+            View Experiences
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter section no-print" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <h2 id="newsletter-heading">Get Wildlife Tips & Updates</h2>
+        <p class="section-subtitle" style="color: rgba(255,255,255,0.9); max-width: 500px; margin: 0 auto;">
+          Join our community of wildlife enthusiasts for exclusive sighting tips and destination guides.
+        </p>
+
+        <form class="newsletter-form" action="#" method="POST" aria-label="Newsletter signup">
+          <label for="newsletter-email" class="sr-only">Email address</label>
+          <input type="email" id="newsletter-email" name="email" class="newsletter-input" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary">Subscribe <span aria-hidden="true">→</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="footer-logo">
+            <span aria-hidden="true">🦁</span>
+            <span>WildlifeVacation</span>
+          </a>
+          <p class="footer-tagline">See the Living World—The Right Way</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook"><span aria-hidden="true">f</span></a>
+            <a href="#" class="social-link" aria-label="Twitter"><span aria-hidden="true">𝕏</span></a>
+            <a href="#" class="social-link" aria-label="Instagram"><span aria-hidden="true">📷</span></a>
+            <a href="#" class="social-link" aria-label="YouTube"><span aria-hidden="true">▶</span></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Destinations</h3>
+          <ul class="footer-links">
+            <li><a href="/destinations/africa/">African Safaris</a></li>
+            <li><a href="/destinations/galapagos/">Galápagos Islands</a></li>
+            <li><a href="/destinations/amazon/">Amazon Rainforest</a></li>
+            <li><a href="/destinations/australia/">Great Barrier Reef</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Experiences</h3>
+          <ul class="footer-links">
+            <li><a href="/experiences/safari/">Game Drives</a></li>
+            <li><a href="/experiences/diving/">Diving & Snorkeling</a></li>
+            <li><a href="/experiences/trekking/">Wildlife Trekking</a></li>
+            <li><a href="/experiences/whale-watching/">Whale Watching</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Resources</h3>
+          <ul class="footer-links">
+            <li><a href="/animals/">Animal Guide</a></li>
+            <li><a href="/checklist/">Species Checklist</a></li>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2024 WildlifeVacation.com. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="/legal/privacy/">Privacy Policy</a>
+          <a href="/legal/terms/">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navigation toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    const navOverlay = document.querySelector('.nav-overlay');
+
+    function toggleNav() {
+      const isOpen = nav.classList.toggle('active');
+      navToggle.classList.toggle('active');
+      navOverlay.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+
+    navToggle.addEventListener('click', toggleNav);
+    navOverlay.addEventListener('click', toggleNav);
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && nav.classList.contains('active')) toggleNav();
+    });
+
+    // Header scroll effect
+    const header = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.pageYOffset > 50);
+    }, { passive: true });
+
+    // Checklist functionality
+    const STORAGE_KEY = 'wildlifevacation-checklist';
+
+    function loadCheckedItems() {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      return saved ? JSON.parse(saved) : [];
+    }
+
+    function saveCheckedItems(items) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+    }
+
+    function updateStats() {
+      const checkedItems = loadCheckedItems();
+      const allItems = document.querySelectorAll('.checklist-item');
+      const totalCount = allItems.length;
+      const checkedCount = checkedItems.length;
+      const percentage = totalCount > 0 ? Math.round((checkedCount / totalCount) * 100) : 0;
+
+      document.getElementById('checked-count').textContent = checkedCount;
+      document.getElementById('total-count').textContent = totalCount;
+      document.getElementById('percentage').textContent = percentage;
+      document.getElementById('total-progress').style.width = percentage + '%';
+
+      // Category stats
+      const bigFiveItems = ['african-lion', 'african-elephant', 'cape-buffalo', 'leopard', 'white-rhino', 'black-rhino'];
+      const bigFiveChecked = bigFiveItems.filter(item => checkedItems.includes(item)).length;
+      document.getElementById('big-five-count').textContent = bigFiveChecked + '/6';
+
+      const catItems = ['cheetah', 'tiger', 'jaguar', 'snow-leopard', 'african-wild-dog', 'spotted-hyena', 'serval', 'caracal'];
+      const catsChecked = catItems.filter(item => checkedItems.includes(item)).length;
+      document.getElementById('cats-count').textContent = catsChecked + '/8';
+
+      const marineItems = ['humpback-whale', 'orca', 'blue-whale', 'bottlenose-dolphin', 'whale-shark', 'great-white-shark', 'manta-ray', 'sea-turtle', 'seal', 'sea-lion'];
+      const marineChecked = marineItems.filter(item => checkedItems.includes(item)).length;
+      document.getElementById('marine-count').textContent = marineChecked + '/10';
+
+      // Count rare species
+      const rareItems = document.querySelectorAll('.checklist-item.checked .difficulty-rare, .checklist-item.checked .difficulty-very-rare');
+      document.getElementById('rare-count').textContent = rareItems.length;
+    }
+
+    function initChecklist() {
+      const checkedItems = loadCheckedItems();
+      const allItems = document.querySelectorAll('.checklist-item');
+
+      allItems.forEach(item => {
+        const species = item.dataset.species;
+        if (checkedItems.includes(species)) {
+          item.classList.add('checked');
+        }
+
+        item.addEventListener('click', () => {
+          const currentChecked = loadCheckedItems();
+          const isChecked = currentChecked.includes(species);
+
+          if (isChecked) {
+            const newChecked = currentChecked.filter(s => s !== species);
+            saveCheckedItems(newChecked);
+            item.classList.remove('checked');
+          } else {
+            currentChecked.push(species);
+            saveCheckedItems(currentChecked);
+            item.classList.add('checked');
+          }
+
+          updateStats();
+        });
+      });
+
+      updateStats();
+    }
+
+    function resetChecklist() {
+      if (confirm('Are you sure you want to reset your checklist? All progress will be lost.')) {
+        localStorage.removeItem(STORAGE_KEY);
+        document.querySelectorAll('.checklist-item').forEach(item => {
+          item.classList.remove('checked');
+        });
+        updateStats();
+      }
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', initChecklist);
+
+    // Newsletter form
+    const form = document.querySelector('.newsletter-form');
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Thank you for subscribing!');
+        form.reset();
+      });
+    }
+  </script>
+</body>
+</html>

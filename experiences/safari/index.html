@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safari Experiences | African Wildlife Adventures | WildlifeVacation.com</title>
+  <meta name="description" content="Discover incredible safari experiences - from classic game drives to walking safaris, hot air balloon rides, and family-friendly adventures. Plan your perfect African safari with expert guidance.">
+  <link rel="canonical" href="https://wildlifevacation.com/experiences/safari/">
+  <meta property="og:title" content="Safari Experiences | Plan Your African Wildlife Adventure">
+  <meta name="theme-color" content="#2d5a27">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦁</text></svg>">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    .exp-hero { background: linear-gradient(135deg, #d4a84b 0%, #c49a3d 100%); padding: var(--space-16) 0 var(--space-20); text-align: center; color: white; }
+    .exp-emoji { font-size: clamp(4rem, 12vw, 8rem); display: block; margin-bottom: var(--space-4); }
+    .exp-title { font-family: var(--font-family-display); font-size: clamp(2.5rem, 8vw, 4rem); margin-bottom: var(--space-4); }
+    .exp-tagline { font-size: var(--text-lg); max-width: 600px; margin: 0 auto; line-height: 1.6; }
+    .content-section { padding: var(--space-12) 0; }
+    .content-section:nth-child(even) { background: var(--color-cream); }
+    .section-header { text-align: center; margin-bottom: var(--space-8); }
+    .section-icon { font-size: 3rem; margin-bottom: var(--space-3); }
+    .section-title { font-family: var(--font-family-display); font-size: var(--text-3xl); color: var(--color-forest); }
+    .section-subtitle { font-size: var(--text-lg); color: var(--color-gray-600); max-width: 600px; margin: var(--space-2) auto 0; }
+    .safari-types { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-6); }
+    .safari-card { background: var(--color-white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); }
+    .safari-card-header { background: linear-gradient(135deg, var(--color-forest) 0%, #3d7a37 100%); padding: var(--space-6); color: white; text-align: center; }
+    .safari-card-emoji { font-size: 3rem; margin-bottom: var(--space-2); }
+    .safari-card-title { font-family: var(--font-family-display); font-size: var(--text-xl); }
+    .safari-card-body { padding: var(--space-6); }
+    .safari-card-body p { color: var(--color-gray-600); line-height: 1.6; margin-bottom: var(--space-4); }
+    .safari-card-details { font-size: var(--text-sm); }
+    .safari-card-detail { display: flex; justify-content: space-between; padding: var(--space-2) 0; border-bottom: 1px solid var(--color-gray-100); }
+    .safari-card-detail:last-child { border-bottom: none; }
+    .safari-card-label { color: var(--color-gray-500); }
+    .safari-card-value { font-weight: 700; color: var(--color-forest); }
+    .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); }
+    .tip-card { background: var(--color-white); padding: var(--space-6); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); border-left: 4px solid var(--color-savanna); }
+    .tip-card h3 { font-size: var(--text-lg); color: var(--color-gray-800); margin-bottom: var(--space-2); }
+    .tip-card p { color: var(--color-gray-600); line-height: 1.6; margin: 0; font-size: var(--text-sm); }
+    .destinations-quick { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-4); margin-top: var(--space-8); }
+    .dest-quick-card { background: var(--color-white); padding: var(--space-5); border-radius: var(--radius-xl); text-align: center; text-decoration: none; color: inherit; box-shadow: var(--shadow-md); transition: transform 0.2s; }
+    .dest-quick-card:hover { transform: translateY(-4px); }
+    .dest-quick-emoji { font-size: 2.5rem; margin-bottom: var(--space-2); }
+    .dest-quick-name { font-weight: 700; color: var(--color-gray-800); }
+    .dest-quick-country { font-size: var(--text-sm); color: var(--color-gray-500); }
+    .cta-section { background: linear-gradient(135deg, var(--color-forest) 0%, #3d7a37 100%); padding: var(--space-16) 0; text-align: center; color: white; }
+    .cta-section h2 { font-family: var(--font-family-display); font-size: var(--text-3xl); margin-bottom: var(--space-4); }
+    .cta-buttons { display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center; margin-top: var(--space-6); }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="trust-bar"><div class="trust-bar-inner"><span>🏆 Trusted by 50,000+ families</span><span>✓ Expert-verified</span><span>🌍 Conservation-focused</span></div></div>
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="/" class="logo"><span class="logo-icon">🦁</span><span>WildlifeVacation</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <nav class="nav" id="main-nav"><ul class="nav-list"><li><a href="/" class="nav-link">Home</a></li><li><a href="/destinations/" class="nav-link">Destinations</a></li><li><a href="/animals/" class="nav-link">Animals</a></li><li><a href="/experiences/" class="nav-link nav-link--active">Experiences</a></li><li><a href="/about/" class="nav-link">About</a></li></ul></nav>
+      <div class="nav-overlay"></div>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="exp-hero">
+      <div class="container">
+        <span class="exp-emoji">🦁</span>
+        <h1 class="exp-title">Safari Experiences</h1>
+        <p class="exp-tagline">From classic game drives to walking safaris and balloon rides - discover the many ways to experience Africa's incredible wildlife. Find the perfect safari style for your family adventure.</p>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">🚙</div><h2 class="section-title">Types of Safari Experiences</h2><p class="section-subtitle">Choose the safari style that suits your family</p></header>
+        <div class="safari-types">
+          <div class="safari-card">
+            <div class="safari-card-header"><div class="safari-card-emoji">🚙</div><div class="safari-card-title">Classic Game Drive</div></div>
+            <div class="safari-card-body">
+              <p>The quintessential safari experience! Travel in open 4x4 vehicles with expert guides who know exactly where to find wildlife. Early morning and late afternoon drives offer the best sightings.</p>
+              <div class="safari-card-details">
+                <div class="safari-card-detail"><span class="safari-card-label">Best for</span><span class="safari-card-value">All ages</span></div>
+                <div class="safari-card-detail"><span class="safari-card-label">Duration</span><span class="safari-card-value">3-4 hours</span></div>
+                <div class="safari-card-detail"><span class="safari-card-label">Min. age</span><span class="safari-card-value">None (varies by lodge)</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="safari-card">
+            <div class="safari-card-header"><div class="safari-card-emoji">🚶</div><div class="safari-card-title">Walking Safari</div></div>
+            <div class="safari-card-body">
+              <p>Experience the bush on foot with armed guides. Learn to track animals, identify plants, and connect with nature at ground level. An immersive way to understand the African wilderness.</p>
+              <div class="safari-card-details">
+                <div class="safari-card-detail"><span class="safari-card-label">Best for</span><span class="safari-card-value">Older children, teens</span></div>
+                <div class="safari-card-detail"><span class="safari-card-label">Duration</span><span class="safari-card-value">2-3 hours</span></div>
+                <div class="safari-card-detail"><span class="safari-card-label">Min. age</span><span class="safari-card-value">Usually 12-16+</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="safari-card">
+            <div class="safari-card-header"><div class="safari-card-emoji">🎈</div><div class="safari-card-title">Hot Air Balloon Safari</div></div>
+            <div class="safari-card-body">
+              <p>Float silently over the savanna at sunrise for a bird's-eye view of wildlife. Watch herds of wildebeest, elephants, and giraffes from above. Usually includes champagne breakfast!</p>
+              <div class="safari-card-details">
+                <div class="safari-card-detail"><span class="safari-card-label">Best for</span><span class="safari-card-value">Special occasions</span></div>
+                <div class="safari-card-detail"><span class="safari-card-label">Duration</span><span class="safari-card-value">1 hour flight</span></div>
+                <div class="safari-card-detail"><span class="safari-card-label">Min. age</span><span class="safari-card-value">Usually 7+</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="safari-card">
+            <div class="safari-card-header"><div class="safari-card-emoji">🌙</div><div class="safari-card-title">Night Safari</div></div>
+            <div class="safari-card-body">
+              <p>Explore the bush after dark using spotlights to find nocturnal creatures. See hunting predators, bush babies, aardvarks, and animals you'd never spot during the day.</p>
+              <div class="safari-card-details">
+                <div class="safari-card-detail"><span class="safari-card-label">Best for</span><span class="safari-card-value">Adventure seekers</span></div>
+                <div class="safari-card-detail"><span class="safari-card-label">Duration</span><span class="safari-card-value">2-3 hours</span></div>
+                <div class="safari-card-detail"><span class="safari-card-label">Min. age</span><span class="safari-card-value">Varies by lodge</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="safari-card">
+            <div class="safari-card-header"><div class="safari-card-emoji">🛶</div><div class="safari-card-title">Water Safari</div></div>
+            <div class="safari-card-body">
+              <p>Explore by boat, canoe, or mokoro (traditional dugout). Get close to hippos, crocodiles, and elephants along rivers and in deltas. Available in Okavango, Chobe, and other water-based destinations.</p>
+              <div class="safari-card-details">
+                <div class="safari-card-detail"><span class="safari-card-label">Best for</span><span class="safari-card-value">Unique experiences</span></div>
+                <div class="safari-card-detail"><span class="safari-card-label">Duration</span><span class="safari-card-value">2-4 hours</span></div>
+                <div class="safari-card-detail"><span class="safari-card-label">Min. age</span><span class="safari-card-value">Usually 6+</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="safari-card">
+            <div class="safari-card-header"><div class="safari-card-emoji">🚗</div><div class="safari-card-title">Self-Drive Safari</div></div>
+            <div class="safari-card-body">
+              <p>Explore at your own pace in your own vehicle. Perfect for families who want flexibility - stop whenever kids need breaks, spend as long as you want with sightings. Best in Kruger and Etosha.</p>
+              <div class="safari-card-details">
+                <div class="safari-card-detail"><span class="safari-card-label">Best for</span><span class="safari-card-value">Families with young kids</span></div>
+                <div class="safari-card-detail"><span class="safari-card-label">Duration</span><span class="safari-card-value">Full day</span></div>
+                <div class="safari-card-detail"><span class="safari-card-label">Min. age</span><span class="safari-card-value">None</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">💡</div><h2 class="section-title">Safari Tips for Families</h2></header>
+        <div class="tips-grid">
+          <div class="tip-card"><h3>📷 Bring Binoculars</h3><p>Kid-sized binoculars keep children engaged and help them spot wildlife. Make it a game - who can spot the lion first? Great for when animals are far away.</p></div>
+          <div class="tip-card"><h3>🎒 Pack Smart</h3><p>Layers for cold early mornings, sunscreen, hats, snacks, and entertainment for downtime. Most lodges provide blankets and ponchos for game drives.</p></div>
+          <div class="tip-card"><h3>🤫 Stay Quiet</h3><p>Prepare kids beforehand - whisper voices help you get closer to animals. Make it fun by being "secret wildlife agents" on a mission!</p></div>
+          <div class="tip-card"><h3>⏰ Manage Expectations</h3><p>Some drives are action-packed, others quieter. Wildlife doesn't perform on demand! The anticipation is part of the adventure.</p></div>
+          <div class="tip-card"><h3>🏨 Choose Right Lodges</h3><p>Many lodges offer kids' programs, family rooms, and flexible meal times. Ask about minimum ages for game drives and activities.</p></div>
+          <div class="tip-card"><h3>📱 Digital Detox</h3><p>Many safari areas have limited WiFi - embrace it! Kids engage more with wildlife when not distracted by screens.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">🌍</div><h2 class="section-title">Top Safari Destinations</h2></header>
+        <div class="destinations-quick">
+          <a href="/destinations/serengeti/" class="dest-quick-card"><div class="dest-quick-emoji">🌅</div><div class="dest-quick-name">Serengeti</div><div class="dest-quick-country">Tanzania</div></a>
+          <a href="/destinations/masai-mara/" class="dest-quick-card"><div class="dest-quick-emoji">🦁</div><div class="dest-quick-name">Masai Mara</div><div class="dest-quick-country">Kenya</div></a>
+          <a href="/destinations/kruger/" class="dest-quick-card"><div class="dest-quick-emoji">🇿🇦</div><div class="dest-quick-name">Kruger</div><div class="dest-quick-country">South Africa</div></a>
+          <a href="/destinations/okavango-delta/" class="dest-quick-card"><div class="dest-quick-emoji">💧</div><div class="dest-quick-name">Okavango Delta</div><div class="dest-quick-country">Botswana</div></a>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready for Your Safari Adventure?</h2>
+        <p>Let us help you plan the perfect safari experience for your family - from choosing the right destination to finding family-friendly lodges.</p>
+        <div class="cta-buttons">
+          <a href="/contact/" class="btn btn--secondary">Get Expert Advice</a>
+          <a href="/destinations/" class="btn btn--outline" style="border-color:white;color:white">Explore Destinations</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p class="footer-copyright">© 2024 WildlifeVacation.com</p><div class="footer-legal"><a href="/legal/privacy/">Privacy</a><a href="/legal/terms/">Terms</a></div></div></div></footer>
+  <script>const navToggle=document.querySelector('.nav-toggle'),nav=document.querySelector('.nav'),navOverlay=document.querySelector('.nav-overlay');navToggle?.addEventListener('click',()=>{const isOpen=nav.classList.toggle('active');navToggle.classList.toggle('active');navOverlay.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);document.body.style.overflow=isOpen?'hidden':'';});navOverlay?.addEventListener('click',()=>navToggle.click());</script>
+</body>
+</html>

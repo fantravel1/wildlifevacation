@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bird Watching Tours | Birding Adventures | WildlifeVacation.com</title>
+  <meta name="description" content="Discover incredible bird watching destinations worldwide. From African raptors to tropical toucans and Antarctic penguins - find family-friendly birding tours and expert guides.">
+  <link rel="canonical" href="https://wildlifevacation.com/experiences/birding/">
+  <meta property="og:title" content="Bird Watching Tours | Global Birding Adventures">
+  <meta name="theme-color" content="#2d5a27">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦁</text></svg>">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    .exp-hero { background: linear-gradient(135deg, #059669 0%, #10b981 100%); padding: var(--space-16) 0 var(--space-20); text-align: center; color: white; }
+    .exp-emoji { font-size: clamp(4rem, 12vw, 8rem); display: block; margin-bottom: var(--space-4); }
+    .exp-title { font-family: var(--font-family-display); font-size: clamp(2.5rem, 8vw, 4rem); margin-bottom: var(--space-4); }
+    .exp-tagline { font-size: var(--text-lg); max-width: 600px; margin: 0 auto; line-height: 1.6; }
+    .content-section { padding: var(--space-12) 0; }
+    .content-section:nth-child(even) { background: var(--color-cream); }
+    .section-header { text-align: center; margin-bottom: var(--space-8); }
+    .section-icon { font-size: 3rem; margin-bottom: var(--space-3); }
+    .section-title { font-family: var(--font-family-display); font-size: var(--text-3xl); color: var(--color-forest); }
+    .bird-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: var(--space-4); }
+    .bird-card { background: var(--color-white); padding: var(--space-4); border-radius: var(--radius-xl); text-align: center; box-shadow: var(--shadow-md); transition: transform 0.2s; }
+    .bird-card:hover { transform: translateY(-4px); }
+    .bird-emoji { font-size: 2.5rem; margin-bottom: var(--space-2); }
+    .bird-name { font-weight: 700; color: var(--color-gray-800); font-size: var(--text-sm); }
+    .bird-location { font-size: var(--text-xs); color: var(--color-gray-500); margin-top: var(--space-1); }
+    .dest-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); }
+    .dest-card { background: var(--color-white); padding: var(--space-6); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); border-left: 4px solid #059669; }
+    .dest-card h3 { font-size: var(--text-lg); color: var(--color-gray-800); margin-bottom: var(--space-2); }
+    .dest-card p { color: var(--color-gray-600); line-height: 1.6; margin: 0 0 var(--space-3) 0; font-size: var(--text-sm); }
+    .dest-card-stat { font-size: var(--text-sm); color: #059669; font-weight: 600; }
+    .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); }
+    .tip-card { background: var(--color-white); padding: var(--space-6); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); }
+    .tip-card h3 { font-size: var(--text-lg); color: var(--color-gray-800); margin-bottom: var(--space-2); }
+    .tip-card p { color: var(--color-gray-600); line-height: 1.6; margin: 0; font-size: var(--text-sm); }
+    .cta-section { background: linear-gradient(135deg, var(--color-forest) 0%, #3d7a37 100%); padding: var(--space-16) 0; text-align: center; color: white; }
+    .cta-section h2 { font-family: var(--font-family-display); font-size: var(--text-3xl); margin-bottom: var(--space-4); }
+    .cta-buttons { display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center; margin-top: var(--space-6); }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="trust-bar"><div class="trust-bar-inner"><span>🏆 Trusted by 50,000+ families</span><span>✓ Expert-verified</span><span>🌍 Conservation-focused</span></div></div>
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="/" class="logo"><span class="logo-icon">🦁</span><span>WildlifeVacation</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <nav class="nav" id="main-nav"><ul class="nav-list"><li><a href="/" class="nav-link">Home</a></li><li><a href="/destinations/" class="nav-link">Destinations</a></li><li><a href="/animals/" class="nav-link">Animals</a></li><li><a href="/experiences/" class="nav-link nav-link--active">Experiences</a></li><li><a href="/about/" class="nav-link">About</a></li></ul></nav>
+      <div class="nav-overlay"></div>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="exp-hero">
+      <div class="container">
+        <span class="exp-emoji">🦜</span>
+        <h1 class="exp-title">Bird Watching</h1>
+        <p class="exp-tagline">From colorful toucans to majestic eagles - the world of birds offers endless wonder. Birding is a perfect family activity that combines outdoor adventure with the thrill of spotting rare and beautiful species.</p>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">🐦</div><h2 class="section-title">Iconic Birds to See</h2></header>
+        <div class="bird-grid">
+          <div class="bird-card"><div class="bird-emoji">🦅</div><div class="bird-name">African Fish Eagle</div><div class="bird-location">Africa</div></div>
+          <div class="bird-card"><div class="bird-emoji">🦜</div><div class="bird-name">Scarlet Macaw</div><div class="bird-location">Central/South America</div></div>
+          <div class="bird-card"><div class="bird-emoji">🐧</div><div class="bird-name">Emperor Penguin</div><div class="bird-location">Antarctica</div></div>
+          <div class="bird-card"><div class="bird-emoji">🦩</div><div class="bird-name">Flamingo</div><div class="bird-location">Africa, Americas</div></div>
+          <div class="bird-card"><div class="bird-emoji">🦚</div><div class="bird-name">Peacock</div><div class="bird-location">India, Sri Lanka</div></div>
+          <div class="bird-card"><div class="bird-emoji">🦉</div><div class="bird-name">Snowy Owl</div><div class="bird-location">Arctic regions</div></div>
+          <div class="bird-card"><div class="bird-emoji">🐦</div><div class="bird-name">Hummingbird</div><div class="bird-location">Americas</div></div>
+          <div class="bird-card"><div class="bird-emoji">🦆</div><div class="bird-name">Mandarin Duck</div><div class="bird-location">East Asia</div></div>
+          <div class="bird-card"><div class="bird-emoji">🦤</div><div class="bird-name">Shoebill</div><div class="bird-location">Central Africa</div></div>
+          <div class="bird-card"><div class="bird-emoji">🪶</div><div class="bird-name">Resplendent Quetzal</div><div class="bird-location">Central America</div></div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">🌍</div><h2 class="section-title">Top Birding Destinations</h2></header>
+        <div class="dest-grid">
+          <div class="dest-card"><h3>🇨🇷 Costa Rica</h3><p>Over 900 bird species in a country the size of West Virginia! From resplendent quetzals to toucans and hummingbirds. Perfect for beginners with excellent infrastructure.</p><div class="dest-card-stat">900+ species | Year-round</div></div>
+          <div class="dest-card"><h3>🇪🇨 Ecuador & Galapagos</h3><p>The world's most bird-diverse country! Cloud forests, Amazon, and unique Galapagos species like blue-footed boobies and frigatebirds. A birder's paradise.</p><div class="dest-card-stat">1,600+ species | Year-round</div></div>
+          <div class="dest-card"><h3>🇰🇪 Kenya</h3><p>Over 1,100 species including the iconic African Fish Eagle, lilac-breasted roller, and flamingo-filled lakes. Combine with safari for incredible wildlife experiences.</p><div class="dest-card-stat">1,100+ species | Oct-Mar best</div></div>
+          <div class="dest-card"><h3>🇦🇺 Australia</h3><p>Unique birds found nowhere else: kookaburras, emus, cassowaries, and the rainbow lorikeet. The Great Barrier Reef islands offer seabird colonies.</p><div class="dest-card-stat">800+ species | Year-round</div></div>
+          <div class="dest-card"><h3>🇮🇳 India</h3><p>Incredible diversity from Himalayan species to tropical birds. See peacocks in the wild, hornbills, and rare endemics in the Western Ghats.</p><div class="dest-card-stat">1,300+ species | Oct-Mar best</div></div>
+          <div class="dest-card"><h3>🇺🇸 South Texas</h3><p>Where tropical and temperate species meet! The Rio Grande Valley is a hotspot for Mexican species at their northern range. Great for US families.</p><div class="dest-card-stat">500+ species | Apr-May best</div></div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">👨‍👩‍👧‍👦</div><h2 class="section-title">Birding Tips for Families</h2></header>
+        <div class="tips-grid">
+          <div class="tip-card"><h3>🔭 Kid-Friendly Binoculars</h3><p>Get lightweight binoculars sized for small hands. Start with 8x magnification - easier to use than higher-powered optics. Practice at home before the trip!</p></div>
+          <div class="tip-card"><h3>📱 Use Bird ID Apps</h3><p>Apps like Merlin Bird ID can identify birds from photos or sound recordings. Kids love using technology to help spot and identify species!</p></div>
+          <div class="tip-card"><h3>📒 Keep a Bird Journal</h3><p>Let kids record sightings with drawings and notes. Many birders remember their first sightings for life - make it memorable with a special trip journal.</p></div>
+          <div class="tip-card"><h3>🌅 Early Morning is Best</h3><p>Birds are most active at dawn. Plan early outings when possible, but don't force it - any time outdoors offers birding opportunities!</p></div>
+          <div class="tip-card"><h3>🎯 Set Achievable Goals</h3><p>Create a "target list" of 5-10 species before visiting a destination. Checking off each bird becomes a fun scavenger hunt that keeps kids engaged.</p></div>
+          <div class="tip-card"><h3>🤫 Practice Patience</h3><p>Birds require quiet observation. Short birding walks mixed with other activities work best for young children. Build up duration as they grow interested.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready for Your Birding Adventure?</h2>
+        <p>Let us help you plan an incredible bird watching trip for your family - from choosing the right destination to finding expert guides.</p>
+        <div class="cta-buttons">
+          <a href="/contact/" class="btn btn--secondary">Plan Your Trip</a>
+          <a href="/checklist/" class="btn btn--outline" style="border-color:white;color:white">Wildlife Checklist</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p class="footer-copyright">© 2024 WildlifeVacation.com</p><div class="footer-legal"><a href="/legal/privacy/">Privacy</a><a href="/legal/terms/">Terms</a></div></div></div></footer>
+  <script>const navToggle=document.querySelector('.nav-toggle'),nav=document.querySelector('.nav'),navOverlay=document.querySelector('.nav-overlay');navToggle?.addEventListener('click',()=>{const isOpen=nav.classList.toggle('active');navToggle.classList.toggle('active');navOverlay.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);document.body.style.overflow=isOpen?'hidden':'';});navOverlay?.addEventListener('click',()=>navToggle.click());</script>
+</body>
+</html>

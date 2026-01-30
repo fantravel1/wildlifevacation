@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diving & Snorkeling | Marine Wildlife Adventures | WildlifeVacation.com</title>
+  <meta name="description" content="Discover world-class diving and snorkeling destinations. From coral reefs to manta rays and whale sharks - find the best underwater wildlife experiences for families.">
+  <link rel="canonical" href="https://wildlifevacation.com/experiences/diving/">
+  <meta property="og:title" content="Diving & Snorkeling | Marine Wildlife Adventures">
+  <meta name="theme-color" content="#2d5a27">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦁</text></svg>">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    .exp-hero { background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%); padding: var(--space-16) 0 var(--space-20); text-align: center; color: white; }
+    .exp-emoji { font-size: clamp(4rem, 12vw, 8rem); display: block; margin-bottom: var(--space-4); }
+    .exp-title { font-family: var(--font-family-display); font-size: clamp(2.5rem, 8vw, 4rem); margin-bottom: var(--space-4); }
+    .exp-tagline { font-size: var(--text-lg); max-width: 600px; margin: 0 auto; line-height: 1.6; }
+    .content-section { padding: var(--space-12) 0; }
+    .content-section:nth-child(even) { background: var(--color-cream); }
+    .section-header { text-align: center; margin-bottom: var(--space-8); }
+    .section-icon { font-size: 3rem; margin-bottom: var(--space-3); }
+    .section-title { font-family: var(--font-family-display); font-size: var(--text-3xl); color: var(--color-forest); }
+    .section-subtitle { font-size: var(--text-lg); color: var(--color-gray-600); max-width: 600px; margin: var(--space-2) auto 0; }
+    .dest-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-6); }
+    .dest-card { background: var(--color-white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); }
+    .dest-card-header { background: linear-gradient(135deg, #0891b2 0%, #22d3ee 100%); padding: var(--space-5); color: white; text-align: center; }
+    .dest-card-emoji { font-size: 2.5rem; margin-bottom: var(--space-2); }
+    .dest-card-name { font-family: var(--font-family-display); font-size: var(--text-lg); }
+    .dest-card-country { font-size: var(--text-sm); opacity: 0.9; }
+    .dest-card-body { padding: var(--space-5); }
+    .dest-card-body p { color: var(--color-gray-600); line-height: 1.6; margin-bottom: var(--space-3); font-size: var(--text-sm); }
+    .dest-card-highlights { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+    .highlight-tag { background: #ecfeff; color: #0891b2; padding: var(--space-1) var(--space-2); border-radius: var(--radius-full); font-size: var(--text-xs); font-weight: 600; }
+    .marine-life-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: var(--space-4); margin-top: var(--space-6); }
+    .marine-card { background: var(--color-white); padding: var(--space-4); border-radius: var(--radius-xl); text-align: center; box-shadow: var(--shadow-md); }
+    .marine-emoji { font-size: 2.5rem; margin-bottom: var(--space-2); }
+    .marine-name { font-weight: 700; color: var(--color-gray-800); font-size: var(--text-sm); }
+    .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); }
+    .tip-card { background: var(--color-white); padding: var(--space-6); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); border-left: 4px solid #0891b2; }
+    .tip-card h3 { font-size: var(--text-lg); color: var(--color-gray-800); margin-bottom: var(--space-2); }
+    .tip-card p { color: var(--color-gray-600); line-height: 1.6; margin: 0; font-size: var(--text-sm); }
+    .cta-section { background: linear-gradient(135deg, var(--color-forest) 0%, #3d7a37 100%); padding: var(--space-16) 0; text-align: center; color: white; }
+    .cta-section h2 { font-family: var(--font-family-display); font-size: var(--text-3xl); margin-bottom: var(--space-4); }
+    .cta-buttons { display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center; margin-top: var(--space-6); }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="trust-bar"><div class="trust-bar-inner"><span>🏆 Trusted by 50,000+ families</span><span>✓ Expert-verified</span><span>🌍 Conservation-focused</span></div></div>
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="/" class="logo"><span class="logo-icon">🦁</span><span>WildlifeVacation</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <nav class="nav" id="main-nav"><ul class="nav-list"><li><a href="/" class="nav-link">Home</a></li><li><a href="/destinations/" class="nav-link">Destinations</a></li><li><a href="/animals/" class="nav-link">Animals</a></li><li><a href="/experiences/" class="nav-link nav-link--active">Experiences</a></li><li><a href="/about/" class="nav-link">About</a></li></ul></nav>
+      <div class="nav-overlay"></div>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="exp-hero">
+      <div class="container">
+        <span class="exp-emoji">🤿</span>
+        <h1 class="exp-title">Diving & Snorkeling</h1>
+        <p class="exp-tagline">Explore vibrant coral reefs, swim with sea turtles, and encounter majestic marine life. Whether you're a certified diver or snorkeling for the first time, the underwater world offers unforgettable family adventures.</p>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">🌊</div><h2 class="section-title">Top Diving & Snorkeling Destinations</h2></header>
+        <div class="dest-grid">
+          <div class="dest-card">
+            <div class="dest-card-header"><div class="dest-card-emoji">🐠</div><div class="dest-card-name">Great Barrier Reef</div><div class="dest-card-country">Australia</div></div>
+            <div class="dest-card-body">
+              <p>The world's largest coral reef system! Over 1,500 fish species, sea turtles, and reef sharks. Family-friendly pontoon platforms make snorkeling accessible for all ages.</p>
+              <div class="dest-card-highlights"><span class="highlight-tag">Sea Turtles</span><span class="highlight-tag">Clownfish</span><span class="highlight-tag">Reef Sharks</span><span class="highlight-tag">Year-round</span></div>
+            </div>
+          </div>
+          <div class="dest-card">
+            <div class="dest-card-header"><div class="dest-card-emoji">🐢</div><div class="dest-card-name">Galapagos Islands</div><div class="dest-card-country">Ecuador</div></div>
+            <div class="dest-card-body">
+              <p>Swim with sea lions, marine iguanas, and Galapagos penguins! Incredible biodiversity above and below water. Some of the most unique marine life on Earth.</p>
+              <div class="dest-card-highlights"><span class="highlight-tag">Sea Lions</span><span class="highlight-tag">Hammerheads</span><span class="highlight-tag">Marine Iguanas</span><span class="highlight-tag">Jun-Nov best</span></div>
+            </div>
+          </div>
+          <div class="dest-card">
+            <div class="dest-card-header"><div class="dest-card-emoji">🦈</div><div class="dest-card-name">Maldives</div><div class="dest-card-country">Indian Ocean</div></div>
+            <div class="dest-card-body">
+              <p>Crystal-clear waters, manta rays, and whale sharks! House reefs at resorts mean world-class snorkeling steps from your room. Perfect for luxury family trips.</p>
+              <div class="dest-card-highlights"><span class="highlight-tag">Manta Rays</span><span class="highlight-tag">Whale Sharks</span><span class="highlight-tag">House Reefs</span><span class="highlight-tag">Nov-Apr best</span></div>
+            </div>
+          </div>
+          <div class="dest-card">
+            <div class="dest-card-header"><div class="dest-card-emoji">🐙</div><div class="dest-card-name">Raja Ampat</div><div class="dest-card-country">Indonesia</div></div>
+            <div class="dest-card-body">
+              <p>The most biodiverse marine area on Earth! Over 1,500 fish species and 75% of all known coral species. Remote but increasingly accessible for families.</p>
+              <div class="dest-card-highlights"><span class="highlight-tag">Highest Biodiversity</span><span class="highlight-tag">Pristine Reefs</span><span class="highlight-tag">Oct-Apr best</span></div>
+            </div>
+          </div>
+        </div>
+        <header class="section-header" style="margin-top:var(--space-12)"><div class="section-icon">🐟</div><h2 class="section-title">Marine Life You Can See</h2></header>
+        <div class="marine-life-grid">
+          <div class="marine-card"><div class="marine-emoji">🐢</div><div class="marine-name">Sea Turtles</div></div>
+          <div class="marine-card"><div class="marine-emoji">🦈</div><div class="marine-name">Reef Sharks</div></div>
+          <div class="marine-card"><div class="marine-emoji">🐙</div><div class="marine-name">Octopus</div></div>
+          <div class="marine-card"><div class="marine-emoji">🐠</div><div class="marine-name">Tropical Fish</div></div>
+          <div class="marine-card"><div class="marine-emoji">🦑</div><div class="marine-name">Squid</div></div>
+          <div class="marine-card"><div class="marine-emoji">🦀</div><div class="marine-name">Crustaceans</div></div>
+          <div class="marine-card"><div class="marine-emoji">🐡</div><div class="marine-name">Pufferfish</div></div>
+          <div class="marine-card"><div class="marine-emoji">🐬</div><div class="marine-name">Dolphins</div></div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">👨‍👩‍👧‍👦</div><h2 class="section-title">Tips for Families</h2></header>
+        <div class="tips-grid">
+          <div class="tip-card"><h3>🏊 Snorkeling is Enough!</h3><p>You don't need to dive to see amazing marine life. Most reef highlights are visible snorkeling in shallow water. Perfect for kids and non-certified adults!</p></div>
+          <div class="tip-card"><h3>🦺 Use Floatation</h3><p>Life jackets and floatation noodles let kids (and nervous adults) relax and enjoy snorkeling without worry. Most operators provide them - ask in advance.</p></div>
+          <div class="tip-card"><h3>🧴 Reef-Safe Sunscreen</h3><p>Regular sunscreen chemicals damage coral. Always use reef-safe formulas with zinc oxide or titanium dioxide. Many destinations now require them.</p></div>
+          <div class="tip-card"><h3>👓 Prescription Masks</h3><p>Can't see without glasses? Prescription snorkel masks are available at most dive shops. Or use contact lenses with a regular mask.</p></div>
+          <div class="tip-card"><h3>🐠 Don't Touch!</h3><p>Teach kids to look but never touch marine life or coral. Even gentle touches can harm delicate organisms. It's also safer - some creatures bite or sting!</p></div>
+          <div class="tip-card"><h3>📸 Underwater Cameras</h3><p>Waterproof cameras or phone housings capture amazing memories. GoPros and similar action cameras are great for kids to use independently.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready for Your Underwater Adventure?</h2>
+        <p>Let us help you plan the perfect diving or snorkeling trip for your family - from beginner-friendly destinations to advanced dive sites.</p>
+        <div class="cta-buttons">
+          <a href="/contact/" class="btn btn--secondary">Plan Your Trip</a>
+          <a href="/destinations/great-barrier-reef/" class="btn btn--outline" style="border-color:white;color:white">Great Barrier Reef</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p class="footer-copyright">© 2024 WildlifeVacation.com</p><div class="footer-legal"><a href="/legal/privacy/">Privacy</a><a href="/legal/terms/">Terms</a></div></div></div></footer>
+  <script>const navToggle=document.querySelector('.nav-toggle'),nav=document.querySelector('.nav'),navOverlay=document.querySelector('.nav-overlay');navToggle?.addEventListener('click',()=>{const isOpen=nav.classList.toggle('active');navToggle.classList.toggle('active');navOverlay.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);document.body.style.overflow=isOpen?'hidden':'';});navOverlay?.addEventListener('click',()=>navToggle.click());</script>
+</body>
+</html>

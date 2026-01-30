@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheetah | The World's Fastest Animal | WildlifeVacation.com</title>
+  <meta name="description" content="Meet the Cheetah - Earth's fastest land animal reaching 70 mph. Learn where to see cheetahs in the wild, their incredible hunting abilities, and best safari destinations for cheetah sightings.">
+  <link rel="canonical" href="https://wildlifevacation.com/animals/cheetah/">
+  <meta property="og:title" content="Cheetah | World's Fastest Land Animal">
+  <meta name="theme-color" content="#2d5a27">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦁</text></svg>">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    .animal-hero { background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); padding: var(--space-16) 0 var(--space-20); text-align: center; color: white; }
+    .animal-emoji { font-size: clamp(4rem, 12vw, 8rem); display: block; margin-bottom: var(--space-4); }
+    .animal-title { font-family: var(--font-family-display); font-size: clamp(2.5rem, 8vw, 4rem); margin-bottom: var(--space-2); }
+    .animal-latin { font-style: italic; font-size: var(--text-xl); opacity: 0.9; margin-bottom: var(--space-4); }
+    .animal-tagline { font-size: var(--text-lg); max-width: 600px; margin: 0 auto; line-height: 1.6; }
+    .status-badge { display: inline-flex; align-items: center; gap: var(--space-2); background: rgba(255,255,255,0.2); padding: var(--space-2) var(--space-4); border-radius: var(--radius-full); font-weight: 700; margin-top: var(--space-4); }
+    .quick-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: var(--space-4); margin: calc(-1 * var(--space-12)) auto var(--space-12); max-width: 900px; padding: 0 var(--space-4); position: relative; z-index: 2; }
+    .stat-card { background: var(--color-white); padding: var(--space-5); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); text-align: center; }
+    .stat-icon { font-size: 2rem; margin-bottom: var(--space-2); }
+    .stat-value { font-family: var(--font-family-display); font-size: var(--text-2xl); color: var(--color-forest); }
+    .stat-label { font-size: var(--text-sm); color: var(--color-gray-600); }
+    .content-section { padding: var(--space-12) 0; }
+    .content-section:nth-child(even) { background: var(--color-cream); }
+    .section-header { text-align: center; margin-bottom: var(--space-8); }
+    .section-icon { font-size: 3rem; margin-bottom: var(--space-3); }
+    .section-title { font-family: var(--font-family-display); font-size: var(--text-3xl); color: var(--color-forest); }
+    .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); }
+    .fact-card { background: var(--color-white); padding: var(--space-6); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); border-left: 4px solid #fbbf24; }
+    .fact-card h3 { font-size: var(--text-lg); color: var(--color-gray-800); margin-bottom: var(--space-2); }
+    .fact-card p { color: var(--color-gray-600); line-height: 1.6; margin: 0; }
+    .speed-comparison { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: var(--space-8); border-radius: var(--radius-2xl); margin: var(--space-8) 0; }
+    .speed-comparison h3 { font-family: var(--font-family-display); text-align: center; margin-bottom: var(--space-6); color: var(--color-gray-800); }
+    .speed-bars { max-width: 600px; margin: 0 auto; }
+    .speed-bar { margin-bottom: var(--space-4); }
+    .speed-bar-label { display: flex; justify-content: space-between; margin-bottom: var(--space-1); font-weight: 600; }
+    .speed-bar-track { height: 24px; background: #fff; border-radius: var(--radius-full); overflow: hidden; }
+    .speed-bar-fill { height: 100%; background: linear-gradient(90deg, #fbbf24, #f59e0b); border-radius: var(--radius-full); }
+    .kids-corner { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: var(--space-10); border-radius: var(--radius-2xl); margin: var(--space-8) 0; }
+    .kids-corner h3 { font-family: var(--font-family-display); font-size: var(--text-2xl); color: var(--color-gray-800); text-align: center; margin-bottom: var(--space-6); }
+    .kids-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-4); }
+    .kids-fact { background: var(--color-white); padding: var(--space-4); border-radius: var(--radius-xl); text-align: center; box-shadow: var(--shadow-md); }
+    .kids-fact-emoji { font-size: 2.5rem; margin-bottom: var(--space-2); }
+    .kids-fact p { color: var(--color-gray-700); font-size: var(--text-sm); margin: 0; }
+    .cta-section { background: linear-gradient(135deg, var(--color-forest) 0%, #3d7a37 100%); padding: var(--space-16) 0; text-align: center; color: white; }
+    .cta-section h2 { font-family: var(--font-family-display); font-size: var(--text-3xl); margin-bottom: var(--space-4); }
+    .cta-buttons { display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center; margin-top: var(--space-6); }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="trust-bar"><div class="trust-bar-inner"><span>🏆 Trusted by 50,000+ families</span><span>✓ Expert-verified</span><span>🌍 Conservation-focused</span></div></div>
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="/" class="logo"><span class="logo-icon">🦁</span><span>WildlifeVacation</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <nav class="nav" id="main-nav"><ul class="nav-list"><li><a href="/" class="nav-link">Home</a></li><li><a href="/destinations/" class="nav-link">Destinations</a></li><li><a href="/animals/" class="nav-link nav-link--active">Animals</a></li><li><a href="/experiences/" class="nav-link">Experiences</a></li><li><a href="/about/" class="nav-link">About</a></li></ul></nav>
+      <div class="nav-overlay"></div>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="animal-hero">
+      <div class="container">
+        <span class="animal-emoji">🐆</span>
+        <h1 class="animal-title">Cheetah</h1>
+        <p class="animal-latin">Acinonyx jubatus</p>
+        <p class="animal-tagline">The fastest land animal on Earth - a sleek, spotted speed machine that can accelerate from 0 to 60 mph in just 3 seconds. Watching a cheetah hunt is one of nature's most thrilling spectacles.</p>
+        <div class="status-badge">⚠️ Conservation Status: Vulnerable</div>
+      </div>
+    </section>
+    <div class="quick-stats">
+      <div class="stat-card"><div class="stat-icon">🏃</div><div class="stat-value">112 km/h</div><div class="stat-label">Top Speed</div></div>
+      <div class="stat-card"><div class="stat-icon">⏱️</div><div class="stat-value">3 sec</div><div class="stat-label">0-60 mph</div></div>
+      <div class="stat-card"><div class="stat-icon">📏</div><div class="stat-value">1.2m</div><div class="stat-label">Body Length</div></div>
+      <div class="stat-card"><div class="stat-icon">⚖️</div><div class="stat-value">50kg</div><div class="stat-label">Average Weight</div></div>
+      <div class="stat-card"><div class="stat-icon">👁️</div><div class="stat-value">5 km</div><div class="stat-label">Vision Range</div></div>
+      <div class="stat-card"><div class="stat-icon">🌍</div><div class="stat-value">~7,100</div><div class="stat-label">Wild Population</div></div>
+    </div>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">📚</div><h2 class="section-title">Fascinating Cheetah Facts</h2></header>
+        <div class="fact-grid">
+          <div class="fact-card"><h3>🏎️ Built for Speed</h3><p>Every part of a cheetah is designed for speed: lightweight skeleton, long legs, large nasal passages for oxygen intake, non-retractable claws for grip like running spikes, and a long tail for balance at high speeds.</p></div>
+          <div class="fact-card"><h3>😿 Tear Marks</h3><p>Those distinctive black "tear marks" running from eyes to mouth aren't for crying - they help reduce glare from the sun, like a football player's eye black, helping cheetahs spot prey in bright conditions.</p></div>
+          <div class="fact-card"><h3>🐦 Chirping Cats</h3><p>Unlike other big cats, cheetahs can't roar! Instead, they chirp like birds, yelp, and purr. Mother cheetahs and cubs communicate with high-pitched sounds similar to songbirds.</p></div>
+          <div class="fact-card"><h3>⏱️ Short Bursts Only</h3><p>Cheetahs can only maintain top speed for about 200-300 meters before overheating. A chase typically lasts less than a minute. If they don't catch prey quickly, they have to rest before trying again.</p></div>
+          <div class="fact-card"><h3>👨‍👦‍👦 Brother Coalitions</h3><p>Male cheetahs often live in groups called coalitions, usually with their brothers. These groups are more successful at defending territory and taking down larger prey than solitary males.</p></div>
+          <div class="fact-card"><h3>😢 High Cub Mortality</h3><p>Only about 5% of cheetah cubs survive to adulthood. Lions, hyenas, and eagles all prey on cubs. Mothers must hide cubs and hunt alone, making them extremely vulnerable.</p></div>
+        </div>
+        <div class="speed-comparison">
+          <h3>🏁 Speed Comparison</h3>
+          <div class="speed-bars">
+            <div class="speed-bar"><div class="speed-bar-label"><span>🐆 Cheetah</span><span>70 mph</span></div><div class="speed-bar-track"><div class="speed-bar-fill" style="width:100%"></div></div></div>
+            <div class="speed-bar"><div class="speed-bar-label"><span>🦁 Lion</span><span>50 mph</span></div><div class="speed-bar-track"><div class="speed-bar-fill" style="width:71%"></div></div></div>
+            <div class="speed-bar"><div class="speed-bar-label"><span>🐎 Horse</span><span>44 mph</span></div><div class="speed-bar-track"><div class="speed-bar-fill" style="width:63%"></div></div></div>
+            <div class="speed-bar"><div class="speed-bar-label"><span>🏃 Usain Bolt</span><span>28 mph</span></div><div class="speed-bar-track"><div class="speed-bar-fill" style="width:40%"></div></div></div>
+          </div>
+        </div>
+        <div class="kids-corner">
+          <h3>🧒 Kids' Corner: Cheetah Facts!</h3>
+          <div class="kids-facts">
+            <div class="kids-fact"><div class="kids-fact-emoji">🏎️</div><p>A cheetah can go from standing still to 60 mph faster than most sports cars!</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">😺</div><p>Cheetahs purr just like your pet cat at home - they're the largest cats that can purr!</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">🦅</div><p>Cheetahs have such good eyesight they can spot prey from 3 miles away!</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">💨</div><p>When running at top speed, a cheetah's feet touch the ground only twice per stride!</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">👶</div><p>Baby cheetahs have a stripe of long grey fur called a "mantle" that makes them look like honey badgers to scare off predators!</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">🐕</div><p>Some zoos give cheetahs dog companions because the dogs help calm nervous cheetahs!</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to See the World's Fastest Cat?</h2>
+        <p>Witness the incredible speed and grace of cheetahs on an African safari your family will never forget.</p>
+        <div class="cta-buttons">
+          <a href="/destinations/serengeti/" class="btn btn--secondary">Serengeti (Best Cheetah Viewing)</a>
+          <a href="/checklist/" class="btn btn--outline" style="border-color:white;color:white">Wildlife Checklist</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p class="footer-copyright">© 2024 WildlifeVacation.com</p><div class="footer-legal"><a href="/legal/privacy/">Privacy</a><a href="/legal/terms/">Terms</a></div></div></div></footer>
+  <script>const navToggle=document.querySelector('.nav-toggle'),nav=document.querySelector('.nav'),navOverlay=document.querySelector('.nav-overlay');navToggle?.addEventListener('click',()=>{const isOpen=nav.classList.toggle('active');navToggle.classList.toggle('active');navOverlay.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);document.body.style.overflow=isOpen?'hidden':'';});navOverlay?.addEventListener('click',()=>navToggle.click());</script>
+</body>
+</html>

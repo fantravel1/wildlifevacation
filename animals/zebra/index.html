@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zebra | Africa's Striped Icon | WildlifeVacation.com</title>
+  <meta name="description" content="Meet the Zebra - Africa's iconic striped horse. Learn about their unique patterns, social behavior, the Great Migration, and where to see massive zebra herds in the wild.">
+  <link rel="canonical" href="https://wildlifevacation.com/animals/zebra/">
+  <meta name="theme-color" content="#2d5a27">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦁</text></svg>">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    .animal-hero { background: linear-gradient(135deg, #18181b 0%, #3f3f46 100%); padding: var(--space-16) 0 var(--space-20); text-align: center; color: white; }
+    .animal-emoji { font-size: clamp(4rem, 12vw, 8rem); display: block; margin-bottom: var(--space-4); }
+    .animal-title { font-family: var(--font-family-display); font-size: clamp(2.5rem, 8vw, 4rem); margin-bottom: var(--space-2); }
+    .animal-latin { font-style: italic; font-size: var(--text-xl); opacity: 0.9; margin-bottom: var(--space-4); }
+    .animal-tagline { font-size: var(--text-lg); max-width: 600px; margin: 0 auto; line-height: 1.6; }
+    .status-badge { display: inline-flex; align-items: center; gap: var(--space-2); background: rgba(255,255,255,0.2); padding: var(--space-2) var(--space-4); border-radius: var(--radius-full); font-weight: 700; margin-top: var(--space-4); }
+    .quick-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: var(--space-4); margin: calc(-1 * var(--space-12)) auto var(--space-12); max-width: 900px; padding: 0 var(--space-4); position: relative; z-index: 2; }
+    .stat-card { background: var(--color-white); padding: var(--space-5); border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); text-align: center; }
+    .stat-icon { font-size: 2rem; margin-bottom: var(--space-2); }
+    .stat-value { font-family: var(--font-family-display); font-size: var(--text-2xl); color: var(--color-forest); }
+    .stat-label { font-size: var(--text-sm); color: var(--color-gray-600); }
+    .content-section { padding: var(--space-12) 0; }
+    .content-section:nth-child(even) { background: var(--color-cream); }
+    .section-header { text-align: center; margin-bottom: var(--space-8); }
+    .section-icon { font-size: 3rem; margin-bottom: var(--space-3); }
+    .section-title { font-family: var(--font-family-display); font-size: var(--text-3xl); color: var(--color-forest); }
+    .fact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); }
+    .fact-card { background: var(--color-white); padding: var(--space-6); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); border-left: 4px solid #18181b; }
+    .fact-card h3 { font-size: var(--text-lg); color: var(--color-gray-800); margin-bottom: var(--space-2); }
+    .fact-card p { color: var(--color-gray-600); line-height: 1.6; margin: 0; }
+    .migration-box { background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%); padding: var(--space-8); border-radius: var(--radius-2xl); margin: var(--space-8) 0; }
+    .migration-box h3 { font-family: var(--font-family-display); color: var(--color-forest); margin-bottom: var(--space-4); text-align: center; }
+    .migration-box p { color: var(--color-gray-700); line-height: 1.7; max-width: 600px; margin: 0 auto; text-align: center; }
+    .kids-corner { background: linear-gradient(135deg, #e4e4e7 0%, #d4d4d8 100%); padding: var(--space-10); border-radius: var(--radius-2xl); margin: var(--space-8) 0; }
+    .kids-corner h3 { font-family: var(--font-family-display); font-size: var(--text-2xl); color: var(--color-gray-800); text-align: center; margin-bottom: var(--space-6); }
+    .kids-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-4); }
+    .kids-fact { background: var(--color-white); padding: var(--space-4); border-radius: var(--radius-xl); text-align: center; box-shadow: var(--shadow-md); }
+    .kids-fact-emoji { font-size: 2.5rem; margin-bottom: var(--space-2); }
+    .kids-fact p { color: var(--color-gray-700); font-size: var(--text-sm); margin: 0; }
+    .cta-section { background: linear-gradient(135deg, var(--color-forest) 0%, #3d7a37 100%); padding: var(--space-16) 0; text-align: center; color: white; }
+    .cta-section h2 { font-family: var(--font-family-display); font-size: var(--text-3xl); margin-bottom: var(--space-4); }
+    .cta-buttons { display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center; margin-top: var(--space-6); }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="trust-bar"><div class="trust-bar-inner"><span>🏆 Trusted by 50,000+ families</span><span>✓ Expert-verified</span><span>🌍 Conservation-focused</span></div></div>
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="/" class="logo"><span class="logo-icon">🦁</span><span>WildlifeVacation</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <nav class="nav" id="main-nav"><ul class="nav-list"><li><a href="/" class="nav-link">Home</a></li><li><a href="/destinations/" class="nav-link">Destinations</a></li><li><a href="/animals/" class="nav-link nav-link--active">Animals</a></li><li><a href="/experiences/" class="nav-link">Experiences</a></li><li><a href="/about/" class="nav-link">About</a></li></ul></nav>
+      <div class="nav-overlay"></div>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="animal-hero">
+      <div class="container">
+        <span class="animal-emoji">🦓</span>
+        <h1 class="animal-title">Zebra</h1>
+        <p class="animal-latin">Equus quagga</p>
+        <p class="animal-tagline">Africa's iconic striped horses - instantly recognizable and endlessly photogenic. Zebras are key players in the Great Migration, one of nature's most spectacular events, and a highlight of any African safari.</p>
+        <div class="status-badge">🌿 Conservation Status: Near Threatened</div>
+      </div>
+    </section>
+    <div class="quick-stats">
+      <div class="stat-card"><div class="stat-icon">📏</div><div class="stat-value">1.3-1.5m</div><div class="stat-label">Shoulder Height</div></div>
+      <div class="stat-card"><div class="stat-icon">⚖️</div><div class="stat-value">350-450kg</div><div class="stat-label">Weight</div></div>
+      <div class="stat-card"><div class="stat-icon">🏃</div><div class="stat-value">65 km/h</div><div class="stat-label">Top Speed</div></div>
+      <div class="stat-card"><div class="stat-icon">⏱️</div><div class="stat-value">25 yrs</div><div class="stat-label">Lifespan</div></div>
+      <div class="stat-card"><div class="stat-icon">👨‍👩‍👧‍👦</div><div class="stat-value">5-20</div><div class="stat-label">Herd Size</div></div>
+      <div class="stat-card"><div class="stat-icon">🌍</div><div class="stat-value">~750,000</div><div class="stat-label">Wild Population</div></div>
+    </div>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">📚</div><h2 class="section-title">Fascinating Zebra Facts</h2></header>
+        <div class="fact-grid">
+          <div class="fact-card"><h3>🎨 Unique Stripes</h3><p>No two zebras have the same stripe pattern - they're as unique as human fingerprints! Scientists use stripe patterns to identify and track individual zebras in the wild. Baby zebras learn to recognize their mother's pattern within days of birth.</p></div>
+          <div class="fact-card"><h3>❓ Why Stripes?</h3><p>Scientists have debated this for centuries! Current research suggests stripes confuse biting flies (which hate landing on striped surfaces), help regulate temperature, and make it harder for predators to single out one zebra from a running herd.</p></div>
+          <div class="fact-card"><h3>🐴 Not Just Striped Horses</h3><p>While zebras look like striped horses, they've never been successfully domesticated. They're unpredictable, aggressive when threatened, and have a powerful kick. They're related to horses but evolved separately in Africa.</p></div>
+          <div class="fact-card"><h3>👨‍👩‍👧‍👦 Family Bonds</h3><p>Zebras live in small family groups called "harems" led by one stallion with several mares and their foals. These families form strong bonds - when threatened, they'll circle to protect young foals with adults facing outward.</p></div>
+          <div class="fact-card"><h3>😴 Sleep Standing Up</h3><p>Like horses, zebras can sleep standing up thanks to special locking joints in their legs. They only lie down to sleep when other zebras are standing guard. They sleep about 7 hours total, in short naps.</p></div>
+          <div class="fact-card"><h3>🗣️ Communication</h3><p>Zebras communicate with various sounds: barking (warning), braying (greeting), snorting (alarm), and whinnying (distress). Each zebra's call is unique, helping family members find each other in large herds.</p></div>
+        </div>
+        <div class="migration-box">
+          <h3>🌍 The Great Migration</h3>
+          <p>Over 200,000 zebras join 1.5 million wildebeest in the annual Great Migration between Tanzania's Serengeti and Kenya's Masai Mara. This 500-mile journey follows the rains and fresh grass, with zebras often leading the way because they can eat taller, coarser grass that wildebeest can't digest. It's one of nature's greatest spectacles!</p>
+        </div>
+        <div class="kids-corner">
+          <h3>🧒 Kids' Corner: Zebra Facts!</h3>
+          <div class="kids-facts">
+            <div class="kids-fact"><div class="kids-fact-emoji">🖤🤍</div><p>Zebras are actually black with white stripes, not white with black stripes! Under their fur, zebra skin is black.</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">🦵</div><p>A zebra's kick is powerful enough to kill a lion! Their back legs can deliver 3,000 pounds of force.</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">👶</div><p>Baby zebras can stand within 6 minutes of being born and run within an hour!</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">👀</div><p>Zebras have excellent eyesight and can see in color, plus their eyes are on the sides of their head for 360° vision!</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">🦷</div><p>Zebras' teeth never stop growing! That's good because they wear them down eating tough grass all day.</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">🦟</div><p>Scientists discovered that flies don't like to land on stripes - so zebras get fewer bug bites than horses!</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to See Zebras in the Wild?</h2>
+        <p>Witness thousands of zebras on the Great Migration or photograph their striking patterns up close.</p>
+        <div class="cta-buttons">
+          <a href="/destinations/serengeti/" class="btn btn--secondary">Serengeti Migration</a>
+          <a href="/checklist/" class="btn btn--outline" style="border-color:white;color:white">Wildlife Checklist</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p class="footer-copyright">© 2024 WildlifeVacation.com</p><div class="footer-legal"><a href="/legal/privacy/">Privacy</a><a href="/legal/terms/">Terms</a></div></div></div></footer>
+  <script>const navToggle=document.querySelector('.nav-toggle'),nav=document.querySelector('.nav'),navOverlay=document.querySelector('.nav-overlay');navToggle?.addEventListener('click',()=>{const isOpen=nav.classList.toggle('active');navToggle.classList.toggle('active');navOverlay.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);document.body.style.overflow=isOpen?'hidden':'';});navOverlay?.addEventListener('click',()=>navToggle.click());</script>
+</body>
+</html>

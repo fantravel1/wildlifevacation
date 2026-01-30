@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mountain Gorilla | Gentle Giants of the Mist | WildlifeVacation.com</title>
+  <meta name="description" content="Meet the Mountain Gorilla - one of our closest relatives with only ~1,000 remaining. Learn about gorilla trekking in Rwanda, Uganda, and DR Congo for a life-changing wildlife encounter.">
+  <link rel="canonical" href="https://wildlifevacation.com/animals/mountain-gorilla/">
+  <meta name="theme-color" content="#2d5a27">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦁</text></svg>">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    .animal-hero{background:linear-gradient(135deg,#374151 0%,#4b5563 100%);padding:var(--space-16) 0 var(--space-20);text-align:center;color:white}
+    .animal-emoji{font-size:clamp(4rem,12vw,8rem);display:block;margin-bottom:var(--space-4)}
+    .animal-title{font-family:var(--font-family-display);font-size:clamp(2.5rem,8vw,4rem);margin-bottom:var(--space-2)}
+    .animal-latin{font-style:italic;font-size:var(--text-xl);opacity:0.9;margin-bottom:var(--space-4)}
+    .animal-tagline{font-size:var(--text-lg);max-width:600px;margin:0 auto;line-height:1.6}
+    .status-badge{display:inline-flex;align-items:center;gap:var(--space-2);background:rgba(239,68,68,0.3);padding:var(--space-2) var(--space-4);border-radius:var(--radius-full);font-weight:700;margin-top:var(--space-4)}
+    .quick-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:var(--space-4);margin:calc(-1*var(--space-12)) auto var(--space-12);max-width:900px;padding:0 var(--space-4);position:relative;z-index:2}
+    .stat-card{background:var(--color-white);padding:var(--space-5);border-radius:var(--radius-xl);box-shadow:var(--shadow-lg);text-align:center}
+    .stat-icon{font-size:2rem;margin-bottom:var(--space-2)}
+    .stat-value{font-family:var(--font-family-display);font-size:var(--text-2xl);color:var(--color-forest)}
+    .stat-label{font-size:var(--text-sm);color:var(--color-gray-600)}
+    .content-section{padding:var(--space-12) 0}
+    .content-section:nth-child(even){background:var(--color-cream)}
+    .section-header{text-align:center;margin-bottom:var(--space-8)}
+    .section-icon{font-size:3rem;margin-bottom:var(--space-3)}
+    .section-title{font-family:var(--font-family-display);font-size:var(--text-3xl);color:var(--color-forest)}
+    .fact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-6)}
+    .fact-card{background:var(--color-white);padding:var(--space-6);border-radius:var(--radius-xl);box-shadow:var(--shadow-md);border-left:4px solid #374151}
+    .fact-card h3{font-size:var(--text-lg);color:var(--color-gray-800);margin-bottom:var(--space-2)}
+    .fact-card p{color:var(--color-gray-600);line-height:1.6;margin:0}
+    .trek-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-6)}
+    .trek-card{background:var(--color-white);border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-lg)}
+    .trek-header{background:linear-gradient(135deg,var(--color-forest) 0%,#3d7a37 100%);padding:var(--space-5);color:white;text-align:center}
+    .trek-body{padding:var(--space-5)}
+    .trek-body p{color:var(--color-gray-600);line-height:1.6;margin-bottom:var(--space-3);font-size:var(--text-sm)}
+    .trek-stat{display:flex;justify-content:space-between;padding:var(--space-2) 0;border-top:1px solid var(--color-gray-100);font-size:var(--text-sm)}
+    .trek-label{color:var(--color-gray-500)}
+    .trek-value{font-weight:700;color:var(--color-forest)}
+    .highlight-box{background:linear-gradient(135deg,#fef3c7 0%,#fde68a 100%);padding:var(--space-8);border-radius:var(--radius-2xl);margin:var(--space-8) 0;text-align:center}
+    .highlight-box h3{font-family:var(--font-family-display);color:#92400e;margin-bottom:var(--space-4)}
+    .highlight-box p{color:var(--color-gray-700);line-height:1.7;max-width:700px;margin:0 auto}
+    .kids-corner{background:linear-gradient(135deg,#dbeafe 0%,#bfdbfe 100%);padding:var(--space-10);border-radius:var(--radius-2xl);margin:var(--space-8) 0}
+    .kids-corner h3{font-family:var(--font-family-display);font-size:var(--text-2xl);color:var(--color-gray-800);text-align:center;margin-bottom:var(--space-6)}
+    .kids-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--space-4)}
+    .kids-fact{background:var(--color-white);padding:var(--space-4);border-radius:var(--radius-xl);text-align:center;box-shadow:var(--shadow-md)}
+    .kids-fact-emoji{font-size:2.5rem;margin-bottom:var(--space-2)}
+    .kids-fact p{color:var(--color-gray-700);font-size:var(--text-sm);margin:0}
+    .cta-section{background:linear-gradient(135deg,var(--color-forest) 0%,#3d7a37 100%);padding:var(--space-16) 0;text-align:center;color:white}
+    .cta-section h2{font-family:var(--font-family-display);font-size:var(--text-3xl);margin-bottom:var(--space-4)}
+    .cta-buttons{display:flex;flex-wrap:wrap;gap:var(--space-4);justify-content:center;margin-top:var(--space-6)}
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="trust-bar"><div class="trust-bar-inner"><span>🏆 Trusted by 50,000+ families</span><span>✓ Expert-verified</span><span>🌍 Conservation-focused</span></div></div>
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="/" class="logo"><span class="logo-icon">🦁</span><span>WildlifeVacation</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <nav class="nav" id="main-nav"><ul class="nav-list"><li><a href="/" class="nav-link">Home</a></li><li><a href="/destinations/" class="nav-link">Destinations</a></li><li><a href="/animals/" class="nav-link nav-link--active">Animals</a></li><li><a href="/experiences/" class="nav-link">Experiences</a></li><li><a href="/about/" class="nav-link">About</a></li></ul></nav>
+      <div class="nav-overlay"></div>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="animal-hero">
+      <div class="container">
+        <span class="animal-emoji">🦍</span>
+        <h1 class="animal-title">Mountain Gorilla</h1>
+        <p class="animal-latin">Gorilla beringei beringei</p>
+        <p class="animal-tagline">One of humanity's closest relatives - gentle, intelligent giants living in the misty mountains of Central Africa. Meeting them face-to-face is one of Earth's most profound wildlife experiences.</p>
+        <div class="status-badge">⚠️ Conservation Status: Endangered (~1,063 remaining)</div>
+      </div>
+    </section>
+    <div class="quick-stats">
+      <div class="stat-card"><div class="stat-icon">📏</div><div class="stat-value">1.4-1.8m</div><div class="stat-label">Standing Height</div></div>
+      <div class="stat-card"><div class="stat-icon">⚖️</div><div class="stat-value">195kg</div><div class="stat-label">Male Weight</div></div>
+      <div class="stat-card"><div class="stat-icon">🧬</div><div class="stat-value">98%</div><div class="stat-label">DNA Shared with Humans</div></div>
+      <div class="stat-card"><div class="stat-icon">👨‍👩‍👧‍👦</div><div class="stat-value">5-30</div><div class="stat-label">Group Size</div></div>
+      <div class="stat-card"><div class="stat-icon">⏱️</div><div class="stat-value">35-40 yrs</div><div class="stat-label">Lifespan</div></div>
+      <div class="stat-card"><div class="stat-icon">🌍</div><div class="stat-value">~1,063</div><div class="stat-label">Wild Population</div></div>
+    </div>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">📚</div><h2 class="section-title">Fascinating Gorilla Facts</h2></header>
+        <div class="fact-grid">
+          <div class="fact-card"><h3>🧠 Remarkable Intelligence</h3><p>Gorillas use tools, solve problems, and express emotions like joy, grief, and empathy. They've been taught sign language and can learn hundreds of words. Each gorilla has unique fingerprints and nose prints!</p></div>
+          <div class="fact-card"><h3>👨‍👩‍👧‍👦 Family-Centered</h3><p>Gorilla groups are led by a dominant "silverback" male who protects the family. Mothers are devoted parents, nursing young for 3-4 years. Siblings play together, and adults groom each other to strengthen bonds.</p></div>
+          <div class="fact-card"><h3>🥬 Gentle Vegetarians</h3><p>Despite their strength, gorillas are peaceful herbivores eating leaves, shoots, and fruit. They spend about 30% of their day eating and can consume up to 40 pounds of vegetation daily!</p></div>
+          <div class="fact-card"><h3>🏔️ Mountain Dwellers</h3><p>Mountain gorillas live at elevations of 8,000-13,000 feet in misty cloud forests. Their thick, long fur helps them survive cold temperatures that can drop near freezing at night.</p></div>
+          <div class="fact-card"><h3>🛏️ Nest Builders</h3><p>Every evening, gorillas build fresh sleeping nests from vegetation - sometimes in trees, sometimes on the ground. They rarely sleep in the same nest twice! Even infants start practicing nest-building.</p></div>
+          <div class="fact-card"><h3>💪 The Silverback</h3><p>Adult males develop silver hair on their backs around age 12, earning the name "silverback." They're 10x stronger than humans and lead their families with mostly gentle authority, though they'll fiercely protect them if threatened.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">📍</div><h2 class="section-title">Where to See Mountain Gorillas</h2></header>
+        <div class="trek-grid">
+          <div class="trek-card">
+            <div class="trek-header"><h3>🇷🇼 Rwanda - Volcanoes National Park</h3></div>
+            <div class="trek-body">
+              <p>The most popular gorilla trekking destination, made famous by Dian Fossey's research. Excellent infrastructure, luxury lodges, and can be combined with Kigali city tours.</p>
+              <div class="trek-stat"><span class="trek-label">Permit Cost</span><span class="trek-value">$1,500</span></div>
+              <div class="trek-stat"><span class="trek-label">Gorilla Groups</span><span class="trek-value">12 habituated families</span></div>
+              <div class="trek-stat"><span class="trek-label">Best Time</span><span class="trek-value">Jun-Sep, Dec-Feb</span></div>
+              <div class="trek-stat"><span class="trek-label">Min. Age</span><span class="trek-value">15 years</span></div>
+            </div>
+          </div>
+          <div class="trek-card">
+            <div class="trek-header"><h3>🇺🇬 Uganda - Bwindi Impenetrable Forest</h3></div>
+            <div class="trek-body">
+              <p>Home to half the world's mountain gorillas! More affordable than Rwanda with equally incredible encounters. The forest is dense and treks can be challenging but rewarding.</p>
+              <div class="trek-stat"><span class="trek-label">Permit Cost</span><span class="trek-value">$700</span></div>
+              <div class="trek-stat"><span class="trek-label">Gorilla Groups</span><span class="trek-value">20+ habituated families</span></div>
+              <div class="trek-stat"><span class="trek-label">Best Time</span><span class="trek-value">Jun-Sep, Dec-Feb</span></div>
+              <div class="trek-stat"><span class="trek-label">Min. Age</span><span class="trek-value">15 years</span></div>
+            </div>
+          </div>
+          <div class="trek-card">
+            <div class="trek-header"><h3>🇨🇩 DR Congo - Virunga National Park</h3></div>
+            <div class="trek-body">
+              <p>The most affordable option in a stunning setting with active volcanoes. Check security situations before booking. Fewer tourists mean more intimate experiences.</p>
+              <div class="trek-stat"><span class="trek-label">Permit Cost</span><span class="trek-value">$400</span></div>
+              <div class="trek-stat"><span class="trek-label">Gorilla Groups</span><span class="trek-value">8 habituated families</span></div>
+              <div class="trek-stat"><span class="trek-label">Best Time</span><span class="trek-value">Jun-Sep</span></div>
+              <div class="trek-stat"><span class="trek-label">Min. Age</span><span class="trek-value">15 years</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="highlight-box">
+          <h3>⚠️ Important: Age Requirement</h3>
+          <p>Mountain gorilla trekking requires visitors to be at least 15 years old. This protects gorillas from human diseases (they're susceptible to our illnesses) and ensures visitors can handle the physically demanding hikes through dense forest at high altitude. For families with younger children, consider Uganda's chimpanzee trekking (age 12+) or gorilla sanctuary visits instead.</p>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <div class="kids-corner">
+          <h3>🧒 Kids' Corner: Gorilla Facts!</h3>
+          <div class="kids-facts">
+            <div class="kids-fact"><div class="kids-fact-emoji">🤝</div><p>Gorillas share 98% of their DNA with humans - they're one of our closest relatives!</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">😤</div><p>When gorillas beat their chests, they're not being mean - they're communicating! It can mean excitement, not just aggression.</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">👃</div><p>Every gorilla has a unique nose print - just like human fingerprints! Scientists use nose patterns to identify individuals.</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">😊</div><p>Gorillas laugh when they play! Their laugh sounds like a breathy chuckle - listen for it during playtime.</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">🌿</div><p>Gorillas eat 40 pounds of plants every day - that's like eating 160 salads!</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">😴</div><p>Gorillas make a new bed every single night from leaves and branches. They're nature's best nest builders!</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready for a Life-Changing Encounter?</h2>
+        <p>Meeting mountain gorillas in their misty forest home is one of Earth's most profound wildlife experiences. Start planning your trek today.</p>
+        <div class="cta-buttons">
+          <a href="/experiences/trekking/" class="btn btn--secondary">Gorilla Trekking Guide</a>
+          <a href="/contact/" class="btn btn--outline" style="border-color:white;color:white">Get Expert Advice</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p class="footer-copyright">© 2024 WildlifeVacation.com</p></div></div></footer>
+  <script>const navToggle=document.querySelector('.nav-toggle'),nav=document.querySelector('.nav'),navOverlay=document.querySelector('.nav-overlay');navToggle?.addEventListener('click',()=>{const isOpen=nav.classList.toggle('active');navToggle.classList.toggle('active');navOverlay.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);document.body.style.overflow=isOpen?'hidden':'';});navOverlay?.addEventListener('click',()=>navToggle.click());</script>
+</body>
+</html>

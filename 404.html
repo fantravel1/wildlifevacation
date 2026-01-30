@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Page Not Found | WildlifeVacation.com</title>
+  <meta name="description" content="Oops! This page seems to have migrated. Let's help you find your way back to amazing wildlife destinations.">
+  <meta name="robots" content="noindex, follow">
+
+  <meta name="theme-color" content="#2d5a27">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦁</text></svg>">
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .error-content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-8);
+      text-align: center;
+      background: linear-gradient(135deg, var(--color-cream) 0%, #fff 100%);
+    }
+    .error-inner {
+      max-width: 600px;
+    }
+    .error-icon {
+      font-size: 8rem;
+      margin-bottom: var(--space-4);
+      animation: wander 3s ease-in-out infinite;
+    }
+    @keyframes wander {
+      0%, 100% { transform: translateX(0) rotate(0deg); }
+      25% { transform: translateX(-20px) rotate(-5deg); }
+      75% { transform: translateX(20px) rotate(5deg); }
+    }
+    .error-code {
+      font-family: var(--font-family-display);
+      font-size: clamp(4rem, 15vw, 8rem);
+      color: var(--color-forest);
+      line-height: 1;
+      margin-bottom: var(--space-2);
+    }
+    .error-title {
+      font-size: var(--text-2xl);
+      color: var(--color-gray-800);
+      margin-bottom: var(--space-4);
+    }
+    .error-message {
+      font-size: var(--text-lg);
+      color: var(--color-gray-600);
+      margin-bottom: var(--space-8);
+      line-height: 1.6;
+    }
+    .error-suggestions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: var(--space-4);
+      margin-bottom: var(--space-8);
+    }
+    .suggestion-card {
+      background: var(--color-white);
+      padding: var(--space-4);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-md);
+      text-decoration: none;
+      color: var(--color-gray-800);
+      transition: all 0.2s ease;
+    }
+    .suggestion-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+    .suggestion-icon {
+      font-size: 2rem;
+      margin-bottom: var(--space-2);
+    }
+    .suggestion-label {
+      font-weight: 700;
+      font-size: var(--text-sm);
+    }
+    .search-box {
+      display: flex;
+      gap: var(--space-2);
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .search-input {
+      flex: 1;
+      padding: var(--space-3) var(--space-4);
+      border: 2px solid var(--color-gray-200);
+      border-radius: var(--radius-xl);
+      font-size: var(--text-base);
+    }
+    .search-input:focus {
+      outline: none;
+      border-color: var(--color-forest);
+    }
+    .fun-facts {
+      margin-top: var(--space-8);
+      padding: var(--space-6);
+      background: var(--color-white);
+      border-radius: var(--radius-2xl);
+      box-shadow: var(--shadow-sm);
+    }
+    .fun-facts h3 {
+      font-size: var(--text-lg);
+      color: var(--color-forest);
+      margin-bottom: var(--space-3);
+    }
+    .fun-facts p {
+      color: var(--color-gray-600);
+      font-size: var(--text-sm);
+      margin: 0;
+    }
+  </style>
+</head>
+<body class="error-page">
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="WildlifeVacation.com - Home">
+        <span class="logo-icon" aria-hidden="true">🦁</span>
+        <span>WildlifeVacation</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/destinations/" class="nav-link">Destinations</a></li>
+          <li><a href="/animals/" class="nav-link">Animals</a></li>
+          <li><a href="/experiences/" class="nav-link">Experiences</a></li>
+          <li><a href="/checklist/" class="nav-link">Checklist</a></li>
+          <li><a href="/about/" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-overlay" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main class="error-content" id="main-content">
+    <div class="error-inner">
+      <div class="error-icon" aria-hidden="true">🦒</div>
+      <div class="error-code">404</div>
+      <h1 class="error-title">This page seems to have migrated!</h1>
+      <p class="error-message">
+        Just like wildebeest crossing the Serengeti, sometimes pages move on.
+        Don't worry—we'll help you find your way back to the herd!
+      </p>
+
+      <div class="error-suggestions">
+        <a href="/" class="suggestion-card">
+          <div class="suggestion-icon">🏠</div>
+          <div class="suggestion-label">Home</div>
+        </a>
+        <a href="/destinations/" class="suggestion-card">
+          <div class="suggestion-icon">🌍</div>
+          <div class="suggestion-label">Destinations</div>
+        </a>
+        <a href="/animals/" class="suggestion-card">
+          <div class="suggestion-icon">🦁</div>
+          <div class="suggestion-label">Animals</div>
+        </a>
+        <a href="/experiences/" class="suggestion-card">
+          <div class="suggestion-icon">🚙</div>
+          <div class="suggestion-label">Experiences</div>
+        </a>
+        <a href="/checklist/" class="suggestion-card">
+          <div class="suggestion-icon">✅</div>
+          <div class="suggestion-label">Checklist</div>
+        </a>
+        <a href="/contact/" class="suggestion-card">
+          <div class="suggestion-icon">💬</div>
+          <div class="suggestion-label">Contact</div>
+        </a>
+      </div>
+
+      <div class="fun-facts">
+        <h3>🎓 While you're here, did you know?</h3>
+        <p id="fun-fact">Giraffes only need 5-30 minutes of sleep per day, and they often sleep standing up!</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p class="footer-copyright">© 2024 WildlifeVacation.com. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="/legal/privacy/">Privacy Policy</a>
+          <a href="/legal/terms/">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navigation toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    const navOverlay = document.querySelector('.nav-overlay');
+
+    function toggleNav() {
+      const isOpen = nav.classList.toggle('active');
+      navToggle.classList.toggle('active');
+      navOverlay.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+
+    navToggle.addEventListener('click', toggleNav);
+    navOverlay.addEventListener('click', toggleNav);
+
+    // Fun facts rotation
+    const funFacts = [
+      "Giraffes only need 5-30 minutes of sleep per day, and they often sleep standing up!",
+      "A group of flamingos is called a 'flamboyance'—and they can live up to 50 years!",
+      "Elephants are the only animals that can't jump, but they can swim for up to 6 hours!",
+      "A lion's roar can be heard from 5 miles away—that's louder than a rock concert!",
+      "Humpback whales sing songs that can last for hours and travel thousands of miles underwater!",
+      "Cheetahs can accelerate from 0 to 60 mph in just 3 seconds—faster than most sports cars!",
+      "Polar bears have black skin under their white fur to help absorb heat from the sun!",
+      "A group of owls is called a 'parliament'—very wise indeed!",
+      "Octopuses have three hearts and blue blood!",
+      "Koalas sleep up to 22 hours a day and have fingerprints almost identical to humans!"
+    ];
+
+    const factElement = document.getElementById('fun-fact');
+    if (factElement) {
+      const randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
+      factElement.textContent = randomFact;
+    }
+  </script>
+</body>
+</html>

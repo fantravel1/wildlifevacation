@@ -34,13 +34,27 @@
   </url>
 
   <url>
+    <loc>https://wildlifevacation.com/checklist/</loc>
+    <lastmod>2024-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://wildlifevacation.com/about/</loc>
     <lastmod>2024-01-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Destination Region Pages (Future) -->
+  <url>
+    <loc>https://wildlifevacation.com/contact/</loc>
+    <lastmod>2024-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Destination Region Pages -->
   <url>
     <loc>https://wildlifevacation.com/destinations/africa/</loc>
     <lastmod>2024-01-30</lastmod>
@@ -76,7 +90,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Specific Destination Pages (Future) -->
+  <!-- Specific Destination Pages -->
   <url>
     <loc>https://wildlifevacation.com/destinations/serengeti/</loc>
     <lastmod>2024-01-30</lastmod>
@@ -119,7 +133,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Experience Type Pages (Future) -->
+  <!-- Experience Type Pages -->
   <url>
     <loc>https://wildlifevacation.com/experiences/safari/</loc>
     <lastmod>2024-01-30</lastmod>
@@ -155,7 +169,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Animal Pages (Future) -->
+  <!-- Animal Pages -->
   <url>
     <loc>https://wildlifevacation.com/animals/african-lion/</loc>
     <lastmod>2024-01-30</lastmod>
@@ -191,15 +205,7 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Checklist Page (Future) -->
-  <url>
-    <loc>https://wildlifevacation.com/checklist/</loc>
-    <lastmod>2024-01-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Collection Pages (Future) -->
+  <!-- Collection Pages -->
   <url>
     <loc>https://wildlifevacation.com/collections/big-five/</loc>
     <lastmod>2024-01-30</lastmod>

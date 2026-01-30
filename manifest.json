@@ -1,0 +1,111 @@
+{
+  "name": "WildlifeVacation.com - Family Safari & Wildlife Travel Guide",
+  "short_name": "WildlifeVacation",
+  "description": "Plan unforgettable family wildlife vacations. Expert guides to safari destinations, animal encounters, and nature experiences worldwide.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffbeb",
+  "theme_color": "#2d5a27",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["travel", "lifestyle", "education"],
+  "icons": [
+    {
+      "src": "/images/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Destinations",
+      "short_name": "Destinations",
+      "description": "Explore wildlife destinations worldwide",
+      "url": "/destinations/",
+      "icons": [{ "src": "/images/icons/destinations-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Animals",
+      "short_name": "Animals",
+      "description": "Discover amazing wildlife species",
+      "url": "/animals/",
+      "icons": [{ "src": "/images/icons/animals-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Wildlife Checklist",
+      "short_name": "Checklist",
+      "description": "Track your wildlife sightings",
+      "url": "/checklist/",
+      "icons": [{ "src": "/images/icons/checklist-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get expert travel advice",
+      "url": "/contact/",
+      "icons": [{ "src": "/images/icons/contact-96x96.png", "sizes": "96x96" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/screenshots/homepage-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "WildlifeVacation Homepage"
+    },
+    {
+      "src": "/images/screenshots/homepage-narrow.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "WildlifeVacation Mobile"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

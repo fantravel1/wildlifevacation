@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bengal Tiger | India's Striped Icon | WildlifeVacation.com</title>
+  <meta name="description" content="Meet the Bengal Tiger - Asia's largest cat and India's national animal. Discover the best tiger reserves, safari tips, and conservation success stories for this magnificent predator.">
+  <link rel="canonical" href="https://wildlifevacation.com/animals/bengal-tiger/">
+  <meta name="theme-color" content="#2d5a27">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦁</text></svg>">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    .animal-hero{background:linear-gradient(135deg,#f97316 0%,#fb923c 100%);padding:var(--space-16) 0 var(--space-20);text-align:center;color:white}
+    .animal-emoji{font-size:clamp(4rem,12vw,8rem);display:block;margin-bottom:var(--space-4)}
+    .animal-title{font-family:var(--font-family-display);font-size:clamp(2.5rem,8vw,4rem);margin-bottom:var(--space-2)}
+    .animal-latin{font-style:italic;font-size:var(--text-xl);opacity:0.9;margin-bottom:var(--space-4)}
+    .animal-tagline{font-size:var(--text-lg);max-width:600px;margin:0 auto;line-height:1.6}
+    .status-badge{display:inline-flex;align-items:center;gap:var(--space-2);background:rgba(255,255,255,0.2);padding:var(--space-2) var(--space-4);border-radius:var(--radius-full);font-weight:700;margin-top:var(--space-4)}
+    .quick-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:var(--space-4);margin:calc(-1*var(--space-12)) auto var(--space-12);max-width:900px;padding:0 var(--space-4);position:relative;z-index:2}
+    .stat-card{background:var(--color-white);padding:var(--space-5);border-radius:var(--radius-xl);box-shadow:var(--shadow-lg);text-align:center}
+    .stat-icon{font-size:2rem;margin-bottom:var(--space-2)}
+    .stat-value{font-family:var(--font-family-display);font-size:var(--text-2xl);color:var(--color-forest)}
+    .stat-label{font-size:var(--text-sm);color:var(--color-gray-600)}
+    .content-section{padding:var(--space-12) 0}
+    .content-section:nth-child(even){background:var(--color-cream)}
+    .section-header{text-align:center;margin-bottom:var(--space-8)}
+    .section-icon{font-size:3rem;margin-bottom:var(--space-3)}
+    .section-title{font-family:var(--font-family-display);font-size:var(--text-3xl);color:var(--color-forest)}
+    .fact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-6)}
+    .fact-card{background:var(--color-white);padding:var(--space-6);border-radius:var(--radius-xl);box-shadow:var(--shadow-md);border-left:4px solid #f97316}
+    .fact-card h3{font-size:var(--text-lg);color:var(--color-gray-800);margin-bottom:var(--space-2)}
+    .fact-card p{color:var(--color-gray-600);line-height:1.6;margin:0}
+    .dest-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-6)}
+    .dest-card{background:var(--color-white);padding:var(--space-6);border-radius:var(--radius-xl);box-shadow:var(--shadow-md);border-left:4px solid #ea580c}
+    .dest-card h3{font-size:var(--text-lg);color:var(--color-gray-800);margin-bottom:var(--space-2)}
+    .dest-card p{color:var(--color-gray-600);line-height:1.6;margin-bottom:var(--space-2);font-size:var(--text-sm)}
+    .dest-card .season{font-weight:700;color:#c2410c;font-size:var(--text-sm)}
+    .success-box{background:linear-gradient(135deg,#dcfce7 0%,#bbf7d0 100%);padding:var(--space-8);border-radius:var(--radius-2xl);margin:var(--space-8) 0;text-align:center}
+    .success-box h3{font-family:var(--font-family-display);color:#166534;margin-bottom:var(--space-4)}
+    .success-box p{color:var(--color-gray-700);line-height:1.7;max-width:700px;margin:0 auto}
+    .kids-corner{background:linear-gradient(135deg,#ffedd5 0%,#fed7aa 100%);padding:var(--space-10);border-radius:var(--radius-2xl);margin:var(--space-8) 0}
+    .kids-corner h3{font-family:var(--font-family-display);font-size:var(--text-2xl);color:#c2410c;text-align:center;margin-bottom:var(--space-6)}
+    .kids-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--space-4)}
+    .kids-fact{background:var(--color-white);padding:var(--space-4);border-radius:var(--radius-xl);text-align:center;box-shadow:var(--shadow-md)}
+    .kids-fact-emoji{font-size:2.5rem;margin-bottom:var(--space-2)}
+    .kids-fact p{color:var(--color-gray-700);font-size:var(--text-sm);margin:0}
+    .cta-section{background:linear-gradient(135deg,var(--color-forest) 0%,#3d7a37 100%);padding:var(--space-16) 0;text-align:center;color:white}
+    .cta-section h2{font-family:var(--font-family-display);font-size:var(--text-3xl);margin-bottom:var(--space-4)}
+    .cta-buttons{display:flex;flex-wrap:wrap;gap:var(--space-4);justify-content:center;margin-top:var(--space-6)}
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="trust-bar"><div class="trust-bar-inner"><span>🏆 Trusted by 50,000+ families</span><span>✓ Expert-verified</span><span>🌍 Conservation-focused</span></div></div>
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="/" class="logo"><span class="logo-icon">🦁</span><span>WildlifeVacation</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <nav class="nav" id="main-nav"><ul class="nav-list"><li><a href="/" class="nav-link">Home</a></li><li><a href="/destinations/" class="nav-link">Destinations</a></li><li><a href="/animals/" class="nav-link nav-link--active">Animals</a></li><li><a href="/experiences/" class="nav-link">Experiences</a></li><li><a href="/about/" class="nav-link">About</a></li></ul></nav>
+      <div class="nav-overlay"></div>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="animal-hero">
+      <div class="container">
+        <span class="animal-emoji">🐅</span>
+        <h1 class="animal-title">Bengal Tiger</h1>
+        <p class="animal-latin">Panthera tigris tigris</p>
+        <p class="animal-tagline">The world's most numerous tiger subspecies and India's national animal - a powerful symbol of wild Asia. Seeing a tiger emerge from the forest is an unforgettable moment of pure magic.</p>
+        <div class="status-badge">⚠️ Conservation Status: Endangered (~3,000 in India)</div>
+      </div>
+    </section>
+    <div class="quick-stats">
+      <div class="stat-card"><div class="stat-icon">📏</div><div class="stat-value">2.7-3.1m</div><div class="stat-label">Length (with tail)</div></div>
+      <div class="stat-card"><div class="stat-icon">⚖️</div><div class="stat-value">220kg</div><div class="stat-label">Male Weight</div></div>
+      <div class="stat-card"><div class="stat-icon">🏃</div><div class="stat-value">65 km/h</div><div class="stat-label">Top Speed</div></div>
+      <div class="stat-card"><div class="stat-icon">🦷</div><div class="stat-value">10 cm</div><div class="stat-label">Canine Length</div></div>
+      <div class="stat-card"><div class="stat-icon">⏱️</div><div class="stat-value">10-15 yrs</div><div class="stat-label">Wild Lifespan</div></div>
+      <div class="stat-card"><div class="stat-icon">🇮🇳</div><div class="stat-value">~3,000</div><div class="stat-label">In India</div></div>
+    </div>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">📚</div><h2 class="section-title">Fascinating Tiger Facts</h2></header>
+        <div class="fact-grid">
+          <div class="fact-card"><h3>🎨 Unique Stripes</h3><p>Like human fingerprints, no two tigers have the same stripe pattern! Scientists use stripe patterns to identify individuals in the wild. Even the skin under the fur is striped.</p></div>
+          <div class="fact-card"><h3>🏊 Water Lovers</h3><p>Unlike most cats, tigers love water! They swim to cool off, cross rivers, and even hunt in water. They're powerful swimmers and have been recorded swimming several kilometers.</p></div>
+          <div class="fact-card"><h3>🌙 Night Hunters</h3><p>Tigers hunt mostly at night and can see 6 times better than humans in the dark. Their retinas have a special reflective layer that amplifies light - that's why their eyes glow in the dark!</p></div>
+          <div class="fact-card"><h3>📢 Mighty Roar</h3><p>A tiger's roar can be heard from 3 km away! They also make a friendly "prusten" sound (like a soft snort) when greeting other tigers - a sound they share with snow leopards.</p></div>
+          <div class="fact-card"><h3>🎯 Ambush Experts</h3><p>Tigers are ambush predators, stalking prey to within 10-25 meters before pouncing. Their stripes provide perfect camouflage in tall grass and dappled forest light.</p></div>
+          <div class="fact-card"><h3>🍖 Big Appetites</h3><p>A tiger can eat up to 40 kg of meat in one sitting - that's like eating 160 hamburgers! After a big meal, they may not eat again for several days.</p></div>
+        </div>
+        <div class="success-box">
+          <h3>🎉 Conservation Success Story!</h3>
+          <p>India's tiger population has increased from just 1,411 in 2006 to over 3,000 today - more than doubling in 15 years! This is thanks to dedicated conservation efforts, anti-poaching patrols, and protected tiger reserves. Your safari tourism directly supports this success by funding conservation programs.</p>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">📍</div><h2 class="section-title">Best Tiger Safari Destinations</h2></header>
+        <div class="dest-grid">
+          <div class="dest-card"><h3>🇮🇳 Ranthambore, India</h3><p>Famous for bold, day-active tigers that tolerate safari vehicles well. Ancient fort ruins create dramatic backdrops. One of the best parks for photography and first-time tiger safaris.</p><div class="season">Best: October-June (peak: Mar-May)</div></div>
+          <div class="dest-card"><h3>🇮🇳 Bandhavgarh, India</h3><p>One of India's highest tiger densities. The legendary tigress Sita made this park famous. Excellent sighting success rates and beautiful sal forest habitat.</p><div class="season">Best: October-June (peak: Apr-Jun)</div></div>
+          <div class="dest-card"><h3>🇮🇳 Kanha, India</h3><p>Inspiration for Kipling's "Jungle Book"! Large open meadows make spotting easier. Also home to the endangered barasingha (swamp deer) found nowhere else.</p><div class="season">Best: October-June (peak: Mar-May)</div></div>
+          <div class="dest-card"><h3>🇮🇳 Jim Corbett, India</h3><p>India's oldest national park, named after the famous conservationist. Beautiful Himalayan foothills setting. Elephants used for some safaris offer unique perspectives.</p><div class="season">Best: November-June (peak: Mar-May)</div></div>
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="container">
+        <div class="kids-corner">
+          <h3>🧒 Kids' Corner: Tiger Facts!</h3>
+          <div class="kids-facts">
+            <div class="kids-fact"><div class="kids-fact-emoji">🔢</div><p>Tigers are the largest wild cats in the world - even bigger than lions!</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">👅</div><p>A tiger's tongue is so rough it can lick paint off a wall and meat off bones!</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">🐾</div><p>Tigers can leap forward 10 meters in a single bound - that's about the length of a school bus!</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">👂</div><p>Tigers have white spots on the back of their ears called "eye spots" that may help cubs follow mom in tall grass!</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">🦁</div><p>Tigers and lions are so closely related they can have babies together - "ligers" (lion dad) and "tigons" (tiger dad)!</p></div>
+            <div class="kids-fact"><div class="kids-fact-emoji">😴</div><p>Tigers sleep up to 18 hours a day - they need lots of energy for hunting!</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready for a Tiger Safari?</h2>
+        <p>Experience the thrill of seeing a wild tiger emerge from the forest - one of nature's most electrifying moments.</p>
+        <div class="cta-buttons">
+          <a href="/experiences/safari/" class="btn btn--secondary">Safari Experiences</a>
+          <a href="/contact/" class="btn btn--outline" style="border-color:white;color:white">Plan Your Trip</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p class="footer-copyright">© 2024 WildlifeVacation.com</p></div></div></footer>
+  <script>const navToggle=document.querySelector('.nav-toggle'),nav=document.querySelector('.nav'),navOverlay=document.querySelector('.nav-overlay');navToggle?.addEventListener('click',()=>{const isOpen=nav.classList.toggle('active');navToggle.classList.toggle('active');navOverlay.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);document.body.style.overflow=isOpen?'hidden':'';});navOverlay?.addEventListener('click',()=>navToggle.click());</script>
+</body>
+</html>

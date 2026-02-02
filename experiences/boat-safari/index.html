@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boat Safari | River & Delta Wildlife Adventures | WildlifeVacation.com</title>
+  <meta name="description" content="Experience incredible boat safari adventures - explore rivers, deltas, and coastlines for unique wildlife encounters. From mokoro canoes to houseboats, discover hippos, crocodiles, elephants, and river dolphins from the water.">
+  <link rel="canonical" href="https://wildlifevacation.com/experiences/boat-safari/">
+  <meta property="og:title" content="Boat Safari | River & Delta Wildlife Adventures">
+  <meta property="og:description" content="Wildlife from the water - explore rivers, deltas, and coastlines for unique animal encounters. Discover the best boat safari destinations for families.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wildlifevacation.com/experiences/boat-safari/">
+  <meta name="theme-color" content="#0369a1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦁</text></svg>">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristAttraction",
+    "name": "Boat Safari Experiences",
+    "description": "Explore rivers, deltas, and coastlines on boat safaris for unique wildlife encounters including hippos, crocodiles, elephants, and river dolphins.",
+    "touristType": ["Family", "Nature Lovers", "Wildlife Enthusiasts"],
+    "isAccessibleForFree": false,
+    "availableLanguage": ["English"],
+    "publicAccess": true
+  }
+  </script>
+  <style>
+    .exp-hero { background: linear-gradient(135deg, #0284c7 0%, #0369a1 50%, #075985 100%); padding: var(--space-16) 0 var(--space-20); text-align: center; color: white; }
+    .exp-emoji { font-size: clamp(4rem, 12vw, 8rem); display: block; margin-bottom: var(--space-4); }
+    .exp-title { font-family: var(--font-family-display); font-size: clamp(2.5rem, 8vw, 4rem); margin-bottom: var(--space-4); }
+    .exp-tagline { font-size: var(--text-lg); max-width: 600px; margin: 0 auto; line-height: 1.6; }
+    .content-section { padding: var(--space-12) 0; }
+    .content-section:nth-child(even) { background: var(--color-cream); }
+    .section-header { text-align: center; margin-bottom: var(--space-8); }
+    .section-icon { font-size: 3rem; margin-bottom: var(--space-3); }
+    .section-title { font-family: var(--font-family-display); font-size: var(--text-3xl); color: var(--color-forest); }
+    .section-subtitle { font-size: var(--text-lg); color: var(--color-gray-600); max-width: 600px; margin: var(--space-2) auto 0; }
+    .boat-types { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); }
+    .boat-card { background: var(--color-white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); }
+    .boat-card-header { background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); padding: var(--space-6); color: white; text-align: center; }
+    .boat-card-emoji { font-size: 3rem; margin-bottom: var(--space-2); }
+    .boat-card-title { font-family: var(--font-family-display); font-size: var(--text-xl); }
+    .boat-card-body { padding: var(--space-6); }
+    .boat-card-body p { color: var(--color-gray-600); line-height: 1.6; margin-bottom: var(--space-4); }
+    .boat-card-details { font-size: var(--text-sm); }
+    .boat-card-detail { display: flex; justify-content: space-between; padding: var(--space-2) 0; border-bottom: 1px solid var(--color-gray-100); }
+    .boat-card-detail:last-child { border-bottom: none; }
+    .boat-card-label { color: var(--color-gray-500); }
+    .boat-card-value { font-weight: 700; color: #0369a1; }
+    .wildlife-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-5); }
+    .wildlife-card { background: var(--color-white); padding: var(--space-5); border-radius: var(--radius-xl); text-align: center; box-shadow: var(--shadow-md); }
+    .wildlife-card-emoji { font-size: 3rem; margin-bottom: var(--space-2); }
+    .wildlife-card-name { font-weight: 700; color: var(--color-gray-800); margin-bottom: var(--space-1); }
+    .wildlife-card-desc { font-size: var(--text-sm); color: var(--color-gray-600); }
+    .destination-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-5); }
+    .dest-card { background: var(--color-white); padding: var(--space-5); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); text-decoration: none; color: inherit; transition: transform 0.2s; }
+    .dest-card:hover { transform: translateY(-4px); }
+    .dest-card h3 { font-size: var(--text-lg); color: var(--color-gray-800); margin-bottom: var(--space-2); display: flex; align-items: center; gap: var(--space-2); }
+    .dest-card p { color: var(--color-gray-600); line-height: 1.5; margin: 0; font-size: var(--text-sm); }
+    .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); }
+    .tip-card { background: var(--color-white); padding: var(--space-6); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); border-left: 4px solid #0284c7; }
+    .tip-card h3 { font-size: var(--text-lg); color: var(--color-gray-800); margin-bottom: var(--space-2); }
+    .tip-card p { color: var(--color-gray-600); line-height: 1.6; margin: 0; font-size: var(--text-sm); }
+    .comparison-table { background: var(--color-white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); margin-top: var(--space-8); }
+    .comparison-table table { width: 100%; border-collapse: collapse; }
+    .comparison-table th { background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: white; padding: var(--space-4); text-align: left; font-weight: 700; }
+    .comparison-table td { padding: var(--space-4); border-bottom: 1px solid var(--color-gray-100); color: var(--color-gray-600); }
+    .comparison-table tr:last-child td { border-bottom: none; }
+    .comparison-table tr:hover { background: var(--color-cream); }
+    .comparison-table .boat-type { font-weight: 700; color: var(--color-gray-800); }
+    .kids-corner { background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); padding: var(--space-10); border-radius: var(--radius-2xl); margin: var(--space-8) 0; }
+    .kids-corner h3 { font-family: var(--font-family-display); font-size: var(--text-2xl); color: #0369a1; text-align: center; margin-bottom: var(--space-6); }
+    .kids-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-4); }
+    .kids-fact { background: var(--color-white); padding: var(--space-4); border-radius: var(--radius-xl); text-align: center; box-shadow: var(--shadow-md); }
+    .kids-fact-emoji { font-size: 2.5rem; margin-bottom: var(--space-2); }
+    .kids-fact p { color: var(--color-gray-700); font-size: var(--text-sm); margin: 0; }
+    .cta-section { background: linear-gradient(135deg, #0284c7 0%, #075985 100%); padding: var(--space-16) 0; text-align: center; color: white; }
+    .cta-section h2 { font-family: var(--font-family-display); font-size: var(--text-3xl); margin-bottom: var(--space-4); }
+    .cta-buttons { display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center; margin-top: var(--space-6); }
+    @media (max-width: 768px) {
+      .comparison-table { overflow-x: auto; }
+      .comparison-table table { min-width: 500px; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="trust-bar"><div class="trust-bar-inner"><span>🏆 Trusted by 50,000+ families</span><span>✓ Expert-verified</span><span>🌍 Conservation-focused</span></div></div>
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="/" class="logo"><span class="logo-icon">🦁</span><span>WildlifeVacation</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <nav class="nav" id="main-nav"><ul class="nav-list"><li><a href="/" class="nav-link">Home</a></li><li><a href="/destinations/" class="nav-link">Destinations</a></li><li><a href="/animals/" class="nav-link">Animals</a></li><li><a href="/experiences/" class="nav-link nav-link--active">Experiences</a></li><li><a href="/about/" class="nav-link">About</a></li></ul></nav>
+      <div class="nav-overlay"></div>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="exp-hero">
+      <div class="container">
+        <span class="exp-emoji">🚤</span>
+        <h1 class="exp-title">Boat Safari</h1>
+        <p class="exp-tagline">Wildlife from the Water - explore rivers, deltas, and coastlines for unique animal encounters. Glide silently past hippos, elephants, and crocodiles for an unforgettable perspective on nature.</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-icon">🛶</div>
+          <h2 class="section-title">Types of Boat Safaris</h2>
+          <p class="section-subtitle">Choose the perfect watercraft for your adventure</p>
+        </header>
+        <div class="boat-types">
+          <div class="boat-card">
+            <div class="boat-card-header">
+              <div class="boat-card-emoji">🛶</div>
+              <div class="boat-card-title">Mokoro (Dugout Canoe)</div>
+            </div>
+            <div class="boat-card-body">
+              <p>The traditional way to explore the Okavango Delta! Glide silently through lily-covered channels in a traditional dugout canoe poled by an expert guide. Get incredibly close to wildlife without disturbing them.</p>
+              <div class="boat-card-details">
+                <div class="boat-card-detail"><span class="boat-card-label">Best for</span><span class="boat-card-value">Quiet, intimate experiences</span></div>
+                <div class="boat-card-detail"><span class="boat-card-label">Capacity</span><span class="boat-card-value">2-3 passengers</span></div>
+                <div class="boat-card-detail"><span class="boat-card-label">Min. age</span><span class="boat-card-value">Usually 6+</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="boat-card">
+            <div class="boat-card-header">
+              <div class="boat-card-emoji">🚤</div>
+              <div class="boat-card-title">Motorboat / Speedboat</div>
+            </div>
+            <div class="boat-card-body">
+              <p>Cover more ground and reach remote areas quickly. Perfect for river cruises and getting to prime wildlife spots. Most common on larger rivers like the Chobe, Amazon, and Kinabatangan.</p>
+              <div class="boat-card-details">
+                <div class="boat-card-detail"><span class="boat-card-label">Best for</span><span class="boat-card-value">Covering large areas</span></div>
+                <div class="boat-card-detail"><span class="boat-card-label">Capacity</span><span class="boat-card-value">6-12 passengers</span></div>
+                <div class="boat-card-detail"><span class="boat-card-label">Min. age</span><span class="boat-card-value">None (with life jackets)</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="boat-card">
+            <div class="boat-card-header">
+              <div class="boat-card-emoji">🚢</div>
+              <div class="boat-card-title">River Cruise</div>
+            </div>
+            <div class="boat-card-body">
+              <p>Larger vessels offering comfortable wildlife viewing with amenities like shade, seating, and refreshments. Perfect for sunset cruises watching elephants drink at the river's edge.</p>
+              <div class="boat-card-details">
+                <div class="boat-card-detail"><span class="boat-card-label">Best for</span><span class="boat-card-value">Relaxed viewing, sunset trips</span></div>
+                <div class="boat-card-detail"><span class="boat-card-label">Capacity</span><span class="boat-card-value">12-30 passengers</span></div>
+                <div class="boat-card-detail"><span class="boat-card-label">Min. age</span><span class="boat-card-value">None</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="boat-card">
+            <div class="boat-card-header">
+              <div class="boat-card-emoji">🏠</div>
+              <div class="boat-card-title">Houseboat Safari</div>
+            </div>
+            <div class="boat-card-body">
+              <p>Live on the water for multiple days! Houseboats offer comfortable accommodations while you drift through wildlife-rich waterways. Explore by day, sleep under the stars at night.</p>
+              <div class="boat-card-details">
+                <div class="boat-card-detail"><span class="boat-card-label">Best for</span><span class="boat-card-value">Multi-day adventures</span></div>
+                <div class="boat-card-detail"><span class="boat-card-label">Capacity</span><span class="boat-card-value">4-10 passengers</span></div>
+                <div class="boat-card-detail"><span class="boat-card-label">Min. age</span><span class="boat-card-value">Varies by operator</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-icon">🦛</div>
+          <h2 class="section-title">Wildlife You'll Encounter</h2>
+          <p class="section-subtitle">Rivers and waterways attract incredible wildlife</p>
+        </header>
+        <div class="wildlife-grid">
+          <div class="wildlife-card">
+            <div class="wildlife-card-emoji">🦛</div>
+            <div class="wildlife-card-name">Hippos</div>
+            <div class="wildlife-card-desc">Watch pods surfacing and yawning from safe distance</div>
+          </div>
+          <div class="wildlife-card">
+            <div class="wildlife-card-emoji">🐊</div>
+            <div class="wildlife-card-name">Crocodiles</div>
+            <div class="wildlife-card-desc">Spot them basking on riverbanks and sandbanks</div>
+          </div>
+          <div class="wildlife-card">
+            <div class="wildlife-card-emoji">🐘</div>
+            <div class="wildlife-card-name">Elephants</div>
+            <div class="wildlife-card-desc">Herds drinking and swimming at water's edge</div>
+          </div>
+          <div class="wildlife-card">
+            <div class="wildlife-card-emoji">🦅</div>
+            <div class="wildlife-card-name">Water Birds</div>
+            <div class="wildlife-card-desc">Kingfishers, herons, eagles, and fish eagles</div>
+          </div>
+          <div class="wildlife-card">
+            <div class="wildlife-card-emoji">🐬</div>
+            <div class="wildlife-card-name">River Dolphins</div>
+            <div class="wildlife-card-desc">Pink dolphins in Amazon, Irrawaddy in Asia</div>
+          </div>
+          <div class="wildlife-card">
+            <div class="wildlife-card-emoji">🦦</div>
+            <div class="wildlife-card-name">Giant Otters</div>
+            <div class="wildlife-card-desc">Playful family groups fishing together</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-icon">🌍</div>
+          <h2 class="section-title">Top Boat Safari Destinations</h2>
+          <p class="section-subtitle">The world's best waterways for wildlife</p>
+        </header>
+        <div class="destination-grid">
+          <a href="/destinations/okavango-delta/" class="dest-card">
+            <h3>🇧🇼 Okavango Delta</h3>
+            <p>Botswana's jewel - explore by mokoro through crystal-clear channels. Elephants, hippos, and incredible birdlife. Best: May-Oct (flood season).</p>
+          </a>
+          <a href="/destinations/amazon/" class="dest-card">
+            <h3>🇧🇷 Amazon River</h3>
+            <p>The world's largest river system. Pink dolphins, caimans, giant otters, and incredible biodiversity. Best: Jun-Nov (dry season for wildlife).</p>
+          </a>
+          <div class="dest-card">
+            <h3>🇲🇾 Kinabatangan River</h3>
+            <p>Borneo's wildlife highway. Proboscis monkeys, pygmy elephants, orangutans, and hornbills right from your boat. Best: Mar-Oct.</p>
+          </div>
+          <div class="dest-card">
+            <h3>🇧🇼 Chobe River</h3>
+            <p>Africa's elephant capital! Massive herds come to drink and swim. Spectacular sunset cruises. Best: May-Oct (dry season).</p>
+          </div>
+          <div class="dest-card">
+            <h3>🇧🇷 Pantanal</h3>
+            <p>World's largest wetland and best place to see jaguars from a boat! Also caimans, capybara, and giant anteaters. Best: Jul-Oct.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-icon">⚖️</div>
+          <h2 class="section-title">Boat Types Compared</h2>
+          <p class="section-subtitle">Find the right boat for your family</p>
+        </header>
+        <div class="comparison-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Boat Type</th>
+                <th>Experience</th>
+                <th>Comfort</th>
+                <th>Wildlife Proximity</th>
+                <th>Best For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="boat-type">🛶 Mokoro</td>
+                <td>Silent, traditional, intimate</td>
+                <td>Basic - sit low</td>
+                <td>Excellent - very close</td>
+                <td>Couples, older children</td>
+              </tr>
+              <tr>
+                <td class="boat-type">🚤 Motorboat</td>
+                <td>Active, covers distance</td>
+                <td>Good - bench seating</td>
+                <td>Good - engines cut near wildlife</td>
+                <td>Families, day trips</td>
+              </tr>
+              <tr>
+                <td class="boat-type">🚢 River Cruise</td>
+                <td>Relaxed, social</td>
+                <td>Excellent - shade, drinks</td>
+                <td>Moderate - larger groups</td>
+                <td>All ages, sunset trips</td>
+              </tr>
+              <tr>
+                <td class="boat-type">🏠 Houseboat</td>
+                <td>Immersive, multi-day</td>
+                <td>Excellent - full amenities</td>
+                <td>Good - wake to wildlife</td>
+                <td>Extended adventures</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-icon">👨‍👩‍👧‍👦</div>
+          <h2 class="section-title">Family Tips for Boat Safaris</h2>
+        </header>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h3>🦺 Life Jackets First</h3>
+            <p>All reputable operators provide life jackets - ensure children wear them at all times. Check that kid-sized jackets are available when booking. Safety briefings are mandatory.</p>
+          </div>
+          <div class="tip-card">
+            <h3>⚓ Boat Stability</h3>
+            <p>Mokoros require sitting still - assess if young children can manage this. Motorboats and larger vessels are more stable. Ask operators about boat type before booking with toddlers.</p>
+          </div>
+          <div class="tip-card">
+            <h3>🦛 Close Encounters</h3>
+            <p>You'll get remarkably close to wildlife from water! Brief children on staying quiet and seated. The reward is incredible photo opportunities and unforgettable memories.</p>
+          </div>
+          <div class="tip-card">
+            <h3>📸 Photography Tips</h3>
+            <p>Keep cameras secure with wrist straps - water and electronics don't mix! Shoot from a low angle at water level for dramatic shots. Polarizing filters reduce glare.</p>
+          </div>
+          <div class="tip-card">
+            <h3>☀️ Sun Protection</h3>
+            <p>Water reflects sun intensely - apply waterproof sunscreen and bring hats. Choose boats with shade canopies for midday trips. Polarized sunglasses help spot underwater wildlife.</p>
+          </div>
+          <div class="tip-card">
+            <h3>🤫 Stay Quiet</h3>
+            <p>Silence is golden on boat safaris! The quieter you are, the closer wildlife will come. Make it a game - who can spot the most animals by staying silent?</p>
+          </div>
+        </div>
+        <div class="kids-corner">
+          <h3>🧒 Kids' Corner: River Wildlife Facts!</h3>
+          <div class="kids-facts">
+            <div class="kids-fact">
+              <div class="kids-fact-emoji">🦛</div>
+              <p>Hippos can hold their breath underwater for 5 minutes! They walk along the river bottom instead of swimming.</p>
+            </div>
+            <div class="kids-fact">
+              <div class="kids-fact-emoji">🐊</div>
+              <p>Crocodiles can go a whole year without eating! They're cold-blooded so don't need much energy.</p>
+            </div>
+            <div class="kids-fact">
+              <div class="kids-fact-emoji">🐬</div>
+              <p>Amazon pink dolphins turn pinker when excited! They use echolocation to find fish in murky water.</p>
+            </div>
+            <div class="kids-fact">
+              <div class="kids-fact-emoji">🦦</div>
+              <p>Giant otters can grow 6 feet long! They live in family groups and "talk" to each other with 22 different sounds.</p>
+            </div>
+            <div class="kids-fact">
+              <div class="kids-fact-emoji">🐘</div>
+              <p>Elephants are excellent swimmers and use their trunks as snorkels when crossing deep rivers!</p>
+            </div>
+            <div class="kids-fact">
+              <div class="kids-fact-emoji">🐟</div>
+              <p>Fish eagles can spot a fish underwater from 1 kilometer away! Their call is the iconic sound of African rivers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready for Your Boat Safari Adventure?</h2>
+        <p>Let us help you plan the perfect water-based wildlife experience - from choosing the right destination to finding family-friendly operators and the best boat type for your group.</p>
+        <div class="cta-buttons">
+          <a href="/contact/" class="btn btn--secondary">Plan Your Trip</a>
+          <a href="/destinations/" class="btn btn--outline" style="border-color:white;color:white">Explore Destinations</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p class="footer-copyright">© 2024 WildlifeVacation.com</p><div class="footer-legal"><a href="/legal/privacy/">Privacy</a><a href="/legal/terms/">Terms</a></div></div></div></footer>
+  <script>const navToggle=document.querySelector('.nav-toggle'),nav=document.querySelector('.nav'),navOverlay=document.querySelector('.nav-overlay');navToggle?.addEventListener('click',()=>{const isOpen=nav.classList.toggle('active');navToggle.classList.toggle('active');navOverlay.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);document.body.style.overflow=isOpen?'hidden':'';});navOverlay?.addEventListener('click',()=>navToggle.click());</script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wildlife Photography Tours | Photo Safaris & Workshops | WildlifeVacation.com</title>
+  <meta name="description" content="Master wildlife photography on dedicated photo safaris with expert guides. Learn lighting, composition, and animal behavior. Family-friendly workshops for all skill levels - from smartphones to DSLRs.">
+  <link rel="canonical" href="https://wildlifevacation.com/experiences/photography/">
+  <meta property="og:title" content="Wildlife Photography Tours | Capture the Wild">
+  <meta property="og:description" content="Dedicated photo safaris, hides, and workshops with specialist guides. Master wildlife photography with your family.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wildlifevacation.com/experiences/photography/">
+  <meta name="theme-color" content="#374151">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="wildlife photography, photo safari, photography tours, wildlife photography workshops, camera hides, nature photography, family photography trips">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦁</text></svg>">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "Wildlife Photography Tours",
+    "description": "Master wildlife photography on dedicated photo safaris with expert guides. Learn lighting, composition, and animal behavior.",
+    "touristType": ["Wildlife Enthusiasts", "Photographers", "Families"],
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "WildlifeVacation.com",
+      "url": "https://wildlifevacation.com"
+    },
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+  <style>
+    .exp-hero { background: linear-gradient(135deg, #374151 0%, #4b5563 50%, #6b7280 100%); padding: var(--space-16) 0 var(--space-20); text-align: center; color: white; }
+    .exp-emoji { font-size: clamp(4rem, 12vw, 8rem); display: block; margin-bottom: var(--space-4); }
+    .exp-title { font-family: var(--font-family-display); font-size: clamp(2.5rem, 8vw, 4rem); margin-bottom: var(--space-4); }
+    .exp-tagline { font-size: var(--text-lg); max-width: 600px; margin: 0 auto; line-height: 1.6; }
+    .content-section { padding: var(--space-12) 0; }
+    .content-section:nth-child(even) { background: var(--color-cream); }
+    .section-header { text-align: center; margin-bottom: var(--space-8); }
+    .section-icon { font-size: 3rem; margin-bottom: var(--space-3); }
+    .section-title { font-family: var(--font-family-display); font-size: var(--text-3xl); color: var(--color-forest); }
+    .section-subtitle { font-size: var(--text-lg); color: var(--color-gray-600); max-width: 600px; margin: var(--space-2) auto 0; }
+    .photo-types { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-6); }
+    .photo-card { background: var(--color-white); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); }
+    .photo-card-header { background: linear-gradient(135deg, #374151 0%, #4b5563 100%); padding: var(--space-6); color: white; text-align: center; }
+    .photo-card-emoji { font-size: 3rem; margin-bottom: var(--space-2); }
+    .photo-card-title { font-family: var(--font-family-display); font-size: var(--text-xl); }
+    .photo-card-body { padding: var(--space-6); }
+    .photo-card-body p { color: var(--color-gray-600); line-height: 1.6; margin-bottom: var(--space-4); }
+    .photo-card-details { font-size: var(--text-sm); }
+    .photo-card-detail { display: flex; justify-content: space-between; padding: var(--space-2) 0; border-bottom: 1px solid var(--color-gray-100); }
+    .photo-card-detail:last-child { border-bottom: none; }
+    .photo-card-label { color: var(--color-gray-500); }
+    .photo-card-value { font-weight: 700; color: #374151; }
+    .equipment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); }
+    .equipment-card { background: var(--color-white); padding: var(--space-6); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); border-left: 4px solid #4b5563; }
+    .equipment-card h3 { font-size: var(--text-lg); color: var(--color-gray-800); margin-bottom: var(--space-2); }
+    .equipment-card p { color: var(--color-gray-600); line-height: 1.6; margin: 0; font-size: var(--text-sm); }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
+    .skill-card { background: var(--color-white); padding: var(--space-5); border-radius: var(--radius-xl); text-align: center; box-shadow: var(--shadow-md); transition: transform 0.2s; }
+    .skill-card:hover { transform: translateY(-4px); }
+    .skill-emoji { font-size: 2.5rem; margin-bottom: var(--space-2); }
+    .skill-name { font-weight: 700; color: var(--color-gray-800); }
+    .skill-desc { font-size: var(--text-sm); color: var(--color-gray-500); margin-top: var(--space-1); }
+    .destinations-quick { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-4); }
+    .dest-quick-card { background: var(--color-white); padding: var(--space-5); border-radius: var(--radius-xl); text-align: center; text-decoration: none; color: inherit; box-shadow: var(--shadow-md); transition: transform 0.2s; }
+    .dest-quick-card:hover { transform: translateY(-4px); }
+    .dest-quick-emoji { font-size: 2.5rem; margin-bottom: var(--space-2); }
+    .dest-quick-name { font-weight: 700; color: var(--color-gray-800); }
+    .dest-quick-country { font-size: var(--text-sm); color: var(--color-gray-500); }
+    .dest-quick-highlight { font-size: var(--text-xs); color: #4b5563; margin-top: var(--space-1); font-weight: 600; }
+    .family-section { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); }
+    .family-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); }
+    .family-card { background: var(--color-white); padding: var(--space-6); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); }
+    .family-card h3 { font-size: var(--text-lg); color: var(--color-gray-800); margin-bottom: var(--space-2); }
+    .family-card p { color: var(--color-gray-600); line-height: 1.6; margin: 0; font-size: var(--text-sm); }
+    .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); }
+    .tip-card { background: var(--color-white); padding: var(--space-6); border-radius: var(--radius-xl); box-shadow: var(--shadow-md); border-left: 4px solid #6b7280; }
+    .tip-card h3 { font-size: var(--text-lg); color: var(--color-gray-800); margin-bottom: var(--space-2); }
+    .tip-card p { color: var(--color-gray-600); line-height: 1.6; margin: 0; font-size: var(--text-sm); }
+    .cta-section { background: linear-gradient(135deg, #374151 0%, #4b5563 100%); padding: var(--space-16) 0; text-align: center; color: white; }
+    .cta-section h2 { font-family: var(--font-family-display); font-size: var(--text-3xl); margin-bottom: var(--space-4); }
+    .cta-buttons { display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center; margin-top: var(--space-6); }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div class="trust-bar"><div class="trust-bar-inner"><span>🏆 Trusted by 50,000+ families</span><span>✓ Expert-verified</span><span>🌍 Conservation-focused</span></div></div>
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="/" class="logo"><span class="logo-icon">🦁</span><span>WildlifeVacation</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <nav class="nav" id="main-nav"><ul class="nav-list"><li><a href="/" class="nav-link">Home</a></li><li><a href="/destinations/" class="nav-link">Destinations</a></li><li><a href="/animals/" class="nav-link">Animals</a></li><li><a href="/experiences/" class="nav-link nav-link--active">Experiences</a></li><li><a href="/about/" class="nav-link">About</a></li></ul></nav>
+      <div class="nav-overlay"></div>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="exp-hero">
+      <div class="container">
+        <span class="exp-emoji">📷</span>
+        <h1 class="exp-title">Wildlife Photography</h1>
+        <p class="exp-tagline">Capture the Wild - master the art of wildlife photography on dedicated photo safaris. From beginner smartphone shots to professional-grade images, create lasting memories of incredible wildlife encounters.</p>
+      </div>
+    </section>
+
+    <!-- Photography Experience Types -->
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">🎯</div><h2 class="section-title">Types of Photography Experiences</h2><p class="section-subtitle">Find the perfect photography adventure for your skill level</p></header>
+        <div class="photo-types">
+          <div class="photo-card">
+            <div class="photo-card-header"><div class="photo-card-emoji">🚙</div><div class="photo-card-title">Photo Safaris</div></div>
+            <div class="photo-card-body">
+              <p>Dedicated game drives designed for photographers. Vehicles with camera mounts, beanbag supports, and optimal positioning for the best shots. Guides understand lighting and wait for the perfect moment.</p>
+              <div class="photo-card-details">
+                <div class="photo-card-detail"><span class="photo-card-label">Best for</span><span class="photo-card-value">All skill levels</span></div>
+                <div class="photo-card-detail"><span class="photo-card-label">Duration</span><span class="photo-card-value">Full day</span></div>
+                <div class="photo-card-detail"><span class="photo-card-label">Group size</span><span class="photo-card-value">4-6 photographers</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="photo-card">
+            <div class="photo-card-header"><div class="photo-card-emoji">🏠</div><div class="photo-card-title">Photography Hides</div></div>
+            <div class="photo-card-body">
+              <p>Concealed blinds at waterholes and feeding sites for intimate, eye-level shots. Get incredibly close to wildlife without disturbing them. Perfect for patient photographers seeking unique perspectives.</p>
+              <div class="photo-card-details">
+                <div class="photo-card-detail"><span class="photo-card-label">Best for</span><span class="photo-card-value">Intermediate to advanced</span></div>
+                <div class="photo-card-detail"><span class="photo-card-label">Duration</span><span class="photo-card-value">3-8 hours</span></div>
+                <div class="photo-card-detail"><span class="photo-card-label">Min. age</span><span class="photo-card-value">Usually 12+</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="photo-card">
+            <div class="photo-card-header"><div class="photo-card-emoji">📚</div><div class="photo-card-title">Photography Workshops</div></div>
+            <div class="photo-card-body">
+              <p>Learn from professional wildlife photographers. Classroom sessions on technique combined with field practice. Cover camera settings, composition, post-processing, and storytelling through images.</p>
+              <div class="photo-card-details">
+                <div class="photo-card-detail"><span class="photo-card-label">Best for</span><span class="photo-card-value">Beginners to intermediate</span></div>
+                <div class="photo-card-detail"><span class="photo-card-label">Duration</span><span class="photo-card-value">3-7 days</span></div>
+                <div class="photo-card-detail"><span class="photo-card-label">Group size</span><span class="photo-card-value">6-12 participants</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="photo-card">
+            <div class="photo-card-header"><div class="photo-card-emoji">🧑‍🏫</div><div class="photo-card-title">Specialist Photo Guides</div></div>
+            <div class="photo-card-body">
+              <p>One-on-one or small group guidance from expert wildlife photographers. Personalized instruction tailored to your equipment and goals. Learn species behavior to anticipate the perfect shot.</p>
+              <div class="photo-card-details">
+                <div class="photo-card-detail"><span class="photo-card-label">Best for</span><span class="photo-card-value">Serious photographers</span></div>
+                <div class="photo-card-detail"><span class="photo-card-label">Duration</span><span class="photo-card-value">Flexible</span></div>
+                <div class="photo-card-detail"><span class="photo-card-label">Customization</span><span class="photo-card-value">High</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Covered -->
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">🎓</div><h2 class="section-title">Skills You'll Master</h2><p class="section-subtitle">Essential techniques for stunning wildlife images</p></header>
+        <div class="skills-grid">
+          <div class="skill-card"><div class="skill-emoji">☀️</div><div class="skill-name">Lighting</div><div class="skill-desc">Golden hour magic, harsh light solutions, backlight techniques</div></div>
+          <div class="skill-card"><div class="skill-emoji">🖼️</div><div class="skill-name">Composition</div><div class="skill-desc">Rule of thirds, negative space, leading lines, framing</div></div>
+          <div class="skill-card"><div class="skill-emoji">🦁</div><div class="skill-name">Animal Behavior</div><div class="skill-desc">Predict movements, capture action, understand body language</div></div>
+          <div class="skill-card"><div class="skill-emoji">⏳</div><div class="skill-name">Patience</div><div class="skill-desc">Wait for the moment, persistence pays off, embrace the wait</div></div>
+          <div class="skill-card"><div class="skill-emoji">⚡</div><div class="skill-name">Camera Settings</div><div class="skill-desc">Shutter speed, aperture, ISO for action and portraits</div></div>
+          <div class="skill-card"><div class="skill-emoji">🎯</div><div class="skill-name">Focus Techniques</div><div class="skill-desc">Eye detection, tracking, back-button focus mastery</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipment Tips -->
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">🎒</div><h2 class="section-title">Essential Equipment Guide</h2><p class="section-subtitle">What to bring on your wildlife photography adventure</p></header>
+        <div class="equipment-grid">
+          <div class="equipment-card"><h3>📸 Cameras</h3><p>Any camera works - from smartphones to mirrorless to DSLRs. Fast autofocus and good high-ISO performance help, but technique matters more than gear. Bring backup batteries!</p></div>
+          <div class="equipment-card"><h3>🔭 Lenses</h3><p>Telephoto lenses (100-400mm or 200-600mm) are ideal. A versatile zoom like 70-200mm is great for larger animals. Don't forget a wide-angle for landscapes and environmental shots.</p></div>
+          <div class="equipment-card"><h3>🔩 Tripods & Supports</h3><p>Monopods work well in vehicles. Beanbags are essential for resting long lenses on vehicle doors. Lightweight travel tripods for hides and walking. Gimbal heads for heavy telephotos.</p></div>
+          <div class="equipment-card"><h3>💼 Camera Bags</h3><p>Dust-proof bags are crucial in Africa. Choose between backpacks for mobility or roller bags for equipment. Keep cameras accessible - wildlife won't wait! Bring lens cleaning supplies.</p></div>
+          <div class="equipment-card"><h3>💾 Memory & Storage</h3><p>Bring more cards than you think you need! Fast cards for burst shooting. Portable drives for backup. Consider a laptop for reviewing shots and freeing up cards.</p></div>
+          <div class="equipment-card"><h3>🔋 Power</h3><p>Pack multiple batteries and a good charger. Solar chargers for remote areas. Power banks for phones and smaller devices. Check lodge power availability beforehand.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Destinations -->
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">🌍</div><h2 class="section-title">Top Photography Destinations</h2><p class="section-subtitle">World-class locations for unforgettable wildlife images</p></header>
+        <div class="destinations-quick">
+          <a href="/destinations/masai-mara/" class="dest-quick-card"><div class="dest-quick-emoji">🦁</div><div class="dest-quick-name">Masai Mara</div><div class="dest-quick-country">Kenya</div><div class="dest-quick-highlight">Big cats & migration</div></a>
+          <a href="/destinations/pantanal/" class="dest-quick-card"><div class="dest-quick-emoji">🐆</div><div class="dest-quick-name">Pantanal</div><div class="dest-quick-country">Brazil</div><div class="dest-quick-highlight">Jaguars & wetlands</div></a>
+          <a href="/destinations/svalbard/" class="dest-quick-card"><div class="dest-quick-emoji">🐻‍❄️</div><div class="dest-quick-name">Svalbard</div><div class="dest-quick-country">Norway</div><div class="dest-quick-highlight">Polar bears & Arctic</div></a>
+          <a href="/destinations/yellowstone/" class="dest-quick-card"><div class="dest-quick-emoji">🐺</div><div class="dest-quick-name">Yellowstone</div><div class="dest-quick-country">USA</div><div class="dest-quick-highlight">Wolves & bison</div></a>
+          <a href="/destinations/galapagos/" class="dest-quick-card"><div class="dest-quick-emoji">🐢</div><div class="dest-quick-name">Galapagos</div><div class="dest-quick-country">Ecuador</div><div class="dest-quick-highlight">Fearless wildlife</div></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Family-Friendly Photography -->
+    <section class="content-section family-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">👨‍👩‍👧‍👦</div><h2 class="section-title">Family-Friendly Photography</h2><p class="section-subtitle">Creating memories together through the lens</p></header>
+        <div class="family-grid">
+          <div class="family-card"><h3>📱 Kids with Cameras</h3><p>Give children their own camera - even an old smartphone works! Kids notice different things than adults and often capture surprisingly creative shots. Set up a family photo competition with prizes!</p></div>
+          <div class="family-card"><h3>🤳 Phone Photography</h3><p>Modern smartphones take incredible wildlife photos. Use burst mode for action, portrait mode for close-ups, and apps for editing. No expensive gear required to capture amazing memories.</p></div>
+          <div class="family-card"><h3>🖼️ Memory Making</h3><p>Focus on experiences, not just technical perfection. Document your family's reactions to wildlife encounters. These candid shots often become the most treasured photos from the trip.</p></div>
+          <div class="family-card"><h3>📔 Photo Journals</h3><p>Let kids create their own wildlife photo journal. Print favorite shots during the trip if possible, or compile them into a book afterward. A wonderful way to relive the adventure.</p></div>
+          <div class="family-card"><h3>🎮 Gamify the Experience</h3><p>Create a photo scavenger hunt - birds in flight, animal babies, sunrise shots. Award points for different subjects. Keeps kids engaged and looking for wildlife!</p></div>
+          <div class="family-card"><h3>👀 Observation Skills</h3><p>Photography teaches kids to slow down and observe. They'll notice animal behavior, lighting changes, and small details. Skills that enhance every wildlife encounter.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pro Tips -->
+    <section class="content-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">💡</div><h2 class="section-title">Pro Tips for Wildlife Photography</h2></header>
+        <div class="tips-grid">
+          <div class="tip-card"><h3>🌅 Golden Hours Rule</h3><p>The best light is in the first and last hours of daylight. Plan your shooting around these times. Midday harsh light? Use it for silhouettes or find shade-dwelling subjects.</p></div>
+          <div class="tip-card"><h3>👁️ Focus on the Eyes</h3><p>Sharp eyes make or break wildlife portraits. Use eye-detection autofocus if available. A slightly soft body is fine if the eyes are tack sharp - that's where viewers connect.</p></div>
+          <div class="tip-card"><h3>📏 Get Low</h3><p>Eye-level or lower creates more intimate, professional-looking images. Lie on the ground when safe, use beanbags on vehicle floors, or find natural low vantage points.</p></div>
+          <div class="tip-card"><h3>🔄 Tell a Story</h3><p>Don't just capture portraits - document behavior, interactions, and environment. A sequence of images showing a hunt or family interaction tells a compelling story.</p></div>
+          <div class="tip-card"><h3>⚡ Anticipate Action</h3><p>Learn animal behavior to predict what happens next. A lion's yawn, an elephant's ear flap, a bird's pre-flight crouch - these cues help you capture the decisive moment.</p></div>
+          <div class="tip-card"><h3>🎨 Embrace Negative Space</h3><p>Don't always zoom in tight. Leave room for the animal to "move into" the frame. Environmental portraits showing habitat can be more powerful than close-ups.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to Capture the Wild?</h2>
+        <p>Let us help you plan the perfect wildlife photography adventure for your family - from choosing the right destination to finding expert photo guides.</p>
+        <div class="cta-buttons">
+          <a href="/contact/" class="btn btn--secondary">Plan Your Photo Safari</a>
+          <a href="/destinations/" class="btn btn--outline" style="border-color:white;color:white">Explore Destinations</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container"><div class="footer-bottom"><p class="footer-copyright">© 2024 WildlifeVacation.com</p><div class="footer-legal"><a href="/legal/privacy/">Privacy</a><a href="/legal/terms/">Terms</a></div></div></div></footer>
+  <script>const navToggle=document.querySelector('.nav-toggle'),nav=document.querySelector('.nav'),navOverlay=document.querySelector('.nav-overlay');navToggle?.addEventListener('click',()=>{const isOpen=nav.classList.toggle('active');navToggle.classList.toggle('active');navOverlay.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);document.body.style.overflow=isOpen?'hidden':'';});navOverlay?.addEventListener('click',()=>navToggle.click());</script>
+</body>
+</html>

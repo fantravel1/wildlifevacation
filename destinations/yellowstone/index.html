@@ -129,7 +129,9 @@
 
   <style>
     .hero {
-      background: linear-gradient(135deg, #365314 0%, #3f6212 50%, #84cc16 100%);
+      background: linear-gradient(rgba(54, 83, 20, 0.7), rgba(63, 98, 18, 0.8)), url('https://images.unsplash.com/photo-1531722569936-825d3dd91b15?w=1920&q=80');
+      background-size: cover;
+      background-position: center;
     }
     .quick-facts {
       display: grid;
@@ -263,6 +265,39 @@
       padding: var(--space-6);
       border-left: 4px solid #10b981;
     }
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-6);
+      margin-top: var(--space-6);
+    }
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius-2xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-item:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-xl);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+      color: white;
+      padding: var(--space-6) var(--space-4) var(--space-4);
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
@@ -343,6 +378,31 @@
           <span class="verification-badge" style="background: rgba(255,255,255,0.95); color: #365314; padding: var(--space-2) var(--space-4); font-size: var(--text-sm);">
             <span aria-hidden="true">👨‍👩‍👧‍👦</span> Family Friendly
           </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="section" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Photo Gallery</span>
+          <h2 id="gallery-heading" class="section-title">Yellowstone in Pictures</h2>
+          <p class="section-subtitle">Experience the wild beauty of America's first national park</p>
+        </div>
+        <div class="image-gallery">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1533167649158-6d508895b680?w=800&q=80" alt="Bison herd grazing in Yellowstone's Lamar Valley" loading="lazy">
+            <div class="gallery-caption">Bison Herd in Lamar Valley</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1563299796-17596ed6b017?w=800&q=80" alt="Grand Prismatic Spring with vibrant rainbow colors" loading="lazy">
+            <div class="gallery-caption">Grand Prismatic Spring</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1591213954196-2d0ccb3f8d4c?w=800&q=80" alt="Old Faithful geyser erupting" loading="lazy">
+            <div class="gallery-caption">Old Faithful Geyser</div>
+          </div>
         </div>
       </div>
     </section>

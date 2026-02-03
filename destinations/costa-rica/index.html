@@ -38,7 +38,7 @@
   }
   </script>
   <style>
-    .region-hero { background: linear-gradient(135deg, #047857 0%, #065f46 50%, #14532d 100%); padding: var(--space-16) 0 var(--space-20); text-align: center; color: white; }
+    .region-hero { background: linear-gradient(135deg, rgba(4, 120, 87, 0.85) 0%, rgba(6, 95, 70, 0.85) 50%, rgba(21, 83, 45, 0.85) 100%), url('https://images.unsplash.com/photo-1518259102261-b40117eabbc9?w=1920&q=80'); background-size: cover; background-position: center; padding: var(--space-16) 0 var(--space-20); text-align: center; color: white; }
     .region-emoji { font-size: clamp(4rem, 12vw, 8rem); display: block; margin-bottom: var(--space-4); }
     .region-title { font-family: var(--font-family-display); font-size: clamp(2.5rem, 8vw, 4rem); margin-bottom: var(--space-4); }
     .region-tagline { font-size: var(--text-lg); max-width: 650px; margin: 0 auto; line-height: 1.6; }
@@ -94,6 +94,11 @@
     .cta-section { background: linear-gradient(135deg, #047857 0%, #065f46 100%); padding: var(--space-16) 0; text-align: center; color: white; }
     .cta-section h2 { font-family: var(--font-family-display); font-size: var(--text-3xl); margin-bottom: var(--space-4); }
     .cta-buttons { display: flex; flex-wrap: wrap; gap: var(--space-4); justify-content: center; margin-top: var(--space-6); }
+    .image-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); margin-top: var(--space-8); }
+    .gallery-item { position: relative; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); aspect-ratio: 4/3; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+    .gallery-item:hover img { transform: scale(1.05); }
+    .gallery-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.7)); padding: var(--space-4); color: white; font-weight: 600; }
     @media (max-width: 640px) {
       .quick-facts { grid-template-columns: repeat(2, 1fr); }
       .wildlife-grid { grid-template-columns: repeat(2, 1fr); }
@@ -144,6 +149,22 @@
         <div class="highlight-box">
           <h3>🌟 Eco-Tourism Pioneer</h3>
           <p>Costa Rica abolished its army in 1948 and invested in conservation instead. Today, over 25% of the country is protected land, and it generates nearly 100% of its electricity from renewable sources. When you visit Costa Rica, your tourism dollars directly support one of the world's most successful conservation models. This is eco-tourism done right!</p>
+        </div>
+
+        <!-- Image Gallery -->
+        <div class="image-gallery">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=800&q=80" alt="Sloth hanging in Costa Rican rainforest" loading="lazy">
+            <div class="gallery-caption">Sloth in the Rainforest</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80" alt="Colorful toucan in Costa Rica" loading="lazy">
+            <div class="gallery-caption">Tropical Toucan</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=800&q=80" alt="Lush Costa Rican rainforest" loading="lazy">
+            <div class="gallery-caption">Pristine Rainforest</div>
+          </div>
         </div>
       </div>
     </section>

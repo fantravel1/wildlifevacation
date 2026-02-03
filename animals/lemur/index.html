@@ -137,7 +137,10 @@
 
   <style>
     .animal-hero {
-      background: linear-gradient(135deg, #ea580c 0%, #c2410c 50%, #9a3412 100%);
+      background: linear-gradient(135deg, rgba(234, 88, 12, 0.85) 0%, rgba(194, 65, 12, 0.9) 50%, rgba(154, 52, 18, 0.95) 100%),
+                  url('https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=1920&q=80');
+      background-size: cover;
+      background-position: center;
       padding: var(--space-16) 0 var(--space-20);
       position: relative;
       overflow: hidden;
@@ -151,6 +154,50 @@
       bottom: 0;
       background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
       opacity: 0.5;
+    }
+
+    /* Photo Gallery Styles */
+    .photo-gallery {
+      padding: var(--space-12) 0;
+      background: var(--color-cream);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--space-4);
+      margin-top: var(--space-8);
+    }
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      box-shadow: var(--shadow-md);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-item:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-xl);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: var(--space-4);
+      background: linear-gradient(transparent, rgba(0,0,0,0.7));
+      color: var(--color-white);
+      font-weight: 600;
+      font-size: var(--text-sm);
     }
     .animal-hero-content {
       position: relative;
@@ -746,6 +793,31 @@
           </blockquote>
           <cite>Dr. Patricia Wright</cite>
           <div class="expert-title">Primatologist & Founder, Centre ValBio Madagascar</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="photo-gallery">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-icon">📸</div>
+          <h2 class="section-title">Lemur Photo Gallery</h2>
+          <p class="section-subtitle">Beautiful images of Madagascar's unique primates</p>
+        </header>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=600&q=80" alt="Ring-tailed lemur with distinctive black and white striped tail" loading="lazy">
+            <div class="gallery-caption">Ring-tailed Lemur</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1580855733764-084b90411a7e?w=600&q=80" alt="Close-up portrait of a lemur with striking orange eyes" loading="lazy">
+            <div class="gallery-caption">Lemur Portrait</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?w=600&q=80" alt="Lemur leaping between trees in Madagascar forest" loading="lazy">
+            <div class="gallery-caption">Lemur Jumping</div>
+          </div>
         </div>
       </div>
     </section>

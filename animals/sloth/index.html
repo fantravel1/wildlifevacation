@@ -137,7 +137,10 @@
 
   <style>
     .animal-hero {
-      background: linear-gradient(135deg, #047857 0%, #065f46 50%, #064e3b 100%);
+      background: linear-gradient(135deg, rgba(4, 120, 87, 0.85) 0%, rgba(6, 95, 70, 0.9) 50%, rgba(6, 78, 59, 0.95) 100%),
+                  url('https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=1920&q=80');
+      background-size: cover;
+      background-position: center;
       padding: var(--space-16) 0 var(--space-20);
       position: relative;
       overflow: hidden;
@@ -151,6 +154,50 @@
       bottom: 0;
       background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
       opacity: 0.5;
+    }
+
+    /* Photo Gallery Styles */
+    .photo-gallery {
+      padding: var(--space-12) 0;
+      background: var(--color-cream);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--space-4);
+      margin-top: var(--space-8);
+    }
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      box-shadow: var(--shadow-md);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-item:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-xl);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: var(--space-4);
+      background: linear-gradient(transparent, rgba(0,0,0,0.7));
+      color: var(--color-white);
+      font-weight: 600;
+      font-size: var(--text-sm);
     }
     .animal-hero-content {
       position: relative;
@@ -746,6 +793,31 @@
           </blockquote>
           <cite>Dr. Rebecca Cliffe</cite>
           <div class="expert-title">Sloth Conservation Foundation Founder</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="photo-gallery">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-icon">📸</div>
+          <h2 class="section-title">Sloth Photo Gallery</h2>
+          <p class="section-subtitle">Adorable images of nature's slow-motion experts</p>
+        </header>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1577936111794-e74c47ac3478?w=600&q=80" alt="Sloth hanging from tree branch in rainforest canopy" loading="lazy">
+            <div class="gallery-caption">Sloth Hanging</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1579169326371-b1ae5ed44aa4?w=600&q=80" alt="Peaceful sloth sleeping curled up on a branch" loading="lazy">
+            <div class="gallery-caption">Sloth Sleeping</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1557178985-891ca9b9b01c?w=600&q=80" alt="Close-up of sloth face showing its adorable smile" loading="lazy">
+            <div class="gallery-caption">Sloth Close-up</div>
+          </div>
         </div>
       </div>
     </section>

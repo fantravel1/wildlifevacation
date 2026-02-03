@@ -15,7 +15,13 @@
   <link rel="manifest" href="/manifest.json">
   <link rel="stylesheet" href="/css/styles.css">
   <style>
-    .exp-hero { background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%); padding: var(--space-16) 0 var(--space-20); text-align: center; color: white; }
+    .exp-hero { background: linear-gradient(135deg, rgba(3,105,161,0.85) 0%, rgba(2,132,199,0.85) 100%), url('https://images.unsplash.com/photo-1568430462989-44163eb1752f?w=1920&q=80'); background-size: cover; background-position: center; padding: var(--space-16) 0 var(--space-20); text-align: center; color: white; }
+    .gallery-section { padding: var(--space-12) 0; background: var(--color-white); }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-6); }
+    .gallery-item { position: relative; border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 4/3; box-shadow: var(--shadow-lg); }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+    .gallery-item:hover img { transform: scale(1.05); }
+    .gallery-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: var(--space-4); background: linear-gradient(transparent, rgba(0,0,0,0.7)); color: white; font-weight: 600; }
     .exp-emoji { font-size: clamp(4rem, 12vw, 8rem); display: block; margin-bottom: var(--space-4); }
     .exp-title { font-family: var(--font-family-display); font-size: clamp(2.5rem, 8vw, 4rem); margin-bottom: var(--space-4); }
     .exp-tagline { font-size: var(--text-lg); max-width: 600px; margin: 0 auto; line-height: 1.6; }
@@ -72,6 +78,25 @@
         <span class="exp-emoji">🐋</span>
         <h1 class="exp-title">Whale Watching</h1>
         <p class="exp-tagline">Witness the gentle giants of the ocean - from breaching humpbacks to majestic blue whales. Whale watching offers unforgettable wildlife encounters that awe visitors of all ages.</p>
+      </div>
+    </section>
+    <section class="gallery-section">
+      <div class="container">
+        <header class="section-header"><div class="section-icon">📸</div><h2 class="section-title">Whale Watching Gallery</h2></header>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1570913149827-d2ac84ab3f9a?w=800&q=80" alt="Humpback whale breaching out of the ocean" loading="lazy">
+            <div class="gallery-caption">Whale Breaching</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1454991727061-be514eae86f7?w=800&q=80" alt="Whale tail fluke above the water" loading="lazy">
+            <div class="gallery-caption">Whale Tail Fluke</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1517627043994-b991bbe62f47?w=800&q=80" alt="Whale watching boat on the ocean" loading="lazy">
+            <div class="gallery-caption">Whale Watching Boat</div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="content-section">

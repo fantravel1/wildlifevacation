@@ -137,7 +137,10 @@
 
   <style>
     .animal-hero {
-      background: linear-gradient(135deg, #c2410c 0%, #9a3412 50%, #7c2d12 100%);
+      background: linear-gradient(135deg, rgba(194, 65, 12, 0.85) 0%, rgba(154, 52, 18, 0.9) 50%, rgba(124, 45, 18, 0.95) 100%),
+                  url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1920&q=80');
+      background-size: cover;
+      background-position: center;
       padding: var(--space-16) 0 var(--space-20);
       position: relative;
       overflow: hidden;
@@ -151,6 +154,50 @@
       bottom: 0;
       background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
       opacity: 0.5;
+    }
+
+    /* Photo Gallery Styles */
+    .photo-gallery {
+      padding: var(--space-12) 0;
+      background: var(--color-cream);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--space-4);
+      margin-top: var(--space-8);
+    }
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      box-shadow: var(--shadow-md);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery-item:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-xl);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: var(--space-4);
+      background: linear-gradient(transparent, rgba(0,0,0,0.7));
+      color: var(--color-white);
+      font-weight: 600;
+      font-size: var(--text-sm);
     }
     .animal-hero-content {
       position: relative;
@@ -746,6 +793,31 @@
           </blockquote>
           <cite>Dr. Terence Dawson</cite>
           <div class="expert-title">Marsupial Biologist & Author of "Kangaroos"</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="photo-gallery">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-icon">📸</div>
+          <h2 class="section-title">Kangaroo Photo Gallery</h2>
+          <p class="section-subtitle">Stunning images of Australia's iconic marsupials</p>
+        </header>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1574870111867-089730e5a72b?w=600&q=80" alt="Kangaroo mid-jump bounding across Australian outback" loading="lazy">
+            <div class="gallery-caption">Kangaroo Jumping</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1580910365203-91ea9115a319?w=600&q=80" alt="Mother kangaroo with joey peeking out of her pouch" loading="lazy">
+            <div class="gallery-caption">Kangaroo with Joey</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1585916420730-d7f95e942d43?w=600&q=80" alt="Silhouette of kangaroo against orange Australian sunset" loading="lazy">
+            <div class="gallery-caption">Kangaroo at Sunset</div>
+          </div>
         </div>
       </div>
     </section>

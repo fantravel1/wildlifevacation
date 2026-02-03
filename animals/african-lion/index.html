@@ -137,7 +137,13 @@
 
   <style>
     .animal-hero {
-      background: linear-gradient(135deg, #d4a84b 0%, #c49a3d 50%, #b8902f 100%);
+      background:
+        linear-gradient(135deg, rgba(212, 168, 75, 0.85) 0%, rgba(196, 154, 61, 0.8) 50%, rgba(184, 144, 47, 0.85) 100%),
+        url('https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: #d4a84b; /* Fallback color */
       padding: var(--space-16) 0 var(--space-20);
       position: relative;
       overflow: hidden;
@@ -150,7 +156,7 @@
       right: 0;
       bottom: 0;
       background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-      opacity: 0.5;
+      opacity: 0.3;
     }
     .animal-hero-content {
       position: relative;
@@ -226,6 +232,57 @@
     .stat-label {
       font-size: var(--text-sm);
       color: var(--color-gray-600);
+      font-weight: 600;
+    }
+
+    /* Image Gallery */
+    .image-gallery {
+      padding: var(--space-8) 0 var(--space-12);
+    }
+    .gallery-header {
+      text-align: center;
+      margin-bottom: var(--space-6);
+    }
+    .gallery-title {
+      font-family: var(--font-family-display);
+      font-size: var(--text-2xl);
+      color: var(--color-forest);
+      margin-bottom: var(--space-2);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--space-4);
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 var(--space-4);
+    }
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      aspect-ratio: 4/3;
+      background-color: var(--color-gray-200);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.7));
+      color: var(--color-white);
+      padding: var(--space-6) var(--space-4) var(--space-4);
+      font-size: var(--text-sm);
       font-weight: 600;
     }
 
@@ -306,10 +363,48 @@
       padding: var(--space-6);
       color: var(--color-white);
       text-align: center;
+      min-height: 140px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .destination-header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+      z-index: 1;
+    }
+    .destination-header > * {
+      position: relative;
+      z-index: 2;
+    }
+    .destination-header--masai-mara {
+      background-image: url('https://images.unsplash.com/photo-1547970810-dc1eac37d174?w=600&q=80');
+      background-color: #3d5a3d;
+    }
+    .destination-header--serengeti {
+      background-image: url('https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&q=80');
+      background-color: #3d5a3d;
+    }
+    .destination-header--kruger {
+      background-image: url('https://images.unsplash.com/photo-1535083783855-76ae62b2914e?w=600&q=80');
+      background-color: #3d5a3d;
+    }
+    .destination-header--okavango {
+      background-image: url('https://images.unsplash.com/photo-1568393691622-c7ba131d63b4?w=600&q=80');
+      background-color: #3d5a3d;
     }
     .destination-emoji {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: var(--space-2);
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
     .destination-name {
       font-family: var(--font-family-display);
@@ -704,6 +799,35 @@
       </div>
     </div>
 
+    <!-- Image Gallery -->
+    <section class="image-gallery">
+      <div class="container">
+        <header class="gallery-header">
+          <h2 class="gallery-title">Lions in the Wild</h2>
+        </header>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?w=800&q=80"
+                 alt="A lion pride resting together on the African savanna"
+                 loading="lazy">
+            <div class="gallery-caption">Pride at Rest</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1534188753412-3e26d0d618d6?w=800&q=80"
+                 alt="Majestic male lion portrait showing full mane"
+                 loading="lazy">
+            <div class="gallery-caption">Male Lion Portrait</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1552410260-0fd9e8f4e3c2?w=800&q=80"
+                 alt="Lioness stalking prey during a hunt on the savanna"
+                 loading="lazy">
+            <div class="gallery-caption">Lioness on the Hunt</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Fascinating Facts -->
     <section class="content-section">
       <div class="container">
@@ -761,7 +885,7 @@
 
         <div class="destinations-grid">
           <a href="/destinations/masai-mara/" class="destination-card">
-            <div class="destination-header">
+            <div class="destination-header destination-header--masai-mara">
               <div class="destination-emoji">🦁</div>
               <div class="destination-name">Masai Mara</div>
               <div class="destination-country">Kenya</div>
@@ -787,7 +911,7 @@
           </a>
 
           <a href="/destinations/serengeti/" class="destination-card">
-            <div class="destination-header">
+            <div class="destination-header destination-header--serengeti">
               <div class="destination-emoji">🌅</div>
               <div class="destination-name">Serengeti</div>
               <div class="destination-country">Tanzania</div>
@@ -813,7 +937,7 @@
           </a>
 
           <a href="/destinations/kruger/" class="destination-card">
-            <div class="destination-header">
+            <div class="destination-header destination-header--kruger">
               <div class="destination-emoji">🇿🇦</div>
               <div class="destination-name">Kruger National Park</div>
               <div class="destination-country">South Africa</div>
@@ -839,7 +963,7 @@
           </a>
 
           <a href="/destinations/okavango-delta/" class="destination-card">
-            <div class="destination-header">
+            <div class="destination-header destination-header--okavango">
               <div class="destination-emoji">💧</div>
               <div class="destination-name">Okavango Delta</div>
               <div class="destination-country">Botswana</div>

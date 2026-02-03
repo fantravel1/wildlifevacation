@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
   <style>
-    .animal-hero{background:linear-gradient(135deg,#78716c 0%,#a8a29e 100%);padding:var(--space-16) 0 var(--space-20);text-align:center;color:white}
+    .animal-hero{background:linear-gradient(135deg,rgba(120,113,108,0.85) 0%,rgba(168,162,158,0.85) 100%),url('https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?w=1920&q=80');background-size:cover;background-position:center;padding:var(--space-16) 0 var(--space-20);text-align:center;color:white}
     .animal-emoji{font-size:clamp(4rem,12vw,8rem);display:block;margin-bottom:var(--space-4)}
     .animal-title{font-family:var(--font-family-display);font-size:clamp(2.5rem,8vw,4rem);margin-bottom:var(--space-2)}
     .animal-latin{font-style:italic;font-size:var(--text-xl);opacity:0.9;margin-bottom:var(--space-4)}
@@ -41,6 +41,14 @@
     .cta-section{background:linear-gradient(135deg,var(--color-forest) 0%,#3d7a37 100%);padding:var(--space-16) 0;text-align:center;color:white}
     .cta-section h2{font-family:var(--font-family-display);font-size:var(--text-3xl);margin-bottom:var(--space-4)}
     .cta-buttons{display:flex;flex-wrap:wrap;gap:var(--space-4);justify-content:center;margin-top:var(--space-6)}
+    .image-gallery{padding:var(--space-12) 0;background:var(--color-cream)}
+    .gallery-header{text-align:center;margin-bottom:var(--space-8)}
+    .gallery-header h2{font-family:var(--font-family-display);font-size:var(--text-3xl);color:var(--color-forest)}
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--space-6)}
+    .gallery-item{border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-lg);transition:transform 0.3s ease}
+    .gallery-item:hover{transform:scale(1.02)}
+    .gallery-item img{width:100%;height:280px;object-fit:cover;display:block}
+    .gallery-caption{background:var(--color-white);padding:var(--space-4);text-align:center;font-weight:600;color:var(--color-gray-700)}
   </style>
 </head>
 <body>
@@ -72,6 +80,25 @@
       <div class="stat-card"><div class="stat-icon">⏱️</div><div class="stat-value">13-18 yrs</div><div class="stat-label">Lifespan</div></div>
       <div class="stat-card"><div class="stat-icon">🇦🇺</div><div class="stat-value">~100,000</div><div class="stat-label">Wild Population</div></div>
     </div>
+    <section class="image-gallery">
+      <div class="container">
+        <header class="gallery-header"><h2>Koala Gallery</h2></header>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1579169326371-b8d985fc1056?w=800&q=80" alt="Koala sleeping peacefully in a eucalyptus tree" loading="lazy">
+            <div class="gallery-caption">Koala Sleeping</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1519736927049-fc74a6f77c61?w=800&q=80" alt="Koala eating eucalyptus leaves" loading="lazy">
+            <div class="gallery-caption">Koala Eating</div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://images.unsplash.com/photo-1558424871-fa548e98bb5f?w=800&q=80" alt="Mother koala with baby joey on her back" loading="lazy">
+            <div class="gallery-caption">Koala with Baby</div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="content-section">
       <div class="container">
         <header class="section-header"><div class="section-icon">📚</div><h2 class="section-title">Fascinating Koala Facts</h2></header>
